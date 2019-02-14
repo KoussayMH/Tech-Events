@@ -1,0 +1,3 @@
+malek_homepage:
+    path:     /
+    defaults: { _controller: MalekBundle:Default:index }

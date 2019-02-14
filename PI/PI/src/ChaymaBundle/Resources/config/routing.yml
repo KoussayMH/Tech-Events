@@ -1,0 +1,3 @@
+chayma_homepage:
+    path:     /
+    defaults: { _controller: ChaymaBundle:Default:index }

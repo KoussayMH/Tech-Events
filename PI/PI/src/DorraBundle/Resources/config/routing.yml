@@ -1,0 +1,3 @@
+dorra_homepage:
+    path:     /
+    defaults: { _controller: DorraBundle:Default:index }

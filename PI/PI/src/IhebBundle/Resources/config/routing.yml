@@ -1,0 +1,3 @@
+iheb_homepage:
+    path:     /
+    defaults: { _controller: IhebBundle:Default:index }

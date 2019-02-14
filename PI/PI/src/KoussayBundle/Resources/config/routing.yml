@@ -1,0 +1,3 @@
+koussay_homepage:
+    path:     /
+    defaults: { _controller: KoussayBundle:Default:index }
