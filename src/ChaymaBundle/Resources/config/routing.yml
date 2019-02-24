@@ -1,3 +1,30 @@
 chayma_homepage:
     path:     /
     defaults: { _controller: ChaymaBundle:Default:index }
+Ajouter:
+    path:     /{id}/Ajouter/
+    defaults: { _controller: ChaymaBundle:Panier:Ajouter }
+Afficher:
+    path:     /Afficher
+    defaults: { _controller: ChaymaBundle:Panier:Basket }
+P_supprimmer:
+    path:     /{id}/Supprimer/
+    defaults: { _controller: ChaymaBundle:Panier:Supprimmer }
+P_pass:
+    path:     /{total}/Pass/
+    defaults: { _controller: ChaymaBundle:Panier:Pass }
+
+Commande:
+    path:     /commande
+    defaults: { _controller: ChaymaBundle:Commande:index }
+
+Detail:
+    path:     /{id}/detail/
+    defaults: { _controller: ChaymaBundle:Commande:Details }
+
+Ticket:
+    path:     /{id}/ticket
+    defaults: { _controller: ChaymaBundle:Ticket:Afficher }
+AffTicket:
+    path:     /Affticket
+    defaults: { _controller: ChaymaBundle:Ticket:index }

@@ -1,0 +1,72 @@
+{% extends "@Back/base.html.twig" %}
+
+    {% block container %}
+
+<!-- partial:../../partials/_sidebar.html -->
+
+<div class="main-panel">
+    <div class="content-wrapper">
+        <div class="page-header">
+            <h3 class="page-title">
+                Data table
+            </h3>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Tables</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Data table</li>
+                </ol>
+            </nav>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Data table</h4>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="table-responsive">
+                            <table id="order-listing" class="table">
+                                <thead>
+                                <tr>
+                                    <th>Order #</th>
+                                    <th>Prix</th>
+                                    <th>Date Event</th>
+
+                                    <th>Type Ticket</th>
+                                    <th>Quantite</th>
+                                    <th>Event</th>
+                                    <th>Status</th>
+                                    <th>Actions</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                {% for c in tickets %}
+
+                                    <tr>
+                                        <td>{{ c.id }}</td>
+                                        <td>{{ c.prix }}</td>
+                                        <td>{{ c.event.date|date }}</td>
+                                        <td>{{ c.type }}</td>
+                                        <td>{{ c.quantite }}</td>
+                                        <td>{{ c.event }}</td>
+                                        <td>
+                                            <label class="badge badge-info">On hold</label>
+                                        </td>
+                                        <td>
+                                            <button class="btn btn-outline-primary" onclick="window.location.href ='{{ path('Detail',{'id': c.id}) }}';">View</button>
+                                        </td>
+                                    </tr>
+                                {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- content-wrapper ends -->
+
+    <script src="{{ asset ('back/js/data-table.js') }}"></script>
+
+    {% endblock %}
+
+

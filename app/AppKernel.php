@@ -24,7 +24,7 @@ class AppKernel extends Kernel
             new MalekBundle\MalekBundle(),
             new ChaymaBundle\ChaymaBundle(),
             new FOS\UserBundle\FOSUserBundle(),
-            new BackBundle\BackBundle(),
+            new § BackBundle\BackBundle(),
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {

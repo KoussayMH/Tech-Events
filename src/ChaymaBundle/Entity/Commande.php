@@ -96,6 +96,12 @@ class Commande
         return $this->date;
     }
 
+    public function __toString()
+    {
+        return (string) $this->getId();
+        // TODO: Implement __toString() method.
+    }
+
 
 }
 

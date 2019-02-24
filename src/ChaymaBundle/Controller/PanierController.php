@@ -52,6 +52,12 @@ class PanierController extends Controller
 
     }
 
+
+    public function ApplyAction()
+    {
+
+    }
+
     public function BasketAction()
     {
         $session = $this->get('session');

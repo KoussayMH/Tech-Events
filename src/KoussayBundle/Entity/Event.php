@@ -248,5 +248,13 @@ class Event
     {
         return $this->pub;
     }
+
+    public function __toString()
+    {
+        return (string)$this->getTitre() ;
+        // TODO: Implement __toString() method.
+    }
+
+
 }
 
