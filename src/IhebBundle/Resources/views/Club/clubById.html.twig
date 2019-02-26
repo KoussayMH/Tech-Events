@@ -1,0 +1,142 @@
+{% extends "@Front/layout.html.twig" %}
+{% block container %}
+    <!--Start breadcrumb area-->
+    <section class="breadcrumb-area"
+             style="background-image: url({{ asset ('front/images/resources/breadcrumb-bg.jpg') }});">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="breadcrumbs">
+                        <h1> {{ club.nameClub }}}</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End breadcrumb area-->
+
+    <!--Start breadcrumb bottom area-->
+    <section class="breadcrumb-bottom-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="breadcrumb-bottom">
+                        <div class="left pull-left">
+                            <ul>
+                                <li><a href="{{ path ('all_club') }}">Clubs</a></li>
+                                <li><i class="fa fa-angle-right" aria-hidden="true"></i></li>
+                                <li class="active">{{ club.nameClub }}</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {% set flashbag_notices = app.session.flashbag.get('notice') %}
+    {% if flashbag_notices is not empty  %}
+        {% for notice in flashbag_notices %}
+            <div class="container">
+                <div class="alert alert-danger " role="alert">
+                    <strong>Erreur !</strong> {{ notice }} <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                </div>
+            </div>
+        {% endfor %}
+    {% endif %}
+    <!--Start blog Single area-->
+    <section id="blog-area" class="blog-single-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
+                    <div class="blog-post">
+                        <div class="single-blog-item">
+                            <div class="img-holder">
+                                <img src="{{ asset('uploads/brochures/' ~ club.photoClub) }}" alt="{{ club.nameClub }}" style="width: 1000px ; height: 500px">
+                                <div class="post-type">
+                                    <span class="flaticon-photo"></span>
+                                </div>
+                                <div class="post-date">
+                                    <h3>Club <br>" {{ club.nameClub }} "</h3>
+                                </div>
+                            </div>
+                            <div class="text-holder">
+                                <ul class="meta-info">
+                                    <li><a href="#"><i class="fa fa-user" aria-hidden="true"></i>By {{ club.adminClub.firstName }} {{ club.adminClub.lastName }}</a>
+                                    </li>
+                                    <li><a href="#"><i class="fa fa-folder-open" aria-hidden="true"></i>{{ club.typeClub }}</a></li>
+                                </ul>
+                                <h3 class="blog-title"> Name : {{ club.nameClub }}</h3>
+                                <div class="text">
+                                    <p class="mar-btm"> Description : {{ club.descriptionClub }}</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Start author box-->
+                        <div class="author-box">
+                            <div class="sec-title pdb-30">
+                                <h2>About Author</h2>
+                                <span class="border"></span>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="img-holder">
+                                        <img src="{{ asset('front/images/image_user.png') }}">
+                                    </div>
+                                    <div class="text-holder">
+                                        <h3>{{ club.adminClub.firstName }} {{ club.adminClub.lastName }}</h3>
+                                        <p>{{ club.adminClub.descriptionUser }}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--End author box-->
+                    </div>
+                </div>
+                <!--Start sidebar Wrapper-->
+                <div class="col-lg-4 col-md-6 col-sm-7 col-xs-12">
+                    <div class="sidebar-wrapper">
+                        <!--Start single sidebar-->
+
+                        <div class="single-sidebar wow fadeInUp" data-wow-delay="0s" data-wow-duration="1s" data-wow-offset="0">
+                            {% if type !=null %}
+                                <h4 style="margin-bottom: 10px;width: 300px">You Are {{ type}} in This Club</h4>
+                                {% else %}
+                                    <a class="thm-btn" href="{{ path ('join_club',{id: club.id}) }}" style="margin-bottom: 10px;width: 300px">Registration at this club</a>
+                            {% endif %}
+                                <a class="thm-btn" href="{{ path ('all_club') }}">All Clubs</a>
+                            {% if is_granted("IS_AUTHENTICATED_FULLY") %}
+                                <a class="thm-btn" href="{{ path ('club_by_user') }}">My Clubs</a>
+                            {% endif %}
+                        </div>
+                        <!--End single sidebar-->
+                        <!--Start single sidebar-->
+                        <div class="single-sidebar wow fadeInUp" data-wow-delay="0s" data-wow-duration="1s" data-wow-offset="0">
+                            <div class="sec-title">
+                                <h3>Latest News</h3>
+                            </div>
+                            <ul class="popular-post">
+
+                                {% for a in news %}
+                                <li>
+                                    <div class="img-holder">
+                                        <img src="{{ asset('uploads/brochures/' ~ a.photoNews) }}" alt="Awesome Image" style="width: 80px ; height: 80px">
+                                    </div>
+                                    <div class="title-holder">
+                                        <a href="#"><h5 class="post-title">{{ a.title }}</h5></a>
+                                        <h6 class="post-date"><i class="fa fa-calendar" aria-hidden="true"></i>{{ a.creationDate|date ('Y-m-d') }}</h6>
+                                    </div>
+                                </li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                        <!--End single sidebar-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End blog Single area-->
+{% endblock %}
+

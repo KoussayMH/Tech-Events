@@ -1,0 +1,130 @@
+{% extends "@Front/layout.html.twig" %}
+
+
+{% block container %}
+
+    <!--Start breadcrumb area-->
+
+    <section class="breadcrumb-area" style="background-image: url({{ asset ('front/images/resources/breadcrumb-bg.jpg') }});">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="breadcrumbs">
+                        <h1>Buy Ticket</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End breadcrumb area-->
+
+    <!--Start cart area-->
+    <section class="cart-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="cart-top-text">
+                        <div class="text pull-left">
+                            <p>“Silver Plan” has been added to your cart.</p>
+                        </div>
+                        <div class="button pull-right">
+                            <a class="thm-btn gra" href="#">View Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container inner-content">
+            <div class="row">
+                <div class="col-md-12">
+                    {% if produits|length == 0 %}
+                        <tr>
+                            <td class="text-center"><center>Aucun Produit dans votre panier</center></td>
+                        </tr>
+                    {% endif %}
+                    {% if produits|length != 0 %}
+                    <div class="table-outer">
+
+
+                        <table class="cart-table">
+                            <thead class="cart-header">
+                            <tr>
+                                <th class="prod-column">Products</th>
+                                <th>&nbsp;</th>
+                                <th>Quantity</th>
+                                <th class="price">Price</th>
+                                <th>Category</th>
+                                <th>Remove</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            {% set total = 0 %}
+
+                            {% for p in produits %}
+                                <tr>
+                                    <td colspan="2" class="prod-column">
+                                        <div class="column-box">
+                                            <div class="prod-thumb">
+                                                <a href="#"><img src="{{asset('front/images/shop/product-thumb-1.jpg')}}" alt=""></a>
+                                            </div>
+                                            <div class="title">
+                                                <h3 class="prod-title">{{p.libelle}}</h3>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="qty">
+                                        <h3>{{ panier[p.Id] }}</h3>
+                                    </td>
+                                    <td class="price">{{p.prix}}</td>
+                                    <td class="sub-total">{{p.categorie}}</td>
+                                    <td>
+                                        <div class="remove">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <a class="text-danger" href="{{ path('P_supprimmer',{id : p.Id}) }}">Remove</a>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    {% set total = total + (p.prix * panier[p.Id]) %}
+
+                                </tr>
+                            {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+        <div class="container">
+            <div class="row cart-bottom">
+                <div class="col-md-6">
+
+                </div>
+                <!--Start cart total -->
+                <div class="col-lg-6 col-md-6">
+                    <div class="cart-total">
+                        <div class="sec-title">
+                            <h1>Cart Totals</h1>
+                        </div>
+                        <ul class="cart-total-table">
+                            <li class="clearfix">
+                                <span class="col col-title">Order Total</span>
+                                <span class="col">${{ total }}</span>
+                            </li>
+                        </ul>
+                        <button class="thm-btn gra checkout-btn"    onclick="window.location.href='{{ path('PassCl',{'total' :total}) }}';" >Proceed to Checkout</button>
+                    </div>
+                </div>
+                <!--End cart total -->
+            </div>
+        </div>
+        {% endif %}
+    </section>
+    <!--End cart area-->
+
+{% endblock %}
+

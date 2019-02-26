@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Melody Admin</title>
+    <link rel="stylesheet" href="{{ asset('back/vendors/iconfonts/font-awesome/css/all.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('back/vendors/css/vendor.bundle.base.css') }}">
+    <link rel="stylesheet" href="{{ asset('back/vendors/css/vendor.bundle.addons.css') }}">
+    <link rel="stylesheet" href="{{ asset('back/css/style.css') }}">
+    <link rel="shortcut icon" href="{{ asset('back/images/favicon.png') }}"/>
+</head>
+<meta charset="UTF-8"/>
+</head>
+<body>
+<div>
+    {% block fos_user_content %}
+    {% endblock fos_user_content %}
+</div>
+<script src="{{ asset('back/vendors/js/vendor.bundle.base.js') }}"></script>
+<script src="{{ asset('back/vendors/js/vendor.bundle.addons.js') }}"></script>
+<!-- endinject -->
+<!-- inject:js -->
+<script src="{{ asset('back/js/off-canvas.js') }}"></script>
+<script src="{{ asset('back/js/hoverable-collapse.js') }}"></script>
+<script src="{{ asset('back/js/misc.js') }}"></script>
+<script src="{{ asset('back/js/settings.js') }}"></script>
+<script src="{{ asset('back/js/todolist.js') }}"></script>
+</body>
+</html>

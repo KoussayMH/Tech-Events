@@ -118,6 +118,27 @@ use Doctrine\ORM\Mapping as ORM;
      */
     private $pub;
 
+    /**
+     * @ORM\ManyToOne(targetEntity="\IhebBundle\Entity\Club")
+     * @ORM\JoinColumn(name="club",referencedColumnName="id")
+     */
+    private $club;
+
+    /**
+     * @return mixed
+     */
+    public function getClub()
+    {
+        return $this->club;
+    }
+
+    /**
+     * @param mixed $club
+     */
+    public function setClub($club)
+    {
+        $this->club = $club;
+    }
 
     /**
      * Get id
@@ -444,5 +465,13 @@ use Doctrine\ORM\Mapping as ORM;
     {
         return $this->pub;
     }
+
+    public function __toString()
+    {
+        return (string)$this->getId() ;
+        // TODO: Implement __toString() method.
+    }
+
+
 }
 

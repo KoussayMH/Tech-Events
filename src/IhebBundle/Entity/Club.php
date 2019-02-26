@@ -2,7 +2,10 @@
 
 namespace IhebBundle\Entity;
 
+use AppBundle\Entity\User;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
+
 
 /**
  * Club
@@ -12,6 +15,7 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class Club
 {
+
     /**
      * @var int
      *
@@ -24,42 +28,87 @@ class Club
     /**
      * @var string
      *
-     * @ORM\Column(name="nom", type="string", length=255)
+     * @ORM\Column(name="nameClub", type="string", length=255)
      */
-    private $nom;
+    private $nameClub;
 
     /**
      * @var \DateTime
      *
-     * @ORM\Column(name="datecrea", type="date")
+     * @ORM\Column(name="dateCreationClub", type="date")
      */
-    private $datecrea;
+    private $dateCreationClub;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="type", type="string", length=255)
+     * @ORM\Column(name="typeClub", type="string", length=255)
      */
-    private $type;
+    private $typeClub;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="description", type="string", length=255)
+     * @ORM\Column(name="statusClub", type="string", length=255)
      */
-    private $description;
+    private $statusClub;
 
     /**
-     * @var int
+     * @var string
      *
-     * @ORM\Column(name="nbmembres", type="integer")
+     * @ORM\Column(name="descriptionClub", type="string", length=255)
      */
-    private $nbmembres;
+    private $descriptionClub;
 
 
     /**
-     * Get id
+     * Many Clubs have Many Users.
+     * @ORM\ManyToMany(targetEntity="\AppBundle\Entity\User",cascade={"remove"})
+     * @ORM\JoinTable(name="clubs_users",
+     *      joinColumns={@ORM\JoinColumn(name="club_id", referencedColumnName="id")},
+     *      inverseJoinColumns={@ORM\JoinColumn(name="user_id", referencedColumnName="id")}
+     *      )
+     */
+    private $membersClub;
+
+    /**
+     *  One userAdmin has Many club .
+     * @ORM\ManyToOne(targetEntity="\AppBundle\Entity\User")
+     * @ORM\JoinColumns({
+     *   @ORM\JoinColumn(name="admin_id", referencedColumnName="id")
+     * })
+     */
+    private $adminClub;
+
+
+    /**
+     * @ORM\Column(type="string")
      *
+     * @Assert\NotBlank(message="Please, upload the product brochure as a PDF file.")
+     * @Assert\File(mimeTypes={ "application/pdf" })
+     */
+    private $photoClub;
+
+
+
+    public function __construct()
+    {
+        $this->membersClub = new \Doctrine\Common\Collections\ArrayCollection();
+    }
+
+    public function addMember(User $user)
+    {
+        $this->membersClub[] = $user;
+    }
+
+    public function findMembre(User $user){
+        if ($this->membersClub->contains($user)) {
+            return true;
+        }
+    }
+
+
+    /**
      * @return int
      */
     public function getId()
@@ -68,123 +117,147 @@ class Club
     }
 
     /**
-     * Set nom
-     *
-     * @param string $nom
-     *
-     * @return Club
+     * @param int $id
      */
-    public function setNom($nom)
+    public function setId($id)
     {
-        $this->nom = $nom;
-
-        return $this;
+        $this->id = $id;
     }
 
     /**
-     * Get nom
-     *
      * @return string
      */
-    public function getNom()
+    public function getNameClub()
     {
-        return $this->nom;
+        return $this->nameClub;
     }
 
     /**
-     * Set datecrea
-     *
-     * @param \DateTime $datecrea
-     *
-     * @return Club
+     * @param string $nameClub
      */
-    public function setDatecrea($datecrea)
+    public function setNameClub($nameClub)
     {
-        $this->datecrea = $datecrea;
-
-        return $this;
+        $this->nameClub = $nameClub;
     }
 
     /**
-     * Get datecrea
-     *
      * @return \DateTime
      */
-    public function getDatecrea()
+    public function getDateCreationClub()
     {
-        return $this->datecrea;
+        return $this->dateCreationClub;
     }
 
     /**
-     * Set type
-     *
-     * @param string $type
-     *
-     * @return Club
+     * @param \DateTime $dateCreationClub
      */
-    public function setType($type)
+    public function setDateCreationClub($dateCreationClub)
     {
-        $this->type = $type;
-
-        return $this;
+        $this->dateCreationClub = $dateCreationClub;
     }
 
     /**
-     * Get type
-     *
      * @return string
      */
-    public function getType()
+    public function getTypeClub()
     {
-        return $this->type;
+        return $this->typeClub;
     }
 
     /**
-     * Set description
-     *
-     * @param string $description
-     *
-     * @return Club
+     * @param string $typeClub
      */
-    public function setDescription($description)
+    public function setTypeClub($typeClub)
     {
-        $this->description = $description;
-
-        return $this;
+        $this->typeClub = $typeClub;
     }
 
     /**
-     * Get description
-     *
      * @return string
      */
-    public function getDescription()
+    public function getDescriptionClub()
     {
-        return $this->description;
+        return $this->descriptionClub;
     }
 
     /**
-     * Set nbmembres
-     *
-     * @param integer $nbmembres
-     *
-     * @return Club
+     * @param string $descriptionClub
      */
-    public function setNbmembres($nbmembres)
+    public function setDescriptionClub($descriptionClub)
     {
-        $this->nbmembres = $nbmembres;
-
-        return $this;
+        $this->descriptionClub = $descriptionClub;
     }
 
     /**
-     * Get nbmembres
-     *
-     * @return int
+     * @return string
      */
-    public function getNbmembres()
+    public function getMembersClub()
     {
-        return $this->nbmembres;
+        return $this->membersClub;
     }
+
+    /**
+     * @param string $membersClub
+     */
+    public function setMembersClub($membersClub)
+    {
+        $this->membersClub = $membersClub;
+    }
+
+    /**
+     * @return string
+     */
+    public function getAdminClub()
+    {
+        return $this->adminClub;
+    }
+
+    /**
+     * @param string $adminClub
+     */
+    public function setAdminClub($adminClub)
+    {
+        $this->adminClub = $adminClub;
+    }
+
+    /**
+     * @return string
+     */
+    public function getStatusClub()
+    {
+        return $this->statusClub;
+    }
+
+    /**
+     * @param string $statusClub
+     */
+    public function setStatusClub($statusClub)
+    {
+        $this->statusClub = $statusClub;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getPhotoClub()
+    {
+        return $this->photoClub;
+    }
+
+    /**
+     * @param mixed $photoClub
+     */
+    public function setPhotoClub($photoClub)
+    {
+        $this->photoClub = $photoClub;
+    }
+
+    public function __toString()
+    {
+        return (string) $this->getNom() ;
+        // TODO: Implement __toString() method.
+    }
+
+
 }
 

@@ -35,12 +35,51 @@ class Commande
      */
     private $date;
 
+
     /**
-     * @var string
-     *
-     * @ORM\Column(name="etat", type="string", length=255)
+     * @ORM\ManyToOne(targetEntity="\IhebBundle\Entity\Club")
+     * @ORM\JoinColumn(name="club",referencedColumnName="id")
      */
-    private $etat;
+    private $club;
+
+
+    /**
+     * @ORM\ManyToOne(targetEntity="\AppBundle\Entity\User")
+     * @ORM\JoinColumn(name="user",referencedColumnName="id")
+     */
+    private $user;
+
+    /**
+     * @return mixed
+     */
+    public function getUser()
+    {
+        return $this->user;
+    }
+
+    /**
+     * @param mixed $user
+     */
+    public function setUser($user)
+    {
+        $this->user = $user;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getClub()
+    {
+        return $this->club;
+    }
+
+    /**
+     * @param mixed $club
+     */
+    public function setClub($club)
+    {
+        $this->club = $club;
+    }
 
 
     /**
@@ -101,28 +140,12 @@ class Commande
         return $this->date;
     }
 
-    /**
-     * Set etat
-     *
-     * @param string $etat
-     *
-     * @return Commande
-     */
-    public function setEtat($etat)
+    public function __toString()
     {
-        $this->etat = $etat;
-
-        return $this;
+        return (string) $this->getId();
+        // TODO: Implement __toString() method.
     }
 
-    /**
-     * Get etat
-     *
-     * @return string
-     */
-    public function getEtat()
-    {
-        return $this->etat;
-    }
+
 }
 

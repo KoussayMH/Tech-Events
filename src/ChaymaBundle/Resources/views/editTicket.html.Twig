@@ -1,0 +1,78 @@
+{% extends "@Front/layout.html.twig" %}
+
+    {% block container %}
+        <!--Start breadcrumb area-->
+
+        <section class="breadcrumb-area" style="background-image: url({{ asset ('front/images/resources/breadcrumb-bg.jpg') }});">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="breadcrumbs">
+                            <h1>Add Tickets</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--End breadcrumb area-->
+
+
+        <!--Start contact form area-->
+
+        <section class="sponsor-form-area">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12">
+                        <div class="sponsor-form">
+                            <div class="sec-title text-center">
+                                <div class="underlay text-center">
+                                    <h2>Add <span>Tickets</span></h2>
+                                </div>
+                                <h1>Add Tickets</h1>
+                            </div>
+                            {{ form_start(TicketType) }}
+
+                            <form id="sponsor-form" name="sponsor_form" class="default-form" >
+
+                                <div class="row">
+                                    {{ form_start(TicketType) }}
+                                    <div class="">
+                                        <div class="field-label">Event</div>
+
+                                        <label>{{ form_widget(TicketType.event) }}</label>
+                                    </div>
+                                    <div class="">
+                                        <div class="field-label">Prix</div>
+
+                                        {{ form_widget(TicketType.prix) }}
+                                    </div>
+                                    <div class="cm-number">
+                                        <div class="field-label">Quantite</div>
+
+                                        {{ form_widget(TicketType.quantite) }}
+                                    </div>
+                                    <div class="">
+                                        <div class="field-label">Type</div>
+
+                                        {{ form_widget(TicketType.type) }}
+                                    </div>
+                                    <div class="row">
+                                        <div class="">
+                                            <button class="thm-btn gra" type="submit">Add Ticket</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                {{ form_end(TicketType) }}
+
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--End sponsor form area-->
+
+
+    {% endblock %}

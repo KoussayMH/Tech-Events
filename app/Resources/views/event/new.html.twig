@@ -1,0 +1,187 @@
+{% extends '@Front/layout.html.twig' %}
+
+{% block container %}
+    <!--Start breadcrumb area-->
+    <section class="breadcrumb-area" style="background-image: url({{ asset('front/images/resources/breadcrumb-bg.jpg') }});">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="breadcrumbs">
+                        <h1>La Liste des evenements </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End breadcrumb area-->
+
+
+
+    <section id="blog-area" class="blog-single-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
+                    <div class="blog-post">
+
+                        <!--Start add comment box-->
+                        <div class="add-comment-box">
+                            <div class="sec-title pdb-30">
+                                <h2>Ajouter un evenement</h2>
+                                <span class="border"></span>
+                            </div>
+                                    {{ form_start(form) }}
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="field-label">Titre*</div>
+                                                {{ form_widget(form.titre , {'attr':{'class':'form-control' }} )  }}
+
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="field-label">date*</div>
+                                                {{ form_widget(form.date )  }}
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="field-label">lieu*</div>
+                                                {{ form_widget(form.lieu , {'attr':{'class':'form-control' }} )  }}
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="field-label">Description</div>
+                                                {{ form_widget(form.description , {'attr':{'class':'form-control' }} )  }}
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="field-label">Image</div>
+                                                {{ form_widget(form.image1 , {'attr':{'class':'form-control' }} )  }}
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                {{ form_widget(form.submit ,{'attr':{'class':'btn btn-primary mr-2'}}) }}
+                                                {{ form_end(form) }}
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <!--End add comment box-->
+                    </div>
+                </div>
+                <!--Start sidebar Wrapper-->
+                <div class="col-lg-4 col-md-6 col-sm-7 col-xs-12">
+                    <div class="sidebar-wrapper">
+
+                        <!--Start single sidebar-->
+                        <div class="single-sidebar wow fadeInUp" data-wow-delay="0s" data-wow-duration="1s" data-wow-offset="0">
+                            <div class="sec-title">
+                                <h3>Latest News</h3>
+                            </div>
+                            <ul class="popular-post">
+                                <li>
+                                    <div class="img-holder">
+                                        <img src="images/sidebar/popular-post-1.jpg" alt="Awesome Image">
+                                        <div class="overlay-style-one">
+                                            <div class="box">
+                                                <div class="content">
+                                                    <a href="#"><i class="fa fa-link" aria-hidden="true"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="title-holder">
+                                        <a href="#"><h5 class="post-title">Internet Searches Inspire Be<br> cause they Are Charitable.</h5></a>
+                                        <h6 class="post-date"><i class="fa fa-calendar" aria-hidden="true"></i>18th Aug, 2017</h6>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="img-holder">
+                                        <img src="images/sidebar/popular-post-2.jpg" alt="Awesome Image">
+                                        <div class="overlay-style-one">
+                                            <div class="box">
+                                                <div class="content">
+                                                    <a href="#"><i class="fa fa-link" aria-hidden="true"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="title-holder">
+                                        <a href="#"><h5 class="post-title">River Stumble as Cruzeiro But <br>Fly High in Table Prove.</h5></a>
+                                        <h6 class="post-date"><i class="fa fa-calendar" aria-hidden="true"></i>24th Jun, 2017</h6>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="img-holder">
+                                        <img src="images/sidebar/popular-post-3.jpg" alt="Awesome Image">
+                                        <div class="overlay-style-one">
+                                            <div class="box">
+                                                <div class="content">
+                                                    <a href="#"><i class="fa fa-link" aria-hidden="true"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="title-holder">
+                                        <a href="#"><h5 class="post-title">Everyone loses their cool over <br>Riley’s first date.</h5></a>
+                                        <h6 class="post-date"><i class="fa fa-calendar" aria-hidden="true"></i>05th Mar, 2017</h6>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--End single sidebar-->
+                        <!--Start single sidebar-->
+                        <div class="single-sidebar wow fadeInUp" data-wow-delay="0s" data-wow-duration="1s" data-wow-offset="0">
+                            <div class="sec-title">
+                                <h3>Categories</h3>
+                            </div>
+                            <ul class="categories clearfix">
+                                <li><a href="#">Social Events</a></li>
+                                <li><a href="#">Business Related</a></li>
+                                <li><a href="#">Technology</a></li>
+                                <li><a href="#">Cultural Party</a></li>
+                                <li><a href="#">Uncategorized</a></li>
+                            </ul>
+                        </div>
+                        <!--End single sidebar-->
+                        <!--Start single-sidebar-->
+                        <div class="single-sidebar wow fadeInUp" data-wow-delay="0s" data-wow-duration="1s" data-wow-offset="0">
+                            <div class="sec-title">
+                                <h3 class="pull-left">Instagram</h3>
+                                <a class="pull-right follow-us" href="#">Follow Us</a>
+                            </div>
+                            <ul class="instagram">
+                                <li>
+                                    <div class="img-holder">
+
+                                        <img src="{{ asset(event.image1) }}" alt="Awesome Image">
+
+                                        <div class="overlay-style-one">
+                                            <div class="box">
+                                                <div class="content">
+                                                    <a href="#"><i class="fa fa-link" aria-hidden="true"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <!--End single-sidebar-->
+
+                    </div>
+                </div>
+                <!--End Sidebar Wrapper-->
+            </div>
+        </div>
+    </section>
+
+
+{% endblock %}

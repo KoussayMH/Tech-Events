@@ -22,10 +22,12 @@ class User extends BaseUser
      */
     protected $id;
 
+
     /**
      * User constructor.
      * @param int $id
      */
+
 
     public function __construct()
     {
@@ -42,6 +44,12 @@ class User extends BaseUser
     public function getId()
     {
         return $this->id;
+    }
+
+    public function __toString()
+    {
+        return (string) $this->getUsername();
+
     }
 
 
