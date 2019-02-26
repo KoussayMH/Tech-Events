@@ -1,0 +1,97 @@
+{% extends "@Front/layout.html.twig" %}
+
+
+{% block container %}
+<!--Start breadcrumb area-->
+
+<section class="breadcrumb-area" style="background-image: url({{ asset ('front/images/resources/breadcrumb-bg.jpg') }});">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="breadcrumbs">
+                    <h1>Add Tickets</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--End breadcrumb area-->
+    <section class="checkout-area">
+        <div class="container">
+            <div class="row bottom">
+                <form action="{{ path('Effect',{'total' : c.total}) }}">
+
+                <div>
+                    <div class="cart-total">
+                        <div class="sec-title">
+                            <h1>Cart Totals</h1>
+                            <span class="border"></span>
+                        </div>
+                        <ul class="cart-total-table">
+                            <li class="clearfix">
+                                <span class="col col-title">Cart Subtotal</span>
+                                <span class="col">${{ c.total }}</span>
+                            </li>
+                            <li class="clearfix">
+                                <span class="col col-title">Réduction</span>
+                                <span class="col">-$00.00</span>
+                            </li>
+                            <li class="clearfix">
+                                <span class="col col-title">Order Total</span>
+                                <span class="col">${{ c.total }}</span>
+                            </li>
+                            <li class="clearfix">
+                                <div class="row cart-middle">
+                                <div class="col-md-6 col-sm-8 col-xs-12">
+                                    <div class="apply-coupon">
+                                        <input type="text" name="coupon-code" value="" placeholder="Enter Coupon Code...">
+                                        <div class="apply-coupon-button">
+                                            <button class="thm-btn gra" type="button">Apply Coupon</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                            </li>
+                        </ul>
+
+
+                        <div class="payment-options">
+                            <div class="option-block">
+                                <div class="checkbox">
+                                    <label>
+                                        <input name="pay-us" type="checkbox">
+                                        <span>Direct Bank Transfer</span>
+                                    </label>
+                                </div>
+                                <div class="text">
+                                    <p>Please send a check to Store Name, Store Street, Store Town, Store State / County, Store Postcode.</p>
+                                </div>
+                            </div>
+                            <div class="option-block">
+                                <div class="radio-block">
+                                    <div class="checkbox">
+                                        <label>
+                                            <input name="pay-us" type="checkbox">
+                                            <span>Paypal <b>What is Paypal</b></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                                <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                                        data-key="pk_test_XlvdfoLTkBc6lwi3AltjwLBa"
+                                        data-description="Access for a year"
+                                        data-amount="{{ c.total *100}}"
+                                        data-locale="auto"></script>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+{% endblock %}

@@ -1,0 +1,29 @@
+{% extends '@Front/layout.html.twig' %}
+
+{% block container %}
+    <!--Start breadcrumb area-->
+    <section class="breadcrumb-area" style="background-image: url({{ asset('front/images/resources/breadcrumb-bg.jpg') }});">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="breadcrumbs">
+                        <h1>La Liste des evenements </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End breadcrumb area-->
+    <h1>Comment creation</h1>
+
+    {{ form_start(form) }}
+        {{ form_widget(form) }}
+        <input type="submit" value="Create" />
+    {{ form_end(form) }}
+
+    <ul>
+        <li>
+            <a href="{{ path('comment_index') }}">Back to the list</a>
+        </li>
+    </ul>
+{% endblock %}

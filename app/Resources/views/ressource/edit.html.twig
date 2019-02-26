@@ -1,0 +1,75 @@
+{% extends "@Back/base.html.twig" %}
+{% block container %}
+
+
+
+
+
+
+
+
+    <div class="col-md-6 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                {{ form_start(edit_form) }}
+
+                <h4 class="card-title"> Modifier  RH </h4>
+
+
+
+                <form class="forms-sample">
+
+                    <div class="form-group row">
+                        <label for="exampleInputUsername2" class="col-sm-3 col-form-label">Nom</label>
+                        <div class="col-sm-9">
+                            {{ form_widget(edit_form.nom , {'attr':{'class':'form-control' }}) }}
+
+
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="exampleInputEmail2" class="col-sm-3 col-form-label">Prenom</label>
+                        <div class="col-sm-9">
+                            {{ form_widget(edit_form.prenom, {'attr':{'class':'form-control' }}) }}
+                        </div>
+                    </div>
+
+
+                    <div class="form-group row">
+                        <label for="exampleInputMobile" class="col-sm-3 col-form-label">Description</label>
+                        <div class="col-sm-9">
+                            {{ form_widget(edit_form.description , {'attr':{'class':'form-control' }}) }}
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="exampleInputMobile" class="col-sm-3 col-form-label">Domaine</label>
+                        <div class="col-sm-9">
+                            {{ form_widget(edit_form.domaine , {'attr':{'class':'form-control' }}) }}
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="exampleInputMobile" class="col-sm-3 col-form-label">Link</label>
+                        <div class="col-sm-9">
+                            {{ form_widget(edit_form.link , {'attr':{'class':'form-control' }}) }}
+                        </div>
+                    </div>
+
+                    <button type="submit" value="Edit" class="btn btn-primary mr-2">Submit</button>
+                    <button class="btn btn-light">Cancel</button>
+                    {{ form_end(edit_form) }}
+                </form>
+                <ul>
+                    <li>
+                        <a href="{{ path('ressource_index') }}">Back to the list</a>
+                    </li>
+                    <li>
+                        {{ form_start(delete_form) }}
+                        <input type="submit" value="Delete">
+                        {{ form_end(delete_form) }}
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+{% endblock %}

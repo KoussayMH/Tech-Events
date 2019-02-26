@@ -1,0 +1,111 @@
+{% extends "@Front/layout.html.twig" %}
+
+
+{% block container %}
+<!--Start breadcrumb area-->
+
+<section class="breadcrumb-area" style="background-image: url({{ asset ('front/images/resources/breadcrumb-bg.jpg') }});">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="breadcrumbs">
+                    <h1>Add Tickets</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--End breadcrumb area-->
+    <!--Start breadcrumb bottom area-->
+    <section class="breadcrumb-bottom-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="breadcrumb-bottom">
+                        <div class="left pull-left">
+                            <ul>
+                                <li><a href="index-2.html">Home</a></li>
+                                <li><i class="fa fa-angle-right" aria-hidden="true"></i></li>
+                                <li class="active">Buy Ticket</li>
+                            </ul>
+                        </div>
+                        <div class="right pull-right">
+                            <a href="#">
+                                <span><i class="fa fa-share-alt" aria-hidden="true"></i>Share To Others</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End breadcrumb bottom area-->
+
+    <!--Start pricing plan area-->
+    <section class="pricing-plan-area pricing-page">
+        <div class="container">
+            <div class="row">
+                <!--Start single price box-->
+                {% for ticket in tickets %}
+                <div class="col-lg-3 col-md-3 col-sm-8 col-xs-8 text-center">
+                    <form action="{{ path('Ajouter',{id : ticket.Id}) }}">
+                    <div class="single-price-box">
+                        <div class="table-header">
+                            <div class="top">
+                                <h3>{{ ticket.type }}</h3>
+                            </div>
+                            <div class="package">
+                                <div class="inner-box">
+                                    <h2><b>$</b>{{ ticket.prix }}</h2>
+                                </div>
+                                <h3>{{ ticket.titre }}</h3>
+                            </div>
+                        </div>
+                        <div class="price-list">
+                            <h3>{{ ticket.desc }}</h3>
+
+                        </div>
+                        {% if ticket.quantite==0 %}
+
+                            <div >
+                                <ul>
+                                    <li class="active">Complet</li>
+                                </ul>
+                                </br>
+                                </br>
+                                </br>
+                                </br>
+                                </br>
+                                </br>
+                                </br>
+                            </div>
+                            {% endif %}
+                    {% if ticket.quantite!=0 %}
+                        <div class="price-list" >
+                                   <h3>Quantity</h3>
+                            <input  type="number" max={{ ticket.quantite }} name="qte">
+
+
+                        </div>
+
+                        <div class="table-footer">
+                            <input type="submit"   value="Commander" class="thm-btn gra" href="">
+                        </div>
+                    {% endif %}
+                    </div>
+                    </form>
+
+                </div>
+                {% endfor %}
+
+                <!--End single price box-->
+
+            </div>
+
+        </div>
+
+    </section>
+    <!--End pricing plan area-->
+
+
+{% endblock %}

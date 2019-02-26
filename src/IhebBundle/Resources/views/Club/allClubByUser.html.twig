@@ -1,0 +1,149 @@
+{% extends "@Front/layout.html.twig" %}
+
+{% block container %}
+    <!--Start breadcrumb area-->
+    <section class="breadcrumb-area"
+             style="background-image: url({{ asset ('front/images/resources/breadcrumb-bg.jpg') }});">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="breadcrumbs">
+                        <h1> My clubs</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End breadcrumb area-->
+
+    <!--Start breadcrumb bottom area-->
+    <section class="breadcrumb-bottom-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="breadcrumb-bottom">
+                        <div class="left pull-left">
+                            <ul>
+                                <li><a href="{{ path ('all_club') }}">Clubs</a></li>
+                                <li><i class="fa fa-angle-right" aria-hidden="true"></i></li>
+                                <li class="active">My Clubs</li>
+                            </ul>
+                        </div>
+                        <div class="right pull-right">
+                            <a href="{{ path ('new_club') }}">
+                                <span><i class="fa fa-plus" aria-hidden="true">Add a new club</i></span>
+                            </a>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {% set flashbag_notices = app.session.flashbag.get('notice') %}
+    {% if flashbag_notices is not empty  %}
+        {% for notice in flashbag_notices %}
+            <div class="container">
+                <div class="alert alert-danger " role="alert">
+                    <strong>Erreur !</strong> {{ notice }} <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                </div>
+            </div>
+        {% endfor %}
+    {% endif %}
+
+    {% set flashbag_notices1 = app.session.flashbag.get('notice1') %}
+    {% if flashbag_notices1 is not empty  %}
+        {% for notice1 in flashbag_notices1 %}
+            <div class="container">
+                <div class="alert alert-success " role="alert">
+                    <strong>Succes !</strong> {{ notice1 }} <a href="#" class="close" data-dismiss="success" aria-label="close">&times;</a>
+                </div>
+            </div>
+        {% endfor %}
+    {% endif %}
+    <!--Start Event Schedule area-->
+    <section class="event-schedule-area schedule-tab-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="event-schedule-tab">
+                        <!--Start sidebar Wrapper-->
+                        <div class="col-md-11">
+                            <div class="sidebar-wrapper">
+                                <!--Start single sidebar-->
+                                <div class="single-sidebar wow fadeInUp" data-wow-delay="0s" data-wow-duration="1s" data-wow-offset="0">
+                                    <form class="search-form" method="POST">
+                                        <input placeholder="Search By Name..." type="text" name="club_search" id="club_search">
+                                        <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                                    </form>
+                                </div>
+                                <!--End single sidebar-->
+                            </div>
+                        </div>
+                        <!--End Sidebar Wrapper-->
+                        <!--Start tab content-->
+                        <div class="tab-content">
+                            <!--Start single tab pane-->
+                            <div class="tab-pane active" id="d2">
+                                <div class="row">
+                                    <div class="col-md-11">
+                                        <div class="accordion-box">
+                                            {% for a in clubs %}
+                                            <!--Start single accordion box-->
+                                            <div class="accordion accordion-block{% if a.statusClub =="Approved" %} color-3{% else %} color-2{% endif %}">
+                                                <div class="single-box">
+                                                    <div class="single-box-title accord-btn">
+                                                        <div class="img-holder">
+                                                            <img src="{{ asset('uploads/brochures/' ~ a.photoClub) }}" alt="{{ a.nameClub }}" style="width: 70px ; height: 70px" >
+
+                                                        </div>
+                                                        <div class="title-holder">
+                                                            <p><i class="fa fa-clock-o" aria-hidden="true"></i>{{ a.dateCreationClub|date ('Y-m-d') }}</p>
+                                                            <h3>Name : {{ a.nameClub }}</h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="single-box-content accord-content">
+                                                        <ul class="meta-info">
+                                                            <li><span>Type : </span> {{ a.typeClub }}</li>
+                                                            <li><span>Status : </span> {{ a.statusClub }}</li>
+                                                        </ul>
+                                                        <div class="text">
+                                                            <p>Description : {{ a.descriptionClub }}</p>
+                                                        </div>
+                                                        <div class="bottom-content clearfix">
+                                                            <div class="button pull-left">
+                                                                <a class="btn btn-danger" href="{{path('delete_club', {id: a.id})}}" role="button">Delete</a>
+                                                                <a class="btn btn-warning" href="{{path('update_club', {id: a.id})}}">Update</a>
+                                                            </div>
+                                                            <div class="social-share pull-right">
+                                                                <h3>News : </h3>
+                                                                <ul class="social-links">
+                                                                    <li><a href="{{path('add_news', {id: a.id})}}" ><i class="fa fa-plus"></i></a></li>
+                                                                    <li><a href="{{path('news_by_club', {id: a.id})}}"><i class="fa fa-list"></i></a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--End single accordion box-->
+                                            {% endfor %}
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!--End single tab pane-->
+                        </div>
+
+                        <!--End tab content-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Event Schedule area-->
+
+
+{% endblock %}

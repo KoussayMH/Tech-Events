@@ -1,0 +1,72 @@
+{% extends "@Back/base.html.twig" %}
+{% block container %}
+
+
+
+
+
+
+
+
+    <div class="col-md-6 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                {{ form_start(edit_form) }}
+
+                <h4 class="card-title"> Modifier  RH </h4>
+
+
+
+                <form class="forms-sample">
+
+                    <div class="form-group row">
+                        <label for="exampleInputUsername2" class="col-sm-3 col-form-label">Categorie</label>
+                        <div class="col-sm-9">
+                            {{ form_widget(edit_form.categorie , {'attr':{'class':'form-control' }}) }}
+
+
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="exampleInputEmail2" class="col-sm-3 col-form-label">Libelle</label>
+                        <div class="col-sm-9">
+                            {{ form_widget(edit_form.libelle, {'attr':{'class':'form-control' }}) }}
+                        </div>
+                    </div>
+
+
+                    <div class="form-group row">
+                        <label for="exampleInputMobile" class="col-sm-3 col-form-label">Description</label>
+                        <div class="col-sm-9">
+                            {{ form_widget(edit_form.description , {'attr':{'class':'form-control' }}) }}
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="exampleInputMobile" class="col-sm-3 col-form-label">Quantite</label>
+                        <div class="col-sm-9">
+                            {{ form_widget(edit_form.quantite , {'attr':{'class':'form-control' }}) }}
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="exampleInputMobile" class="col-sm-3 col-form-label">Prix</label>
+                        <div class="col-sm-9">
+                            {{ form_widget(edit_form.prix , {'attr':{'class':'form-control' }}) }}
+                        </div>
+                    </div>
+
+                    <button type="submit" value="Edit" class="btn btn-primary mr-2">Submit</button>
+                    <button class="btn btn-light">Cancel</button>
+                    {{ form_end(edit_form) }}
+                </form>
+                <ul>
+                    <li>
+                        <a href="{{ path('afficherProduit') }}">Back to the list</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+

@@ -1,0 +1,80 @@
+{% extends "@Front/layout.html.twig" %}
+
+{% block container %}
+    <section class="breadcrumb-area" style="background-image: url({{ asset('front/images/resources/breadcrumb-bg.jpg') }});">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="breadcrumbs">
+                        <h1> Experts </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="team-area-v2">
+        <div class="container">
+            <div class="sec-title text-center">
+                <div class="underlay text-center">
+                    <h2> La list des   <span> Ressources Humaines </span></h2>
+                </div>
+                <h1>Speakers Style</h1>
+            </div>
+            <div class="row">
+
+                {% for ressource in ressources %}
+
+                    <!--Start single team member-->
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                        <div class="single-team-member">
+                            <div class="img-holder">
+                                <img src="{{ asset ( ressource.image ) }}" alt="Awesome Image">
+                                <div class="overlay-style-one">
+                                    <div class="box">
+                                        <div class="content">
+                                            <div class="text">
+                                                <p>{{ ressource.description }}</p>
+                                            </div>
+                                            <span class="border"></span>
+                                            <ul>
+                                                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                                <li><a href="{{ asset ( ressource.link ) }}"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-holder text-center">
+                                <h3>{{ ressource.nom }}  {{ ressource.prenom }} </h3> <br>
+
+                                <span>{{ ressource.domaine }} <br>
+                            <button class="read-more" onclick="window.location.href ='{{ path('ressource_show' ,{'id': ressource.id}) }}';">Details</button>
+
+                                </span>
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <!--End single team member-->
+
+
+                {% endfor %}
+
+
+
+
+
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+{% endblock %}

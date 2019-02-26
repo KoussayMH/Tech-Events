@@ -1,0 +1,81 @@
+{% extends "@Front/layout.html.twig" %}
+
+
+{% block container %}
+
+    <!--Start breadcrumb area-->
+
+    <section class="breadcrumb-area" style="background-image: url({{ asset ('front/images/resources/breadcrumb-bg.jpg') }});">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="breadcrumbs">
+                        <h1>My Sales</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End breadcrumb area-->
+
+    <!--Start cart area-->
+    <section class="cart-area">
+
+        <div class="container inner-content">
+            <div class="row">
+                <div class="col-md-12">
+
+                    <div class="table-outer">
+
+
+                        <table class="cart-table">
+                            <thead class="cart-header">
+                            <tr>
+                                <th class="prod-column">Event</th>
+                                <th>&nbsp;</th>
+                                <th>Quantity</th>
+                                <th class="price">Price</th>
+                                <th>Type</th>
+                                <th>User</th>
+                                <th>Date</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+
+                            {% for p in details %}
+                                <tr>
+                                    <td colspan="2" class="prod-column">
+                                        <div class="column-box">
+                                            <div class="prod-thumb">
+                                                <a href="#"><img src="{{asset('front/images/shop/product-thumb-1.jpg')}}" alt=""></a>
+                                            </div>
+                                            <div class="title">
+                                                <h3 class="prod-title">{{p.ticket.event.description}}</h3>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="qty">
+                                        <h3>{{ p.quantite }}</h3>
+                                    </td>
+                                    <td class="price">{{p.ticket.prix}}</td>
+                                    <td class="sub-total">{{p.ticket.type}}</td>
+                                    <td class="sub-total">{{p.commande.user}}</td>
+                                    <td class="sub-total">{{p.commande.date| date}}</td>
+
+
+                                </tr>
+                            {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </section>
+    <!--End cart area-->
+
+{% endblock %}
+

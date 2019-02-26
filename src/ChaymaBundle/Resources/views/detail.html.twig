@@ -1,0 +1,90 @@
+
+{% extends "@Back/base.html.twig" %}
+
+    {% block container %}
+
+
+
+
+<div class="main-panel">
+    <div class="content-wrapper">
+        <div class="page-header">
+            <h3 class="page-title">
+                Invoice
+            </h3>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Sample pages</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Invoice</li>
+                </ol>
+            </nav>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="card px-2">
+                    <div class="card-body">
+                        <div class="container-fluid">
+                            <h3 class="text-right my-5">Invoice&nbsp;&nbsp;#INV-17</h3>
+                            <hr>
+                        </div>
+
+
+                        <div class="container-fluid mt-5 d-flex justify-content-center w-100">
+                            <div class="table-responsive w-100">
+                                <table class="table">
+                                    <thead>
+                                    <tr class="bg-primary text-white">
+                                        <th>Commande</th>
+                                        <th>Event</th>
+                                        <th class="text-right">Type Ticket</th>
+                                        <th class="text-right">Quantité</th>
+                                        <th class="text-right">Prix</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    {% set total = 0 %}
+                                    {% set date= 0 %}
+
+                                    {% for d in details %}
+                                    <tr class="text-right">
+                                        <td class="text-left">{{ d.commande }}</td>
+                                        <td class="text-left">{{ d.ticket.event }}</td>
+                                        <td>{{ d.ticket.type }}</td>
+                                        <td>{{ d.quantite }}</td>
+                                        <td>{{ d.ticket.prix }}</td>
+                                        {% set total = d.commande.total %}
+                                    </tr>
+                                        {% endfor %}
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="container-fluid mt-5 w-100">
+                            <p class="text-right mb-2">Sub - Total amount: ${{ total }}</p>
+                            <p class="text-right">vat (10%) : $138</p>
+                            <h4 class="text-right mb-5">Total : ${{ total }}</h4>
+                            <hr>
+                        </div>
+                        <div class="container-fluid w-100">
+                            <a href="#" class="btn btn-primary float-right mt-4 ml-2"><i class="fa fa-print mr-1"></i>Print</a>
+                            <a href="#" class="btn btn-success float-right mt-4"><i class="fa fa-share mr-1"></i>Send Invoice</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- content-wrapper ends -->
+    <!-- partial:../../partials/_footer.html -->
+    <footer class="footer">
+        <div class="d-sm-flex justify-content-center justify-content-sm-between">
+            <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © 2018 <a href="../../../../index.html" target="_blank">Urbanui</a>. All rights reserved.</span>
+            <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Hand-crafted & made with <i class="far fa-heart text-danger"></i></span>
+        </div>
+    </footer>
+    <!-- partial -->
+</div>
+
+
+{% endblock %}

@@ -1,3 +1,78 @@
 iheb_homepage:
     path:     /
     defaults: { _controller: IhebBundle:Default:index }
+
+new_club:
+    path:     /new_club
+    defaults: { _controller: IhebBundle:Club:newClub }
+    methods:  ['GET','POST']
+
+delete_club:
+    path:     /delete_club/{id}
+    defaults: { _controller: IhebBundle:Club:deleteClub }
+    methods:  ['GET','POST']
+
+update_club:
+    path:     /update_club/{id}
+    defaults: { _controller: IhebBundle:Club:updateClub }
+    methods:  ['GET','POST']
+
+all_club:
+    path:     /all_club
+    defaults: { _controller: IhebBundle:Club:getAllApprovedClub }
+    methods:  ['GET','POST']
+
+club_by_id:
+    path:     /club_by_id/{id}
+    defaults: { _controller: IhebBundle:Club:getClubById }
+    methods:  ['GET','POST']
+
+club_by_user:
+    path:     /club_by_user
+    defaults: { _controller: IhebBundle:Club:getClubByUser }
+    methods:  ['GET','POST']
+
+clubs:
+    path:     /clubs
+    defaults: { _controller: IhebBundle:Club:getAllClub }
+    methods:  ['GET','POST']
+
+join_club:
+    path:     /join/{id}
+    defaults: { _controller: IhebBundle:Club:joinClub }
+    methods:  ['GET','POST']
+
+approuve_club:
+    path:     /approuve/{id}
+    defaults: { _controller: IhebBundle:Club:approveClub }
+    methods:  ['GET','POST']
+
+refuse_club:
+    path:     /refuse/{id}
+    defaults: { _controller: IhebBundle:Club:refuseClub }
+    methods:  ['GET','POST']
+
+notfication:
+    path:     /notification
+    defaults: { _controller: IhebBundle:Notification:AllNotificationJson }
+    methods:  ['GET','POST']
+
+notfication_status:
+    path:     /notification_status
+    defaults: { _controller: IhebBundle:Notification:UpdateNotificationJson }
+    methods:  ['GET','POST']
+
+add_news:
+    path:     /news/add/{id}
+    defaults: { _controller: IhebBundle:News:newNew }
+    methods:  ['GET','POST']
+
+all_news:
+    path:     /news/all
+    defaults: { _controller: IhebBundle:News:getAllNews }
+    methods:  ['GET','POST']
+
+news_by_club:
+    path:     /news/news_by_club/{id}
+    defaults: { _controller: IhebBundle:News:getNewsByClub }
+    methods:  ['GET','POST']

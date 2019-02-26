@@ -1,0 +1,67 @@
+
+
+
+{% extends "@Back/layout.html.twig" %}
+
+
+{% block container %}
+
+
+
+        <div class="col-md-6 grid-margin stretch-card">
+            <div class="card">
+                <div class="card-body">
+                    {{ form_start(form) }}
+
+                    <h4 class="card-title"> Ajouter RH </h4>
+
+
+
+                    <form class="forms-sample">
+
+                        <div class="form-group row">
+                            <label for="exampleInputUsername2" class="col-sm-3 col-form-label">Nom</label>
+                            <div class="col-sm-9">
+                                {{ form_widget(form.nom , {'attr':{'class':'form-control' }}) }}
+
+
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="exampleInputEmail2" class="col-sm-3 col-form-label">Prenom</label>
+                            <div class="col-sm-9">
+                                {{ form_widget(form.prenom, {'attr':{'class':'form-control' }}) }}
+                            </div>
+                        </div>
+
+
+                        <div class="form-group row">
+                            <label for="exampleInputMobile" class="col-sm-3 col-form-label">Description</label>
+                            <div class="col-sm-9">
+                                {{ form_widget(form.description , {'attr':{'class':'form-control' }}) }}
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="exampleInputMobile" class="col-sm-3 col-form-label">Domaine</label>
+                            <div class="col-sm-9">
+                                {{ form_widget(form.domaine , {'attr':{'class':'form-control' }}) }}
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="exampleInputMobile" class="col-sm-3 col-form-label">Link</label>
+                            <div class="col-sm-9">
+                                {{ form_widget(form.link , {'attr':{'class':'form-control' }}) }}
+                            </div>
+                        </div>
+
+                        <button type="submit" value="Create" class="btn btn-primary mr-2">Submit</button>
+                        <button class="btn btn-light">Cancel</button>
+                        {{ form_end(form) }}
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+    {% endblock %}

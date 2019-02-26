@@ -1,0 +1,97 @@
+{% extends "@Front/layout.html.twig" %}
+
+{% block container %}
+    <!--Start breadcrumb area-->
+    <section class="breadcrumb-area"
+             style="background-image: url({{ asset ('front/images/resources/breadcrumb-bg.jpg') }});">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="breadcrumbs">
+                        <h1> New News</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End breadcrumb area-->
+
+    <!--Start breadcrumb bottom area-->
+    <section class="breadcrumb-bottom-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="breadcrumb-bottom">
+                        <div class="left pull-left">
+                            <ul>
+                                <li><a href="{{ path ('homepage') }}">News</a></li>
+                                <li><i class="fa fa-angle-right" aria-hidden="true"></i></li>
+                                <li class="active">New</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {% set flashbag_notices = app.session.flashbag.get('notice') %}
+    {% if flashbag_notices is not empty  %}
+        {% for notice in flashbag_notices %}
+            <div class="container">
+                <div class="alert alert-danger " role="alert">
+                    <strong>Oops !</strong> {{ notice }} <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                </div>
+            </div>
+        {% endfor %}
+    {% endif %}
+    <section class="sponsor-form-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12">
+                    <div class="sponsor-form">
+                        <div class="sec-title text-center">
+                            <div class="underlay text-center">
+                                <h2>Add a <span>News</span></h2>
+                            </div>
+                            <h1>Add a News </h1>
+                        </div>
+                        <!--Start add comment box-->
+                        <div class="add-comment-box">
+                            <form enctype="multipart/form-data" class="default-form" method="POST">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="field-label">Tilte* :</div>
+                                                <input type="text" name="form_title" placeholder="Tilte" required="">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label for="photo">Upload a Image from your computer</label>
+                                                <input type="file" name="form_photo" id="form_photo" required>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="field-label">Description</div>
+                                                <input type="text" name="form_description" placeholder="Description" required="">
+
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-2">
+                                                <button class="thm-btn gra" type="submit">ADD</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <!--End add comment box-->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}
