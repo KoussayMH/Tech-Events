@@ -35,12 +35,7 @@ class Commande
      */
     private $date;
 
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="etat", type="string", length=255)
-     */
-    private $etat;
+
 
 
     /**
@@ -101,28 +96,12 @@ class Commande
         return $this->date;
     }
 
-    /**
-     * Set etat
-     *
-     * @param string $etat
-     *
-     * @return Commande
-     */
-    public function setEtat($etat)
+    public function __toString()
     {
-        $this->etat = $etat;
-
-        return $this;
+        return (string) $this->getId();
+        // TODO: Implement __toString() method.
     }
 
-    /**
-     * Get etat
-     *
-     * @return string
-     */
-    public function getEtat()
-    {
-        return $this->etat;
-    }
+
 }
 

@@ -10,4 +10,14 @@ namespace ChaymaBundle\Repository;
  */
 class TicketRepository extends \Doctrine\ORM\EntityRepository
 {
+
+    public function findArray($array)
+    {
+        $qb = $this->createQueryBuilder('p')
+            ->Select('p')
+            ->Where('p.id IN (:array)')
+            ->setParameter('array', $array);
+        return $qb->getQuery()->getResult();
+    }
+
 }

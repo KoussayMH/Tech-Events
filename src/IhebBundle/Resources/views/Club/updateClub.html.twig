@@ -1,0 +1,94 @@
+{% extends "@Front/layout.html.twig" %}
+{% block container %}
+    <!--Start breadcrumb area-->
+    <section class="breadcrumb-area"
+             style="background-image: url({{ asset ('front/images/resources/breadcrumb-bg.jpg') }});">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="breadcrumbs">
+                        <h1>  update club {{ club.nameClub }}</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End breadcrumb area-->
+
+    <!--Start breadcrumb bottom area-->
+    <section class="breadcrumb-bottom-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="breadcrumb-bottom">
+                        <div class="left pull-left">
+                            <ul>
+                                <li><a href="{{ path ('all_club') }}">Club</a></li>
+                                <li><i class="fa fa-angle-right" aria-hidden="true"></i></li>
+                                <li><a href="{{ path ('club_by_user') }}">My Clubs</a></li>
+                                <li><i class="fa fa-angle-right" aria-hidden="true"></i></li>
+                                <li class="active">Update Club {{ club.nameClub }}</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {% set flashbag_notices = app.session.flashbag.get('notice') %}
+    {% if flashbag_notices is not empty  %}
+        {% for notice in flashbag_notices %}
+            <div class="container">
+                <div class="alert alert-danger " role="alert">
+                    <strong>Oops !</strong> {{ notice }} <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                </div>
+            </div>
+        {% endfor %}
+    {% endif %}
+    <section class="sponsor-form-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12">
+                    <div class="sponsor-form">
+                        <div class="sec-title text-center">
+                            <div class="underlay text-center">
+                                <h2>Update Club <span>{{ club.nameClub }}</span></h2>
+                            </div>
+                            <h1>Update Club {{ club.nameClub }}</h1>
+                        </div>
+                        <form enctype="multipart/form-data" class="default-form" method="POST">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <input type="text" name="form_name" value="{{ club.nameClub }}"
+                                           placeholder="Enter the NAME of the Club" required="">
+                                </div>
+                                <div class="col-md-4">
+                                    <input type="text" name="form_type" value="{{ club.typeClub }}"
+                                           placeholder="Enter the TYPE of the Club" required="">
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="photo">Upload a LOGO from your computer</label>
+                                    <input type="file" name="form_photo" id="form_photo" required>
+                                </div>
+                            </div>
+                            <div class="row">
+
+                                <div class="col-md-12">
+                                    <input type="text" name="form_description" value="{{ club.descriptionClub }}" placeholder="Description"
+                                           required="">
+                                </div>
+
+                            </div>
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <button class="thm-btn gra" type="submit">UPDATE</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

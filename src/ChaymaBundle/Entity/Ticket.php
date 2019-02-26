@@ -35,6 +35,53 @@ class Ticket
      */
     private $quantite;
 
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="type", type="string", length=255)
+     */
+    private $type;
+
+    /**
+     * @return string
+     */
+    public function getType()
+    {
+        return $this->type;
+    }
+
+    /**
+     * @param string $type
+     */
+    public function setType($type)
+    {
+        $this->type = $type;
+    }
+
+
+    /**
+     * @ORM\ManyToOne(targetEntity="\KoussayBundle\Entity\Event")
+     * @ORM\JoinColumn(name="event",referencedColumnName="id")
+     */
+    private $event;
+
+    /**
+     * @return mixed
+     */
+    public function getEvent()
+    {
+        return $this->event;
+    }
+
+    /**
+     * @param mixed $event
+     */
+    public function setEvent($event)
+    {
+        $this->event = $event;
+    }
+
+
 
     /**
      * Get id

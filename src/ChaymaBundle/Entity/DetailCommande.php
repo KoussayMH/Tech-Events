@@ -27,6 +27,50 @@ class DetailCommande
      * @ORM\Column(name="quantite", type="integer")
      */
     private $quantite;
+    /**
+     * @ORM\ManyToOne(targetEntity="\ChaymaBundle\Entity\Ticket")
+     * @ORM\JoinColumn(name="ticket",referencedColumnName="id")
+     */
+    private $ticket;
+
+    /**
+     * @ORM\ManyToOne(targetEntity="\ChaymaBundle\Entity\Commande")
+     * @ORM\JoinColumn(name="commande",referencedColumnName="id")
+     */
+    private $commande;
+
+    /**
+     * @return mixed
+     */
+    public function getCommande()
+    {
+        return $this->commande;
+    }
+
+    /**
+     * @param mixed $commande
+     */
+    public function setCommande($commande)
+    {
+        $this->commande = $commande;
+    }
+
+
+    /**
+     * @return mixed
+     */
+    public function getTicket()
+    {
+        return $this->ticket;
+    }
+
+    /**
+     * @param mixed $ticket
+     */
+    public function setTicket($ticket)
+    {
+        $this->ticket = $ticket;
+    }
 
 
     /**
