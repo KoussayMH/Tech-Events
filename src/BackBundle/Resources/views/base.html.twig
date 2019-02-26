@@ -415,9 +415,14 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" data-toggle="collapse" href="{{path('Commande')}}" aria-expanded="false" aria-controls="page-layouts">
+                    <a class="nav-link" data-toggle="collapse" href="#" aria-expanded="false" aria-controls="page-layouts">
                         <i class="fab fa-trello menu-icon"></i>
                         <span class="menu-title">Vente Tickets</span>
+                        <i class="menu-arrow"></i>
+                    </a>
+                    <a class="nav-link" data-toggle="collapse" href="#" aria-expanded="false" aria-controls="page-layouts">
+                        <i class="fab fa-trello menu-icon"></i>
+                        <span class="menu-title">Evenements</span>
                         <i class="menu-arrow"></i>
                     </a>
                     <div class="collapse" id="page-layouts">
@@ -435,9 +440,9 @@
             </ul>
         </nav>
 
-            {% block container %}
+        {% block container %}
 
-            {%  endblock %}
+        {%  endblock %}
 
     </div>
     <!-- page-body-wrapper ends -->

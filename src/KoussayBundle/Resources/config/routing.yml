@@ -1,3 +1,20 @@
 koussay_homepage:
     path:     /
     defaults: { _controller: KoussayBundle:Default:index }
+
+dataTable:
+    path:     /dataTable
+    defaults: { _controller: KoussayBundle:Event:read }
+
+deleteA:
+    path:     /deleteA/{id}
+    defaults: { _controller: KoussayBundle:Event:deleteA }
+UpdateDemandes:
+    path:     /UpdateDemandes/{id}
+    defaults: { _controller: KoussayBundle:Event:updateDemandeDQL }
+afficherCommentaire:
+    path:     /afficherCommentaire/{id}
+    defaults: { _controller: KoussayBundle:Comment:afficherCommentaire }
+supprimerCommentaire:
+    path:     /supprimerCommentaire/{id}
+    defaults: { _controller: KoussayBundle:Comment:supprimerCommentaire }

@@ -1,3 +1,11 @@
+koussay_comment:
+    resource: "@KoussayBundle/Controller/CommentController.php"
+    type:     annotation
+
+koussay_event:
+    resource: "@KoussayBundle/Controller/EventController.php"
+    type:     annotation
+
 back:
     resource: "@BackBundle/Resources/config/routing.yml"
     prefix:   /back
