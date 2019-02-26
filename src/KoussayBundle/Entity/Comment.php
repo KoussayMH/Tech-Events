@@ -28,6 +28,8 @@ class Comment
      */
     private $date;
 
+
+
     /**
      * @var int
      *

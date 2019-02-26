@@ -45,5 +45,16 @@ class CommandeController extends Controller
     }
 
 
+    public function DetailClubAction()
+    {
+        $em= $this->getDoctrine()->getManager() ;
+        $user= $this->getUser() ;
+        $details= $em->getRepository('ChaymaBundle:DetailCommande')->findBy(array('user'=>$user)) ;
+        return $this->render('@Chayma/detailClub.html.twig', array(
+            'details' => $details,
+        ));
+
+    }
+
 
 }

@@ -13,6 +13,9 @@ P_supprimmer:
 P_pass:
     path:     /{total}/Pass/
     defaults: { _controller: ChaymaBundle:Panier:Pass }
+PassCl:
+    path:     /{total}/Passcl/
+    defaults: { _controller: ChaymaBundle:PanierClub:PassCL }
 
 Commande:
     path:     /commande
@@ -23,8 +26,49 @@ Detail:
     defaults: { _controller: ChaymaBundle:Commande:Details }
 
 Ticket:
-    path:     /{id}/ticket
-    defaults: { _controller: ChaymaBundle:Ticket:Afficher }
+    path:     /{id}/Ajticket
+    defaults: { _controller: ChaymaBundle:Ticket:Ajouter }
 AffTicket:
     path:     /Affticket
     defaults: { _controller: ChaymaBundle:Ticket:index }
+
+EditTicket:
+    path:     /{id}/editticket
+    defaults: { _controller: ChaymaBundle:Ticket:edit }
+
+DeleteTicket:
+    path:     /{id}/delticket
+    defaults: { _controller: ChaymaBundle:Ticket:delete }
+
+TicketEvent:
+    path:     /{id}/ticketevent
+    defaults: { _controller: ChaymaBundle:Ticket:Affevent }
+QRCode:
+    path:     /{id}/QRCode
+    defaults: { _controller: ChaymaBundle:Ticket:qrcode }
+
+DetClub:
+    path:     /details
+    defaults: { _controller: ChaymaBundle:Commande:DetailClub }
+
+Paiement:
+    path:     /payer
+    defaults: { _controller: ChaymaBundle:Panier:Paiement }
+
+Effect:
+    path:     /{total}/Effect
+    defaults: { _controller: ChaymaBundle:Panier:Effect }
+EffectCl:
+    path:     /{total}/EffectCl
+    defaults: { _controller: ChaymaBundle:PanierClub:EffectCl }
+checkout:
+    path:     /checkout
+    defaults: { _controller: ChaymaBundle:Panier:checkout }
+
+Basket:
+    path:     /Basket
+    defaults: { _controller: ChaymaBundle:PanierClub:Basket }
+
+AjouterCl:
+    path:     /{id}/AjouterCl/
+    defaults: { _controller: ChaymaBundle:PanierClub:AjouterPC }

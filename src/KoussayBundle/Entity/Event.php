@@ -70,6 +70,27 @@ class Event
      */
     private $pub;
 
+    /**
+     * @ORM\ManyToOne(targetEntity="\IhebBundle\Entity\Club")
+     * @ORM\JoinColumn(name="club",referencedColumnName="id")
+     */
+    private $club;
+
+    /**
+     * @return mixed
+     */
+    public function getClub()
+    {
+        return $this->club;
+    }
+
+    /**
+     * @param mixed $club
+     */
+    public function setClub($club)
+    {
+        $this->club = $club;
+    }
 
     /**
      * Get id
@@ -251,7 +272,7 @@ class Event
 
     public function __toString()
     {
-        return (string)$this->getTitre() ;
+        return (string)$this->getId() ;
         // TODO: Implement __toString() method.
     }
 
