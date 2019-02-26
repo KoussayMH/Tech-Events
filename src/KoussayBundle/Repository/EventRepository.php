@@ -11,6 +11,7 @@ namespace KoussayBundle\Repository;
 class EventRepository extends \Doctrine\ORM\EntityRepository
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     public function findEventDQL()
     {
@@ -35,5 +36,15 @@ class EventRepository extends \Doctrine\ORM\EntityRepository
     }
 
 >>>>>>> 30a24b2eed29a611d0978ac1882dfb4a47f00c2c
+=======
+    public function findArray($array)
+    {
+        $qb = $this->createQueryBuilder('p')
+            ->Select('p')
+            ->Where('p.idProduit IN (:array)')
+            ->setParameter('array', $array);
+        return $qb->getQuery()->getResult();
+    }
+>>>>>>> 854778e5b112b9441cb2e1706bbab68010ed3374
 
 }

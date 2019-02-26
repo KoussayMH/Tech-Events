@@ -16,7 +16,7 @@ use Symfony\Component\Validator\Constraints as Assert ;
  * @ORM\Entity(repositoryClass="KoussayBundle\Repository\EventRepository")
  * @Vich\Uploadable
  */
-class Event
+ class Event
 {
     /**
      * @var int
@@ -26,6 +26,9 @@ class Event
      * @ORM\GeneratedValue(strategy="AUTO")
      */
     private $id;
+
+
+
 
     /**
      * @var string
@@ -46,6 +49,36 @@ class Event
 
 
     /**
+     * @var string
+     *
+     * @ORM\Column(name="image1", type="string", length=255)
+     */
+    private $image1;
+
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="image2", type="string", length=255)
+     */
+    private $image2;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="image3", type="string", length=255)
+     */
+    private $image3;
+
+
+
+
+
+
+
+
+
+    /**
      * @var \DateTime
      *
      * @ORM\Column(name="date", type="date")
@@ -57,8 +90,18 @@ class Event
      *
      * @ORM\Column(name="image1", type="string", length=255)
      */
+<<<<<<< HEAD
     private $image1;
 
+=======
+    private $description;
+     /**
+      * @var string
+      *
+      * @ORM\Column(name="etat", type="string", length=255)
+      */
+     private $etat;
+>>>>>>> 854778e5b112b9441cb2e1706bbab68010ed3374
 
     /**
  * @var string
@@ -88,6 +131,16 @@ class Event
     private $nbparticipants;
 
 
+<<<<<<< HEAD
+=======
+    /**
+     *
+     * @ORM\ManyToOne(targetEntity="DorraBundle\Entity\Ressource")
+     * @ORM\JoinColumn(name="ressource_id",referencedColumnName="id")
+     */
+    private $ressource;
+
+>>>>>>> 854778e5b112b9441cb2e1706bbab68010ed3374
 
     /**
      * @var string
@@ -179,6 +232,63 @@ class Event
 
 
 
+<<<<<<< HEAD
+=======
+
+
+    /**
+     * Set image2
+     *
+     * @param string $image2
+     *
+     * @return Event
+     */
+    public function setImage2($image2)
+    {
+        $this->image2 = $image2;
+
+        return $this;
+    }
+
+    /**
+     * Get image2
+     *
+     * @return string
+     */
+    public function getImage2()
+    {
+        return $this->image2;
+    }
+
+
+
+
+
+    /**
+     * Set image3
+     *
+     * @param string $image3
+     *
+     * @return Event
+     */
+    public function setImage3($image3)
+    {
+        $this->image3 = $image3;
+
+        return $this;
+    }
+
+    /**
+     * Get image3
+     *
+     * @return string
+     */
+    public function getImage3()
+    {
+        return $this->image3;
+    }
+
+>>>>>>> 854778e5b112b9441cb2e1706bbab68010ed3374
     /**
      * Set date
      *
@@ -226,6 +336,44 @@ class Event
     {
         return $this->description;
     }
+
+
+
+
+
+
+
+     /**
+      * Set etat
+      *
+      * @param string $etat
+      *
+      * @return Event
+      */
+     public function setEtat($etat)
+     {
+         $this->etat = $etat;
+
+         return $this;
+     }
+
+     /**
+      * Get etat
+      *
+      * @return string
+      */
+     public function getEtat()
+     {
+         return $this->etat;
+     }
+
+
+
+
+
+
+
+
 
     /**
      * Set note
@@ -298,6 +446,35 @@ class Event
     {
         return $this->nbparticipants;
     }
+
+
+    /**
+     * Set ressource
+     *
+     * @param integer $ressource
+     *
+     * @return Event
+     */
+    public function setRessource($ressource)
+    {
+        $this->ressource = $ressource;
+
+        return $this;
+    }
+
+    /**
+     * Get ressource
+     *
+     * @return int
+     */
+    public function getRessource()
+    {
+        return $this->ressource;
+    }
+
+
+
+
 
     /**
      * Set pub
