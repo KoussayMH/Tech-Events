@@ -1,0 +1,50 @@
+{% extends '@Back/base.html.twig' %}
+
+{% block container %}
+    <h1>Email creation</h1>
+
+    {{ form_start(form) }}
+      {#  {{ form_widget(form) }}
+        <input type="submit" value="Create" />
+#}
+
+    <ul>
+        <li>
+            <a href="{{ path('email_index') }}">Back to the list</a>
+        </li>
+    </ul>
+
+<div class="col-md-6 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Default form</h4>
+            <p class="card-description">
+                Basic form layout
+            </p>
+            <form class="forms-sample">
+                <div class="form-group">
+                    <label for="exampleInputUsername1">objet</label>
+                    <input type="text" class="form-control" id="exampleInputUsername1" placeholder="objet" {{ form_widget(form.objet)}} >
+
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Description</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Description" {{ form_widget(form.description)}}>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">type</label>
+                    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="type" {{ form_widget(form.type)}}>
+                </div>
+
+
+                <button type="submit" class="btn btn-primary mr-2" value="Create">Submit</button>
+                <button class="btn btn-light">Cancel</button>
+            </form>
+        </div>
+    </div>
+
+
+</div>
+    {{ form_end(form) }}
+
+{% endblock %}

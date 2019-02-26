@@ -10,4 +10,13 @@ namespace KoussayBundle\Repository;
  */
 class EventRepository extends \Doctrine\ORM\EntityRepository
 {
+    public function findArray($array)
+    {
+        $qb = $this->createQueryBuilder('p')
+            ->Select('p')
+            ->Where('p.idProduit IN (:array)')
+            ->setParameter('array', $array);
+        return $qb->getQuery()->getResult();
+    }
+
 }

@@ -1,0 +1,73 @@
+{% extends "@Back/base.html.twig" %}
+
+ {% block container %}
+
+
+
+
+     <div id="dialog" title="Success" hidden="hidden">
+         <p>l'evenement est change avec succces</p>
+     </div>
+
+     <div id="opener" hidden="hidden"  title="Success">
+         <div id="dialog1" title="Dialog Title" hidden="hidden">l'evenement est change avec succces</div>
+         <button id ="btn" hidden="hidden">close</button>
+     </div>
+
+     <h1 class="list-group-item active">Evenements list</h1>
+     <p id="demo"></p>
+     <table class="table table-hover">
+         <thead>
+         <tr>
+             <th scope="col">Id</th>
+             <th scope="col">Nomevenement</th>
+             <th scope="col">Adr</th>
+             <th scope="col">Description</th>
+             <th scope="col">Datedebut</th>
+             <th scope="col">Datefin</th>
+             <th scope="col">Actions</th>
+         </tr>
+         </thead>
+         <tbody>
+         {% for promotion in promotions %}
+             <tr class="table-active">
+                 <td><a href="{{ path('promotion_show', { 'id': promotion.id }) }}">{{ promotion.id }}</a></td>
+                 <td>{{ promotion.description }}</td>
+                 <td>{{ promotion.duree }}</td>
+                 <td>{% if promotion.dateDeb %}{{ promotion.dateDeb|date('Y-m-d') }}{% endif %}</td>
+                 <td>{% if promotion.dateFin %}{{ promotion.dateFin|date('Y-m-d') }}{% endif %}</td>
+                 <td>
+                     <ul>
+                         <li>
+                             <a href="{{ path('promotion_show', { 'id': promotion.id }) }}"
+                                class="btn btn-primary btn-xs">show</a>
+                         </li>
+                         <li>
+                             <a href="{{ path('promotion_edit', { 'id': promotion.id }) }}"
+                                class="btn btn-success btn-xs">edit</a>
+                         </li>
+                         <li>
+                             <a href="{{ path('promotion_delete', { 'id': promotion.id }) }}"
+                                class="btn btn-danger btn-xs">delete</a>
+                         </li>
+                     </ul>
+                 </td>
+             </tr>
+         {% endfor %}
+         </tbody>
+     </table>
+
+
+
+     <ul>
+         <li>
+
+             <a href="{{ path('promotion_new') }}" class="btn btn-primary ">Create a new evenement</a>
+         </li>
+     </ul>
+
+
+
+
+
+ {% endblock %}

@@ -1,0 +1,41 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Smss list</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Contenu</th>
+                <th>Titre</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for sM in sMSs %}
+            <tr>
+                <td><a href="{{ path('sms_show', { 'id': sM.id }) }}">{{ sM.id }}</a></td>
+                <td>{{ sM.contenu }}</td>
+                <td>{{ sM.titre }}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('sms_show', { 'id': sM.id }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('sms_edit', { 'id': sM.id }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('sms_new') }}">Create a new sM</a>
+        </li>
+    </ul>
+{% endblock %}

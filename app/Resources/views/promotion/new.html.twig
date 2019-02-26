@@ -1,0 +1,23 @@
+{% extends '@Back/base.html.twig' %}
+
+{% block container %}
+<div class="main-panel">
+    <div class="content-wrapper">
+        <div class="page-header">
+            <div class="card-body">
+    <h1>Promotion creation</h1>
+
+    {{ form_start(form) }}
+        {{ form_widget(form) }}
+        <input type="submit" value="Create" />
+
+
+
+
+                {{ form_end(form) }}
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

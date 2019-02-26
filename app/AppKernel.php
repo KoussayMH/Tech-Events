@@ -25,6 +25,10 @@ class AppKernel extends Kernel
             new ChaymaBundle\ChaymaBundle(),
             new FOS\UserBundle\FOSUserBundle(),
             new BackBundle\BackBundle(),
+
+            new Vich\UploaderBundle\VichUploaderBundle(),
+            new AncaRebeca\FullCalendarBundle\FullCalendarBundle(),
+
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {
