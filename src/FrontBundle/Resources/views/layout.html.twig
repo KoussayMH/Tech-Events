@@ -11,16 +11,16 @@
     <!-- For IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- master stylesheet -->
-    <link rel="stylesheet" href="front/css/style.css">
+    <link rel="stylesheet" href="{{ asset ('front/css/style.css') }}">
     <!-- Responsive stylesheet -->
-    <link rel="stylesheet" href="front/css/responsive.css">
+    <link rel="stylesheet" href="{{ asset ('front/css/responsive.css') }}">
 
 
 
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="front/images/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" href="front/images/favicon/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="front/images/favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset ('front/images/favicon/apple-touch-icon.png') }}">
+    <link rel="icon" type="image/png" href="{{ asset ('front/images/favicon/favicon-32x32.png') }}" sizes="32x32">
+    <link rel="icon" type="image/png" href="{{ asset ('front/images/favicon/favicon-16x16.png') }}" sizes="16x16">
 
     <!-- Fixing Internet Explorer-->
     <!--[if lt IE 9]>
@@ -45,7 +45,8 @@
                     <!--Start logo-->
                     <div class="logo pull-left">
                         <a href="index-2.html">
-                            <img src="front/images/resources/logo-h4.png" alt="Awesome Logo">
+
+                            <img src="{{ asset ('front/images/resources/logo-h4.png') }}" alt="Awesome Logo">
                         </a>
                     </div>
                     <!--End logo-->
@@ -60,6 +61,7 @@
                         </div>
                         <div class="navbar-collapse collapse clearfix">
                             <ul class="navigation clearfix">
+
                                 <li class="current"><a href="index-2.html">Home</a></li>
                                 <li class="dropdown"><a href="#">Pages</a>
                                     <ul>
@@ -114,11 +116,11 @@
     <!--End mainmenu area-->
 
 
-<section>
-    {% block container %}
+    <section>
+        {% block container %}
 
-    {%  endblock %}
-</section>
+        {%  endblock %}
+    </section>
 
 
     <!--Start footer area-->
@@ -130,7 +132,9 @@
                     <div class="single-footer-widget mar-bottom-50">
                         <div class="footer-logo">
                             <a href="index-2.html">
-                                <img src="front/images/footer/footer-logo.png" alt="Awesome Footer Logo">
+
+
+                                <img src="{{ asset ('front/images/footer/footer-logo.png') }}" alt="Awesome Footer Logo">
                             </a>
                         </div>
                         <div class="our-info">
@@ -151,7 +155,8 @@
                         <ul class="latest-post">
                             <li class="single-post">
                                 <div class="img-holder">
-                                    <img src="front/images/footer/latest-news-1.png" alt="Awesome Image">
+
+                                    <img src="{{ asset ('front/images/footer/latest-news-1.png') }}" alt="Awesome Image">
                                     <div class="overlay-style-one">
                                         <div class="box">
                                             <div class="content">
@@ -169,7 +174,8 @@
                             </li>
                             <li class="single-post">
                                 <div class="img-holder">
-                                    <img src="front/images/footer/latest-news-2.png" alt="Awesome Image">
+
+                                    <img src="{{ asset ('front/images/footer/latest-news-2.png') }}" alt="Awesome Image">
                                     <div class="overlay-style-one">
                                         <div class="box">
                                             <div class="content">
@@ -255,70 +261,75 @@
 <!--Scroll to top-->
 <div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-chevron-circle-up"></span></div>
 
+
+
+
 <!-- main jQuery -->
-<script src="front/js/jquery.js"></script>
+<script src="{{ asset ('front/js/jquery.js') }}"></script>
 <!-- Wow Script -->
-<script src="front/js/wow.js"></script>
+<script src="{{ asset ('front/js/wow.js') }}"></script>
 <!-- bootstrap -->
-<script src="front/js/bootstrap.min.js"></script>
+<script src="{{ asset ('front/js/bootstrap.min.js') }}"></script>
 <!-- bx slider -->
-<script src="front/js/jquery.bxslider.min.js"></script>
+<script src="{{ asset ('front/js/jquery.bxslider.min.js') }}"></script>
 <!-- count to -->
-<script src="front/js/jquery.countTo.js"></script>
+<script src="{{ asset ('front/js/jquery.countTo.js') }}"></script>
 <!-- owl carousel -->
-<script src="front/js/owl.carousel.min.js"></script>
+<script src="{{ asset ('front/js/owl.carousel.min.js') }}"></script>
 <!-- validate -->
-<script src="front/js/validation.js"></script>
+<script src="{{ asset ('front/js/validation.js') }}"></script>
 <!-- mixit up -->
-<script src="front/js/jquery.mixitup.min.js"></script>
+<script src="{{ asset ('front/js/jquery.mixitup.min.js') }}"></script>
 <!-- easing -->
-<script src="front/js/jquery.easing.min.js"></script>
+<script src="{{ asset ('front/js/jquery.easing.min.js') }}"></script>
 <!-- gmap helper -->
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHzPSV2jshbjI8fqnC_C4L08ffnj5EN3A"></script>
+
+
+<script src="{{ asset ('front/js/gmaps.js') }}"></script>
 <!--gmap script-->
-<script src="front/js/gmaps.js"></script>
-<script src="front/js/map-helper.js"></script>
+<script src="{{ asset ('front/js/map-helper.js') }}"></script>
 <!-- fancy box -->
-<script src="front/js/jquery.fancybox.pack.js"></script>
-<script src="front/js/jquery.appear.js"></script>
+<script src="{{ asset ('front/js/jquery.fancybox.pack.js') }}"></script>
+<script src="{{ asset ('front/js/jquery.appear.js') }}"></script>
 <!-- isotope script-->
-<script src="front/js/isotope.js"></script>
-<script src="front/js/jquery.prettyPhoto.js"></script>
-<script src="front/js/jquery.bootstrap-touchspin.js"></script>
+<script src="{{ asset ('front/js/isotope.js') }}"></script>
+<script src="{{ asset ('front/js/jquery.prettyPhoto.js') }}"></script>
+<script src="{{ asset ('front/js/jquery.bootstrap-touchspin.js') }}"></script>
 <!-- jQuery timepicker js -->
-<script src="front/assets/timepicker/timePicker.js"></script>
+<script src="{{ asset ('front/assets/timepicker/timePicker.js') }}"></script>
 <!-- Bootstrap select picker js -->
-<script src="front/assets/bootstrap-sl-1.12.1/bootstrap-select.js"></script>
+<script src="{{ asset ('front/assets/bootstrap-sl-1.12.1/bootstrap-select.js') }}"></script>
 <!-- Bootstrap bootstrap touchspin js -->
 <!-- jQuery ui js -->
-<script src="front/assets/jquery-ui-1.11.4/jquery-ui.js"></script>
+<script src="{{ asset ('front/assets/jquery-ui-1.11.4/jquery-ui.js') }}"></script>
 <!-- Language Switche  -->
-<script src="front/assets/language-switcher/jquery.polyglot.language.switcher.js"></script>
+<script src="{{ asset ('front/assets/language-switcher/jquery.polyglot.language.switcher.js') }}"></script>
 <!-- Html 5 light box script-->
-<script src="front/assets/html5lightbox/html5lightbox.js"></script>
+<script src="{{ asset ('front/assets/html5lightbox/html5lightbox.js') }}"></script>
 <!-- Countdown Timer script-->
-<script src="front/js/jquery.countdown.min.js"></script>
+<script src="{{ asset ('front/js/jquery.countdown.min.js') }}"></script>
 
 
 <!--Revolution Slider-->
-<script src="front/plugins/revolution/js/jquery.themepunch.revolution.min.js"></script>
-<script src="front/plugins/revolution/js/jquery.themepunch.tools.min.js"></script>
-<script src="front/plugins/revolution/js/extensions/revolution.extension.actions.min.js"></script>
-<script src="front/plugins/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
-<script src="front/plugins/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
-<script src="front/plugins/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
-<script src="front/plugins/revolution/js/extensions/revolution.extension.migration.min.js"></script>
-<script src="front/plugins/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
-<script src="front/plugins/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
-<script src="front/plugins/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
-<script src="front/plugins/revolution/js/extensions/revolution.extension.video.min.js"></script>
-<script src="front/js/main-slider-script.js"></script>
+<script src="{{ asset ('front/plugins/revolution/js/jquery.themepunch.revolution.min.js') }}"></script>
+<script src="{{ asset ('front/plugins/revolution/js/jquery.themepunch.tools.min.js') }}"></script>
+<script src="{{ asset ('front/plugins/revolution/js/extensions/revolution.extension.actions.min.js') }}"></script>
+<script src="{{ asset ('front/plugins/(revolution/js/extensions/revolution.extension.carousel.min.js') }}"></script>
+<script src="{{ asset ('front/plugins/revolution/js/extensions/revolution.extension.kenburn.min.js') }}"></script>
+<script src="{{ asset ('front/plugins/revolution/js/extensions/revolution.extension.layeranimation.min.js') }}"></script>
+<script src="{{ asset ('front/plugins/revolution/js/extensions/revolution.extension.migration.min.js') }}"></script>
+<script src="{{ asset ('front/plugins/revolution/js/extensions/revolution.extension.navigation.min.js') }}"></script>
+<script src="{{ asset ('front/plugins/revolution/js/extensions/revolution.extension.parallax.min.js') }}"></script>
+<script src="{{ asset ('front/plugins/revolution/js/extensions/revolution.extension.slideanims.min.js') }}"></script>
+<script src="{{ asset ('front/plugins/revolution/js/extensions/revolution.extension.slideanims.min.js') }}"></script>
+<script src="{{ asset ('front/js/main-slider-script.js') }}"></script>
 
 
 
 <!-- thm custom script -->
-<script src="front/js/main-slider-script.js"></script>
-<script src="front/js/custom.js"></script>
+<script src="{{ asset ('front/js/main-slider-script.js') }}"></script>
+<script src="{{ asset ('front/js/custom.js') }}"></script>
 
 
 

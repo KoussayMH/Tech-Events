@@ -1,0 +1,102 @@
+{% extends '@Front/layout.html.twig' %}
+
+{% block container %}
+    <!--Start breadcrumb area-->
+    <section class="breadcrumb-area" style="background-image: url({{ asset('front/images/resources/breadcrumb-bg.jpg') }});">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="breadcrumbs">
+                        <h1>La Liste des evenements </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End breadcrumb area-->
+
+
+
+    <!--Start comment box-->
+    <div class="comment-box">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="sec-title pdb-30">
+                    <h2>Read Comments</h2>
+                    <span class="border"></span>
+                </div>
+                {% for comment in comments %}
+
+                    <!--Start single comment box-->
+                    <div class="single-comment-box">
+                        <div class="img-holder">
+                            <img src="images/blog/comment-2.jpg" alt="taswiret user ">
+                        </div>
+                        <div class="text-holder">
+                            <div class="top">
+                                <div class="name pull-left">
+                                    <h5>user </h5>
+                                </div>
+                                <div class="review-box pull-right">
+                                    <ul>
+                                        <li>{{ comment.date|date('Y-m-d') }}</i></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <p>{{ comment.description }}.</p>
+                            </div>
+
+                        </div>
+                    </div>
+                {% endfor %}
+                <li><a href="#"><i class="fa fa-comments">Read more</i></a></li>
+
+                <!--End single comment box-->
+            </div>
+        </div>
+    </div>
+
+
+
+<h1>Comments list</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Date</th>
+                <th>Maxcaracs</th>
+                <th>Description</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for comment in comments %}
+            <tr>
+                <td><a href="{{ path('comment_show', { 'id': comment.id }) }}">{{ comment.id }}</a></td>
+                <td>{% if comment.date %}{{ comment.date|date('Y-m-d') }}{% endif %}</td>
+                <td>{{ comment.maxcaracs }}</td>
+                <td>{{ comment.description }}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('comment_show', { 'id': comment.id }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('comment_edit', { 'id': comment.id }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('comment_new') }}">Create a new comment</a>
+        </li>
+    </ul>
+{% endblock %}

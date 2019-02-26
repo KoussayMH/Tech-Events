@@ -29,6 +29,13 @@ class Comment
     private $date;
 
     /**
+     *
+     * @ORM\ManyToOne(targetEntity="Event")
+     * @ORM\JoinColumn(name="Event_id",referencedColumnName="id")
+     */
+    private $event;
+
+    /**
      * @var int
      *
      * @ORM\Column(name="maxcaracs", type="integer")
@@ -123,6 +130,30 @@ class Comment
     public function getDescription()
     {
         return $this->description;
+    }
+
+    /**
+     * Set event
+     *
+     * @param string $event
+     *
+     * @return Event
+     */
+    public function setEvent($event)
+    {
+        $this->event = $event;
+
+        return $this;
+    }
+
+    /**
+     * Get event
+     *
+     * @return string
+     */
+    public function getEvent()
+    {
+        return $this->event;
     }
 }
 
