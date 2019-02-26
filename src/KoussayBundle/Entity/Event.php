@@ -85,30 +85,13 @@ use Symfony\Component\Validator\Constraints as Assert ;
      */
     private $date;
 
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="image1", type="string", length=255)
-     */
-<<<<<<< HEAD
-    private $image1;
 
-=======
-    private $description;
-     /**
-      * @var string
-      *
-      * @ORM\Column(name="etat", type="string", length=255)
-      */
-     private $etat;
->>>>>>> 854778e5b112b9441cb2e1706bbab68010ed3374
 
-    /**
- * @var string
- *
- * @ORM\Column(name="description", type="string", length=255)
- */
+
     private $description;
+
+
+
     /**
      * @var float
      *
@@ -131,8 +114,6 @@ use Symfony\Component\Validator\Constraints as Assert ;
     private $nbparticipants;
 
 
-<<<<<<< HEAD
-=======
     /**
      *
      * @ORM\ManyToOne(targetEntity="DorraBundle\Entity\Ressource")
@@ -140,7 +121,6 @@ use Symfony\Component\Validator\Constraints as Assert ;
      */
     private $ressource;
 
->>>>>>> 854778e5b112b9441cb2e1706bbab68010ed3374
 
     /**
      * @var string
@@ -232,9 +212,6 @@ use Symfony\Component\Validator\Constraints as Assert ;
 
 
 
-<<<<<<< HEAD
-=======
-
 
     /**
      * Set image2
@@ -288,7 +265,6 @@ use Symfony\Component\Validator\Constraints as Assert ;
         return $this->image3;
     }
 
->>>>>>> 854778e5b112b9441cb2e1706bbab68010ed3374
     /**
      * Set date
      *
@@ -498,34 +474,6 @@ use Symfony\Component\Validator\Constraints as Assert ;
     public function getPub()
     {
         return $this->pub;
-    }
-    /**
-     * Set etat
-     *
-     * @param string $etat
-     *
-     * @return Event
-     */
-    public function setEtat($etat)
-    {
-        $this->etat = $etat;
-
-        return $this;
-    }
-
-    /**
-     * Get etat
-     *
-     * @return string
-     */
-    public function getEtat()
-    {
-<<<<<<< HEAD
-        return (string)$this->getId() ;
-        // TODO: Implement __toString() method.
-=======
-        return $this->etat;
->>>>>>> 30a24b2eed29a611d0978ac1882dfb4a47f00c2c
     }
 
 
