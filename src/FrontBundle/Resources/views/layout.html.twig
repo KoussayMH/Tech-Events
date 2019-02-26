@@ -62,53 +62,56 @@
                         </div>
                         <div class="navbar-collapse collapse clearfix">
                             <ul class="navigation clearfix">
-
-                                <li class="current"><a href="index-2.html">Home</a></li>
-                                <li class="dropdown"><a href="#">Pages</a>
+                                <li><a href="{{ path ('homepage') }}">Home</a></li>
+                                <li class="dropdown"><a href="#">Club</a>
                                     <ul>
-                                        <li><a href="about.html">About Us</a></li>
-                                        <li><a href="become-sponsor.html">Become a Sponsor</a></li>
-                                        <li><a href="gallery.html">Our Gallery</a></li>
-                                        <li><a href="faq.html">FAQ’s</a></li>
-                                        <li><a href="buy-tickets.html">Buy Tickets</a></li>
-                                        <li><a href="cart.html">Cart</a></li>
-                                        <li><a href="checkout.html">Checkout</a></li>
+                                        <li><a href="{{ path ('all_club') }}">All clubs</a></li>
+                                        <li><a href="{{ path ('new_club') }}">Add new club</a></li>
+                                        {% if is_granted("IS_AUTHENTICATED_FULLY") %}
+                                            <li><a href="{{ path ('club_by_user') }}">My Clubs</a></li>
+                                        {% endif %}
                                     </ul>
                                 </li>
-                                <li class="dropdown"><a href="speakers.html">Speakers</a>
-                                    <ul>
-                                        <li><a href="speakers.html">Speakers</a></li>
-                                        <li><a href="speaker-single.html">Single Speaker</a></li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown"><a href="schedules.html">Schedules</a>
-                                    <ul>
-                                        <li><a href="schedules.html">Schedule Grid view</a></li>
-                                        <li><a href="schedule-list.html">Schedule List view</a></li>
-                                        <li><a href="schedule-tab.html">Schedule Tabs</a></li>
-                                        <li><a href="schedule-single.html">Single Schedule</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="sponsors.html">Sponsors</a></li>
-                                <li class="dropdown"><a href="blog.html">News</a>
-                                    <ul>
-                                        <li><a href="blog.html">News Default</a></li>
-                                        <li><a href="blog-grid.html">News Grid View</a></li>
-                                        <li><a href="blog-modern.html">News Modern</a></li>
-                                        <li><a href="blog-single.html">Blog Single Post</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="contact.html">Contact Us</a></li>
+                                <li><a href="{{ path ('all_news') }}">News</a></li>
                             </ul>
                         </div>
                     </nav>
                     <!--End mainmenu-->
                     <!--Start mainmenu right box-->
-                    <div class="mainmenu-right-box pull-right">
-                        <div class="buy-ticket-button">
-                            <a class="thm-btn" href="#">Buy Ticket</a>
+                    {% if is_granted("IS_AUTHENTICATED_FULLY") %}
+                        <script type="text/javascript">
+                            userid={{ app.user.id|json_encode|raw }} ;
+                        </script>
+                        <nav class="main-menu pull-right">
+                            <div class="navbar-collapse collapse clearfix" >
+                                <ul class="navigation clearfix " style=" margin-right : 70px">
+
+                                    <li role="presentation" class="dropdown">
+                                        <a class="dropdown-toggle" data-toggle="dropdown">
+                                            <span class="badge count"></span><i class="fa fa-bell"></i>
+                                        </a>
+                                        <ul class="dropdown-menu" style="width: 320px">
+                                        </ul>
+                                    </li>
+
+                                    <li class="dropdown"><a href="#"> <i class="fa fa-user"></i> {{ app.user.username }}
+                                        </a>
+                                        <ul style="width: 150px">
+                                            <li><a href="{{ path ('fos_user_security_logout') }}" ><i
+                                                            class="fa fa-sign-out"></i>Logout</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    {% else %}
+                        <div class="mainmenu-right-box pull-right">
+                            <div class="buy-ticket-button">
+                                <a class="thm-btn" href="{{ path ('fos_user_security_login') }}">Login / Register</a>
+                            </div>
                         </div>
-                    </div>
+                    {% endif %}
                     <!--End mainmenu right box-->
                 </div>
             </div>
@@ -332,7 +335,47 @@
 <script src="{{ asset ('front/js/main-slider-script.js') }}"></script>
 <script src="{{ asset ('front/js/custom.js') }}"></script>
 
+<script>
+    $(document).ready(function () {
 
+        function load_unseen_notification(view = '') {
+            $.ajax({
+
+                url: "http://localhost/PI-Dev/web/app_dev.php/iheb/notification?plein_text=" + userid,
+                success: function (data) {
+
+
+                    $('.dropdown-menu').html(data.notification);
+                    if (data.unseen_notification > 0) {
+
+                        $('.count').html(data.unseen_notification);
+
+                    }
+                }
+            });
+        }
+
+        load_unseen_notification();
+
+
+        $(document).on('click', '.dropdown-toggle', function () {
+            $('.count').html('');
+            $.ajax({
+
+                url: "http://localhost/PI-Dev/web/app_dev.php/iheb/notification_status",
+                success: function (data) {
+                    console.log(data);
+                }
+            });
+        });
+
+        setInterval(function () {
+            load_unseen_notification();
+            ;
+        }, 5000);
+
+    });
+</script>
 
 
 

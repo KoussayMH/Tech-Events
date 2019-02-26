@@ -22,6 +22,9 @@
     <link rel="shortcut icon" href="{{ asset ('back/images/favicon.png') }}" />
 </head>
 <body class="sidebar-dark">
+<script type="text/javascript">
+    userid={{ app.user.id|json_encode|raw }} ;
+</script>
 <div class="container-scroller">
     <!-- partial:../../partials/_navbar.html -->
     <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row default-layout-navbar">
@@ -53,7 +56,7 @@
                         <span class="btn btn-primary">+ Create new</span>
                     </a>
                 </li>
-                <li class="nav-item dropdown d-none d-lg-flex">
+                <li class="nav-item d-none d-lg-flex">
                     <div class="nav-link">
                         <span class="dropdown-toggle btn btn-outline-dark" id="languageDropdown" data-toggle="dropdown">English</span>
                         <div class="dropdown-menu navbar-dropdown" aria-labelledby="languageDropdown">
@@ -75,136 +78,36 @@
                         </div>
                     </div>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#" data-toggle="dropdown">
+                <li class="nav-item dropdown" >
+                    <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#"
+                       data-toggle="dropdown">
                         <i class="fas fa-bell mx-0"></i>
-                        <span class="count">16</span>
+                        <span class="count"> </span>
                     </a>
-                    <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
-                        <a class="dropdown-item">
-                            <p class="mb-0 font-weight-normal float-left">You have 16 new notifications
-                            </p>
-                            <span class="badge badge-pill badge-warning float-right">View all</span>
-                        </a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item preview-item">
-                            <div class="preview-thumbnail">
-                                <div class="preview-icon bg-danger">
-                                    <i class="fas fa-exclamation-circle mx-0"></i>
-                                </div>
-                            </div>
-                            <div class="preview-item-content">
-                                <h6 class="preview-subject font-weight-medium">Application Error</h6>
-                                <p class="font-weight-light small-text">
-                                    Just now
-                                </p>
-                            </div>
-                        </a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item preview-item">
-                            <div class="preview-thumbnail">
-                                <div class="preview-icon bg-warning">
-                                    <i class="fas fa-wrench mx-0"></i>
-                                </div>
-                            </div>
-                            <div class="preview-item-content">
-                                <h6 class="preview-subject font-weight-medium">Settings</h6>
-                                <p class="font-weight-light small-text">
-                                    Private message
-                                </p>
-                            </div>
-                        </a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item preview-item">
-                            <div class="preview-thumbnail">
-                                <div class="preview-icon bg-info">
-                                    <i class="far fa-envelope mx-0"></i>
-                                </div>
-                            </div>
-                            <div class="preview-item-content">
-                                <h6 class="preview-subject font-weight-medium">New user registration</h6>
-                                <p class="font-weight-light small-text">
-                                    2 days ago
-                                </p>
-                            </div>
-                        </a>
+
+                    <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list dropdown-me"
+                         aria-labelledby="notificationDropdown" style="width: 320px">
+
+
+
                     </div>
+
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link count-indicator dropdown-toggle" id="messageDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
-                        <i class="fas fa-envelope mx-0"></i>
-                        <span class="count">25</span>
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="messageDropdown">
-                        <div class="dropdown-item">
-                            <p class="mb-0 font-weight-normal float-left">You have 7 unread mails
-                            </p>
-                            <span class="badge badge-info badge-pill float-right">View all</span>
-                        </div>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item preview-item">
-                            <div class="preview-thumbnail">
 
-                                <img src="{{ asset ('back/images/faces/face4.jpg') }}" alt="image" class="profile-pic">
-                            </div>
-                            <div class="preview-item-content flex-grow">
-                                <h6 class="preview-subject ellipsis font-weight-medium">David Grey
-                                    <span class="float-right font-weight-light small-text">1 Minutes ago</span>
-                                </h6>
-                                <p class="font-weight-light small-text">
-                                    The meeting is cancelled
-                                </p>
-                            </div>
-                        </a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item preview-item">
-                            <div class="preview-thumbnail">
-
-                                <img src="{{ asset ('back/images/faces/face2.jpg') }}" alt="image" class="profile-pic">
-                            </div>
-                            <div class="preview-item-content flex-grow">
-                                <h6 class="preview-subject ellipsis font-weight-medium">Tim Cook
-                                    <span class="float-right font-weight-light small-text">15 Minutes ago</span>
-                                </h6>
-                                <p class="font-weight-light small-text">
-                                    New product launch
-                                </p>
-                            </div>
-                        </a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item preview-item">
-                            <div class="preview-thumbnail">
-
-                                <img src="{{ asset ('back/images/faces/face3.jpg') }}" alt="image" class="profile-pic">
-                            </div>
-                            <div class="preview-item-content flex-grow">
-                                <h6 class="preview-subject ellipsis font-weight-medium"> Johnson
-                                    <span class="float-right font-weight-light small-text">18 Minutes ago</span>
-                                </h6>
-                                <p class="font-weight-light small-text">
-                                    Upcoming board meeting
-                                </p>
-                            </div>
-                        </a>
-                    </div>
-                </li>
                 <li class="nav-item nav-profile dropdown">
                     <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="profileDropdown">
                         <img src="{{ asset ('back/images/faces/face5.jpg') }}" alt="profile"/>
-
                     </a>
                     <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
-                        <a class="dropdown-item">
-                            <i class="fas fa-cog text-primary"></i>
-                            Settings
-                        </a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item">
+                        <a class="dropdown-item" href="{{ path ('fos_user_security_logout') }}">
                             <i class="fas fa-power-off text-primary"></i>
                             Logout
                         </a>
                     </div>
                 </li>
+
+
                 <li class="nav-item nav-settings d-none d-lg-block">
                     <a class="nav-link" href="#">
                         <i class="fas fa-ellipsis-h"></i>
@@ -399,7 +302,7 @@
                         </div>
                         <div class="profile-name">
                             <p class="name">
-                                Welcome Jane
+                                Welcome {{ app.user.userName }}
                             </p>
                             <p class="designation">
                                 Super Admin
@@ -428,7 +331,12 @@
                         </ul>
                     </div>
                 </li>
-
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ path ('clubs') }}">
+                        <i class="fa fa-id-card menu-icon"></i>
+                        <span class="menu-title">Clubs</span>
+                    </a>
+                </li>
 
 
 
@@ -460,6 +368,46 @@
 <!-- Custom js for this page-->
 <script src="{{ asset ('back/js/dashboard.js') }}"></script>
 <!-- End custom js for this page-->
+
+<script>
+    $(document).ready(function () {
+
+        function load_unseen_notification(view = '') {
+            $.ajax({
+                url: "http://localhost/PI-Dev/web/app_dev.php/iheb/notification?plein_text=" + userid,
+                success: function (data) {
+                    $('.dropdown-me').html(data.notification);
+                    if (data.unseen_notification > 0) {
+                        $('.count').html(data.unseen_notification);
+                    }
+                    else {
+                        $('.count').html(0);
+                    }
+                }
+            });
+        }
+
+        load_unseen_notification();
+
+
+        $(document).on('click', '.dropdown-toggle', function () {
+            $('.count').html('');
+            $.ajax({
+
+                url: "http://localhost/PI-Dev/web/app_dev.php/iheb/notification_status",
+                success: function (data) {
+                    console.log(data);
+                }
+            });
+        });
+
+        setInterval(function () {
+            load_unseen_notification();
+            ;
+        }, 5000);
+
+    });
+</script>
 </body>
 
 

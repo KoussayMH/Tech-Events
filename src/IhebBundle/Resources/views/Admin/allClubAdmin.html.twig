@@ -1,0 +1,80 @@
+{% extends "@Back/base.html.twig" %}
+{% block container %}
+    {% set flashbag_notices = app.session.flashbag.get('notice') %}
+    {% if flashbag_notices is not empty  %}
+        {% for notice in flashbag_notices %}
+            <div class="container">
+                <div class="alert alert-danger " role="alert">
+                    <strong>Oops !</strong> {{ notice }} <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                </div>
+            </div>
+        {% endfor %}
+    {% endif %}
+
+    {% set flashbag_notices1 = app.session.flashbag.get('notice1') %}
+    {% if flashbag_notices1 is not empty  %}
+        {% for notice1 in flashbag_notices1 %}
+            <div class="container">
+                <div class="alert alert-success " role="alert">
+                    <strong>Succes !</strong> {{ notice1 }} <a href="#" class="close" data-dismiss="success" aria-label="close">&times;</a>
+                </div>
+            </div>
+        {% endfor %}
+    {% endif %}
+
+<div class="card">
+    <div class="card-body">
+        <h4 class="card-title">list of clubs</h4>
+        <div class="row">
+            <div class="col-12">
+                <div class="table-responsive">
+                    <table id="order-listing" class="table">
+                        <thead>
+                        <tr>
+                            <th>Logo</th>
+                            <th>Name</th>
+                            <th>Date</th>
+
+                            <th>Type</th>
+                            <th>Admin</th>
+                            <th>UserName</th>
+                            <th>Description</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {% for a in clubs %}
+                        <tr>
+                            <td class="py-1">
+                                <img src="{{ asset('uploads/brochures/' ~ a.photoClub) }}" alt="image"/>
+                            </td>
+
+                            <td>{{ a.nameClub }}</td>
+                            <td>{{ a.dateCreationClub|date ('m-d') }} {{ a.dateCreationClub|date ('Y') }}</td>
+                            <td>{{ a.typeClub }}</td>
+                            <td>{{ a.adminClub.firstName }} {{ a.adminClub.lastName }}</td>
+                            <td>{{ a.adminClub.username }}</td>
+                            <td>{{ a.descriptionClub }}</td>
+                            <td>
+                                <label class="badge {% if a.statusClub =="Refused" %}badge-danger{% elseif a.statusClub =="Approved" %}badge-success{% else %}badge-info{% endif %}" style="width: 100px">{{ a.statusClub }}</label>
+                            </td>
+                            <td>
+                                {% if a.statusClub =="Waiting" %}
+                                    <a href="{{path('approuve_club', {id: a.id})}}" class="btn btn-outline-success" style="width: 100px; margin : 10px 0;">Accept</a>
+                                    <a href="{{path('refuse_club', {id: a.id})}}" class="btn btn-outline-danger" style="width: 100px">Refuse</a>
+                                    {% else %}
+                                        <a href="{{path('delete_club', {id: a.id})}}" class="btn btn-outline-danger" style="width: 100px">Delete</a>
+                                {% endif %}
+                            </td>
+                        </tr>
+                        {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

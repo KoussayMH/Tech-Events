@@ -14,6 +14,7 @@ imports:
 # https://symfony.com/doc/current/best_practices/configuration.html#application-related-configuration
 parameters:
     locale: en
+    brochures_directory: '%kernel.project_dir%/web/uploads/brochures'
 
 framework:
     #esi: ~
@@ -88,3 +89,16 @@ fos_user:
         sender_name: "aaaa"
     service:
         mailer: fos_user.mailer.twig_swift
+    registration:
+        form:
+            type: AppBundle\Form\RegistrationType
+
+knp_snappy:
+    pdf:
+        enabled:    true
+        binary:     "\"C:\\Program Files\\wkhtmltopdf\\bin\\wkhtmltopdf.exe\"" #"\"C:\\Program Files\\wkhtmltopdf\\bin\\wkhtmltopdf.exe\"" for Windows users
+        options:    []
+    image:
+        enabled:    true
+        binary:     "\"C:\\Program Files\\wkhtmltopdf\\bin\\wkhtmltoimage.exe\"" #"\"C:\\Program Files\\wkhtmltopdf\\bin\\wkhtmltoimage.exe\"" for Windows users
+        options:    []
