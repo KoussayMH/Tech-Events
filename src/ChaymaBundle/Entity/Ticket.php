@@ -42,100 +42,6 @@ class Ticket
      */
     private $type;
 
-
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="Titre", type="string", length=255)
-     */
-    private $titre;
-
-
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="Description", type="string", length=255)
-     */
-    private $desc;
-
-
-    /**
-     * @ORM\ManyToOne(targetEntity="\AppBundle\Entity\User")
-     * @ORM\JoinColumn(name="user",referencedColumnName="id")
-     */
-    private $user;
-
-
-    /**
-     * @ORM\ManyToOne(targetEntity="\IhebBundle\Entity\Club")
-     * @ORM\JoinColumn(name="club",referencedColumnName="id")
-     */
-    private $club;
-
-    /**
-     * @return mixed
-     */
-    public function getClub()
-    {
-        return $this->club;
-    }
-
-    /**
-     * @param mixed $club
-     */
-    public function setClub($club)
-    {
-        $this->club = $club;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getUser()
-    {
-        return $this->user;
-    }
-
-    /**
-     * @param mixed $user
-     */
-    public function setUser($user)
-    {
-        $this->user = $user;
-    }
-
-    /**
-     * @return string
-     */
-    public function getDesc()
-    {
-        return $this->desc;
-    }
-
-    /**
-     * @param string $desc
-     */
-    public function setDesc($desc)
-    {
-        $this->desc = $desc;
-    }
-
-    /**
-     * @return string
-     */
-    public function getTitre()
-    {
-        return $this->titre;
-    }
-
-    /**
-     * @param string $titre
-     */
-    public function setTitre($titre)
-    {
-        $this->titre = $titre;
-    }
-
     /**
      * @return string
      */
@@ -234,13 +140,5 @@ class Ticket
     {
         return $this->quantite;
     }
-
-    public function __toString()
-    {
-        return (string)$this->getId();
-        // TODO: Implement __toString() method.
-    }
-
-
 }
 

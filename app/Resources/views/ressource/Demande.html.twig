@@ -1,0 +1,142 @@
+{% extends "@Front/layout.html.twig" %}
+{% block container %}
+
+    <section class="breadcrumb-area" style="background-image: url({{ asset('front/images/resources/breadcrumb-bg.jpg') }});">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="breadcrumbs">
+                        <h1> Demande </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="breadcrumb-bottom-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="breadcrumb-bottom">
+                        <div class="left pull-left">
+                            <ul>
+
+                                <li class="active">La Liste Des évènements disponibles</li>
+                            </ul>
+                        </div>
+                        <div class="right pull-right">
+                            <a href="#">
+                                <span><i class="fa fa-share-alt" aria-hidden="true"></i>Share To Others</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Start blog area-->
+    <section id="blog-area" class="blog-grid-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
+                    <div class="blog-post">
+                        <div class="row">
+                            {% for event in listEvent %}
+                                {%  if event.etat =='Accepte' %}
+                            <!--Start single blog item-->
+                            <div class="col-md-6">
+                                <div class="single-blog-item">
+                                    <div class="img-holder">
+
+                                        <img src="{{ asset('front/images/team/4.jpg') }}" alt="Awesome Image">
+                                        <div class="overlay-style-one">
+                                            <div class="box">
+                                                <div class="content">
+                                                    <a href="blog-single.html"><i class="fa fa-link" aria-hidden="true"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="post-type">
+                                            <span class="flaticon-photo"></span>
+                                        </div>
+                                        <div class="post-date">
+                                            <h3> {{ event.date | date('d') }} <br> {{ event.date | date('m') }}</h3>
+                                        </div>
+                                    </div>
+                                    <div class="text-holder">
+                                        <ul class="meta-info">
+                                            <li><a href="#"><i  aria-hidden="true"></i> {{ event.titre }}</a></li>
+                                        </ul>
+                                        <a href="blog-single.html">
+                                            <h3 class="blog-title">{{ event.description }}</h3>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--End single blog item-->
+                            {% endif %}
+                            {% endfor %}
+
+
+
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--End blog area-->
+
+
+
+
+   <br>
+
+    <section class="sponsor-form-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12">
+                    <div class="sponsor-form">
+                        <div class="sec-title text-center">
+                            <div class="underlay text-center">
+                                <h2>Choisir <span>l'evenement </span></h2>
+                            </div>
+                            <h1>Choisir l'evenement</h1>
+                        </div>
+                        <form id="sponsor-form" name="sponsor_form" class="default-form" action="http://steelthemes.com/demo/html/evento/inc/sendmail.php" method="post">
+                            {{ form_start(form) }}
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <select class="selectmenu">
+                                        <option selected="selected">Golden Sponsor  {{ form_widget(form.event , {'attr' : {'class':'selectmenu' }}) }} </option>
+
+                                    </select>
+                                </div>
+
+
+
+
+
+
+
+
+
+
+
+                                <div class="col-md-4">
+                                    <button class="thm-btn gra" type="submit">Become a Sponsor</button>
+                                </div>
+                            </div>
+                            {{ form_end(form) }}
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+{% endblock %}

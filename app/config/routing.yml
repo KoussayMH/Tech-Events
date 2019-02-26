@@ -1,9 +1,25 @@
-koussay_comment:
-    resource: "@KoussayBundle/Controller/CommentController.php"
+dorra_produit:
+    resource: "@DorraBundle/Controller/ProduitController.php"
     type:     annotation
 
-koussay_event:
-    resource: "@KoussayBundle/Controller/EventController.php"
+dorra_ressource:
+    resource: "@DorraBundle/Controller/RessourceController.php"
+    type:     annotation
+
+dorra_ressource:
+    resource: "@DorraBundle/Controller/RessourceController.php"
+    type:     annotation
+
+dorra_ressource:
+    resource: "@DorraBundle/Controller/RessourceController.php"
+    type:     annotation
+
+dorra_ressource:
+    resource: "@DorraBundle/Controller/RessourceController.php"
+    type:     annotation
+
+dorra_ressource:
+    resource: "@DorraBundle/Controller/RessourceController.php"
     type:     annotation
 
 back:
