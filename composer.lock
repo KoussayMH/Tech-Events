@@ -4,7 +4,19 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
+<<<<<<< HEAD
     "content-hash": "91759990d26b431bca1643dfdd60ca83",
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+    "content-hash": "9836e617e65f86f3a159b0bfb25dce4a",
+=======
+    "content-hash": "4a7eceb965614ba2fe33d334ff98718f",
+>>>>>>> 30a24b2eed29a611d0978ac1882dfb4a47f00c2c
+=======
+    "content-hash": "365237393fb693ff4fdb939a62a39f0f",
+>>>>>>> 854778e5b112b9441cb2e1706bbab68010ed3374
+>>>>>>> 6b7a62fdfb9b605c66c6eeaa2a0028cebbe702d5
     "packages": [
         {
             "name": "ancarebeca/full-calendar-bundle",
@@ -1119,6 +1131,61 @@
             "time": "2014-01-12T16:20:24+00:00"
         },
         {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+            "name": "jms/payment-core-bundle",
+            "version": "1.4.1",
+            "target-dir": "JMS/Payment/CoreBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/schmittjoh/JMSPaymentCoreBundle.git",
+                "reference": "c9052c9720203ce92584e0e57096532005cfbe1a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/schmittjoh/JMSPaymentCoreBundle/zipball/c9052c9720203ce92584e0e57096532005cfbe1a",
+                "reference": "c9052c9720203ce92584e0e57096532005cfbe1a",
+                "shasum": ""
+            },
+            "require": {
+                "defuse/php-encryption": "~2.0",
+                "doctrine/common": "~2.3",
+                "doctrine/dbal": "~2.3",
+                "doctrine/orm": "~2.3",
+                "php": ">=5.6",
+                "symfony/browser-kit": ">=2.3 <5.0",
+                "symfony/config": ">=2.3 <5.0",
+                "symfony/dependency-injection": ">=2.3 <5.0",
+                "symfony/event-dispatcher": ">=2.3 <5.0",
+                "symfony/form": ">=2.3 <5.0",
+                "symfony/http-foundation": ">=2.3 <5.0",
+                "symfony/http-kernel": ">=2.3 <5.0",
+                "symfony/options-resolver": ">=2.3 <5.0",
+                "symfony/validator": ">=2.3 <5.0"
+            },
+            "require-dev": {
+                "doctrine/doctrine-bundle": "~1.6",
+                "matthiasnoback/symfony-config-test": "^2.1",
+                "phpunit/phpunit": "~4.8|~5.4",
+                "sensio/framework-extra-bundle": "~3.0",
+                "symfony/doctrine-bridge": ">=2.3 <5.0",
+                "symfony/dom-crawler": ">=2.3 <5.0",
+                "symfony/framework-bundle": ">=2.3 <5.0",
+                "symfony/phpunit-bridge": "~2.7",
+                "symfony/routing": ">=2.3 <5.0",
+                "symfony/templating": ">=2.3 <5.0",
+                "symfony/twig-bridge": ">=2.3 <5.0",
+                "symfony/twig-bundle": ">=2.3 <5.0",
+                "twig/twig": "~1.0"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.4-dev"
+=======
+>>>>>>> 6b7a62fdfb9b605c66c6eeaa2a0028cebbe702d5
             "name": "jms/metadata",
             "version": "1.7.0",
             "source": {
@@ -1143,12 +1210,96 @@
             "extra": {
                 "branch-alias": {
                     "dev-master": "1.5.x-dev"
+<<<<<<< HEAD
+=======
+>>>>>>> 30a24b2eed29a611d0978ac1882dfb4a47f00c2c
+>>>>>>> 6b7a62fdfb9b605c66c6eeaa2a0028cebbe702d5
                 }
             },
             "autoload": {
                 "psr-0": {
+<<<<<<< HEAD
                     "Metadata\\": "src/"
+=======
+<<<<<<< HEAD
+                    "JMS\\Payment\\CoreBundle": ""
+=======
+                    "Metadata\\": "src/"
+>>>>>>> 30a24b2eed29a611d0978ac1882dfb4a47f00c2c
+>>>>>>> 6b7a62fdfb9b605c66c6eeaa2a0028cebbe702d5
                 }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+                "Apache2"
+            ],
+            "authors": [
+                {
+                    "name": "Paulo Rodrigues Pinto",
+                    "email": "regularjack@gmail.com"
+=======
+>>>>>>> 6b7a62fdfb9b605c66c6eeaa2a0028cebbe702d5
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Asmir Mustafic",
+                    "email": "goetas@gmail.com"
+<<<<<<< HEAD
+=======
+>>>>>>> 30a24b2eed29a611d0978ac1882dfb4a47f00c2c
+>>>>>>> 6b7a62fdfb9b605c66c6eeaa2a0028cebbe702d5
+                },
+                {
+                    "name": "Johannes M. Schmitt",
+                    "email": "schmittjoh@gmail.com"
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+                },
+                {
+                    "name": "Contributors",
+                    "homepage": "https://github.com/schmittjoh/JMSPaymentCoreBundle/contributors"
+                }
+            ],
+            "description": "A unified API for processing payments with Symfony",
+            "homepage": "http://jmspaymentcorebundle.readthedocs.io",
+            "keywords": [
+                "payment"
+            ],
+            "time": "2019-02-20T18:43:13+00:00"
+        },
+        {
+            "name": "khanamiryan/qrcode-detector-decoder",
+            "version": "1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/khanamiryan/php-qrcode-detector-decoder.git",
+                "reference": "a75482d3bc804e3f6702332bfda6cccbb0dfaa76"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/khanamiryan/php-qrcode-detector-decoder/zipball/a75482d3bc804e3f6702332bfda6cccbb0dfaa76",
+                "reference": "a75482d3bc804e3f6702332bfda6cccbb0dfaa76",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.6|^7.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.7"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Zxing\\": "lib/"
+                },
+                "files": [
+                    "lib/Common/customFunctions.php"
+                ]
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -1156,12 +1307,22 @@
             ],
             "authors": [
                 {
-                    "name": "Asmir Mustafic",
-                    "email": "goetas@gmail.com"
-                },
-                {
-                    "name": "Johannes M. Schmitt",
-                    "email": "schmittjoh@gmail.com"
+                    "name": "Ashot Khanamiryan",
+                    "email": "a.khanamiryan@gmail.com",
+                    "homepage": "https://github.com/khanamiryan",
+                    "role": "Developer"
+                }
+            ],
+            "description": "QR code decoder / reader",
+            "homepage": "https://github.com/khanamiryan/php-qrcode-detector-decoder/",
+            "keywords": [
+                "barcode",
+                "qr",
+                "zxing"
+            ],
+            "time": "2018-04-26T11:41:33+00:00"
+=======
+>>>>>>> 6b7a62fdfb9b605c66c6eeaa2a0028cebbe702d5
                 }
             ],
             "description": "Class/method/property metadata management in PHP",
@@ -1172,8 +1333,16 @@
                 "yaml"
             ],
             "time": "2018-10-26T12:40:10+00:00"
+<<<<<<< HEAD
         },
         {
+=======
+>>>>>>> 30a24b2eed29a611d0978ac1882dfb4a47f00c2c
+        },
+        {
+=======
+>>>>>>> 854778e5b112b9441cb2e1706bbab68010ed3374
+>>>>>>> 6b7a62fdfb9b605c66c6eeaa2a0028cebbe702d5
             "name": "monolog/monolog",
             "version": "1.24.0",
             "source": {
@@ -1926,7 +2095,7 @@
                 },
                 {
                     "name": "Gert de Pagter",
-                    "email": "backendtea@gmail.com"
+                    "email": "BackEndTea@gmail.com"
                 }
             ],
             "description": "Symfony polyfill for ctype functions",
