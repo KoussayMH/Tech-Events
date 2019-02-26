@@ -1,0 +1,1316 @@
+{% extends "@Front/layout.html.twig" %}
+
+{% block container %}
+    <section class="breadcrumb-area" style="background-image: url({{ asset('front/images/resources/breadcrumb-bg.jpg') }});">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="breadcrumbs">
+                        <h1>Buy Ticket</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Start single speaker area-->
+
+    <section class="single-speaker-area">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="top-content">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="img-holder">
+                                    <img src="{{ asset(ressource.image) }}" alt="Awesome Image">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="text-holder">
+                                    <div class="title">
+                                        <h2>{{ ressource.prenom }} {{ ressource.nom }} </h2>
+                                        <span>{{ ressource.domaine }}</span>
+                                    </div>
+                                    <div class="text">
+                                        <p> {{ ressource.description }}</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="info-holder">
+                                    <ul>
+                                        <li><i class="fa fa-building-o" aria-hidden="true"></i> Company: <span>{{ ressource.company }}</span></li>
+                                        <li><i class="fa fa-envelope" aria-hidden="true"></i> Email: <span>{{ ressource.email }}</span></li>
+                                        <li><i class="fa fa-globe" aria-hidden="true"></i> Website: <span>{{ ressource.website }}</span></li>
+                                        <li><i class="fa fa-user" aria-hidden="true"></i> Follow On:
+                                            <span>
+                                            <a href="#"><i class="fa fa-facebook"></i></a>
+                                            <a href="#"><i class="fa fa-twitter"></i></a>
+                                            <a href="#"><i class="fa fa-google-plus"></i></a>
+                                            <a href="#"><i class="fa fa-pinterest-p"></i></a>
+                                            <a href="{{ ressource.link }}"><i class="fa fa-linkedin"></i></a>
+                                        </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <br>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="schedules-button text-center">
+                                            <a class="thm-btn" href="{{ path('createDemande', { 'RS': ressource.id }) }}">Demande</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </section>
+    <!--End single speaker area-->
+    <section class="event-schedule-area sec-pding">
+        <div class="container">
+            <div class="sec-title text-center">
+                <div class="underlay text-center">
+                    <h2>Event <span>Schedule</span></h2>
+                </div>
+                <h1>Event Schedule</h1>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="event-schedule-tab">
+                        <!--Start tab menu-->
+                        <div id="tabmenu-carousel" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#tabmenu-carousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#tabmenu-carousel" data-slide-to="1"></li>
+                            </ol>
+                            <div class="carousel-inner" role="listbox">
+
+                                <div class="item active">
+                                    <ul class="nav nav-tabs tab-menu">
+                                        {% for value in Event %}
+                                        <li><a href="#d1" data-toggle="tab"><h3>Event <span>{{ value.id }}</span></h3><p>{{ value.titre }} </p><p>{{ value.date |date('Y-m-d') }}</p> </a></li>
+                                        {% endfor %}
+                                    </ul>
+                                </div>
+
+
+                            </div>
+                            <a class="left slide-control" href="#tabmenu-carousel" role="button" data-slide="prev"><i class="fa fa-angle-left"></i></a>
+                            <a class="right slide-control" href="#tabmenu-carousel" role="button" data-slide="next"><i class="fa fa-angle-right"></i></a>
+                        </div>
+                        <!--End tab menu-->
+                        <!--Start tab content-->
+                        <div class="tab-content">
+                            <!--Start single tab pane-->
+                            <div class="tab-pane" id="d1">
+
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="accordion-box">
+                                            <!--Start single accordion box-->
+                                            <div class="accordion accordion-block">
+                                                <div class="single-box">
+                                                    <div class="single-box-title accord-btn">
+                                                        <div class="img-holder">
+                                                            <img src="images/events/1.jpg" alt="Awesome Image">
+                                                        </div>
+                                                        <div class="title-holder">
+                                                            <p><i class="fa fa-clock-o" aria-hidden="true"></i>09:30 - 11.00</p>
+                                                            <h3>Introduction About Event</h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="single-box-content accord-content">
+                                                        <ul class="meta-info">
+                                                            <li><span>Speaker:</span> Vanno Lawrence</li>
+                                                            <li><span>Where:</span> Block B, Room 12</li>
+                                                        </ul>
+                                                        <div class="text">
+                                                            <p>Explain to you how all this mistaken idea of denouncing pleasure and sed praising pain was born and I will give you a complete account of system, and expound the actual teachings of the great.</p>
+                                                        </div>
+                                                        <div class="bottom-content clearfix">
+                                                            <div class="button pull-left">
+                                                                <a class="thm-btn" href="#">Know More</a>
+                                                            </div>
+                                                            <div class="social-share pull-right">
+                                                                <h3>Share:</h3>
+                                                                <ul class="social-links">
+                                                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--End single accordion box-->
+                                            <!--Start single accordion box-->
+                                            <div class="accordion accordion-block color-2">
+                                                <div class="single-box">
+                                                    <div class="single-box-title accord-btn">
+                                                        <div class="img-holder">
+                                                            <img src="images/events/2.jpg" alt="Awesome Image">
+                                                        </div>
+                                                        <div class="title-holder">
+                                                            <p><i class="fa fa-clock-o" aria-hidden="true"></i>12.15 - 01.15</p>
+                                                            <h3>Design Thinking for Innovation</h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="single-box-content accord-content">
+                                                        <ul class="meta-info">
+                                                            <li><span>Speaker:</span> Vanno Lawrence</li>
+                                                            <li><span>Where:</span> Block B, Room 12</li>
+                                                        </ul>
+                                                        <div class="text">
+                                                            <p>Explain to you how all this mistaken idea of denouncing pleasure and sed praising pain was born and I will give you a complete account of system, and expound the actual teachings of the great.</p>
+                                                        </div>
+                                                        <div class="bottom-content clearfix">
+                                                            <div class="button pull-left">
+                                                                <a class="thm-btn" href="#">Know More</a>
+                                                            </div>
+                                                            <div class="social-share pull-right">
+                                                                <h3>Share:</h3>
+                                                                <ul class="social-links">
+                                                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--End single accordion box-->
+                                            <!--Start single accordion box-->
+                                            <div class="accordion accordion-block color-3 last">
+                                                <div class="single-box">
+                                                    <div class="single-box-title accord-btn">
+                                                        <div class="img-holder">
+                                                            <img src="images/events/3.jpg" alt="Awesome Image">
+                                                        </div>
+                                                        <div class="title-holder">
+                                                            <p><i class="fa fa-clock-o" aria-hidden="true"></i>02.45 - 03.45</p>
+                                                            <h3>A Frontier for Designers</h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="single-box-content accord-content">
+                                                        <ul class="meta-info">
+                                                            <li><span>Speaker:</span> Vanno Lawrence</li>
+                                                            <li><span>Where:</span> Block B, Room 12</li>
+                                                        </ul>
+                                                        <div class="text">
+                                                            <p>Explain to you how all this mistaken idea of denouncing pleasure and sed praising pain was born and I will give you a complete account of system, and expound the actual teachings of the great.</p>
+                                                        </div>
+                                                        <div class="bottom-content clearfix">
+                                                            <div class="button pull-left">
+                                                                <a class="thm-btn" href="#">Know More</a>
+                                                            </div>
+                                                            <div class="social-share pull-right">
+                                                                <h3>Share:</h3>
+                                                                <ul class="social-links">
+                                                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--End single accordion box-->
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="accordion-box">
+                                            <!--Start single accordion box-->
+                                            <div class="accordion accordion-block color-4 last">
+                                                <div class="single-box">
+                                                    <div class="single-box-title accord-btn active">
+                                                        <div class="img-holder">
+                                                            <img src="images/events/4.jpg" alt="Awesome Image">
+                                                        </div>
+                                                        <div class="title-holder">
+                                                            <p><i class="fa fa-clock-o" aria-hidden="true"></i>11.15 - 12.30</p>
+                                                            <h3>Unlocking the Digital World</h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="single-box-content accord-content collapsed">
+                                                        <ul class="meta-info">
+                                                            <li><span>Speaker:</span> Vanno Lawrence</li>
+                                                            <li><span>Where:</span> Block B, Room 12</li>
+                                                        </ul>
+                                                        <div class="text">
+                                                            <p>Praising pain was born and I will give you a complete account of system, and expound the actual teachings of the great. Explain to you how all this mistaken idea of denouncing pleasure and sed.</p>
+                                                        </div>
+                                                        <div class="bottom-content clearfix">
+                                                            <div class="button pull-left">
+                                                                <a class="thm-btn" href="#">Know More</a>
+                                                            </div>
+                                                            <div class="social-share pull-right">
+                                                                <h3>Share:</h3>
+                                                                <ul class="social-links">
+                                                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--End single accordion box-->
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!--End single tab pane-->
+
+                            <!--Start single tab pane-->
+                            <div class="tab-pane" id="d3">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="accordion-box">
+                                            <!--Start single accordion box-->
+                                            <div class="accordion accordion-block color-2">
+                                                <div class="single-box">
+                                                    <div class="single-box-title accord-btn">
+                                                        <div class="img-holder">
+                                                            <img src="images/events/2.jpg" alt="Awesome Image">
+                                                        </div>
+                                                        <div class="title-holder">
+                                                            <p><i class="fa fa-clock-o" aria-hidden="true"></i>12.15 - 01.15</p>
+                                                            <h3>Design Thinking for Innovation</h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="single-box-content accord-content">
+                                                        <ul class="meta-info">
+                                                            <li><span>Speaker:</span> Vanno Lawrence</li>
+                                                            <li><span>Where:</span> Block B, Room 12</li>
+                                                        </ul>
+                                                        <div class="text">
+                                                            <p>Explain to you how all this mistaken idea of denouncing pleasure and sed praising pain was born and I will give you a complete account of system, and expound the actual teachings of the great.</p>
+                                                        </div>
+                                                        <div class="bottom-content clearfix">
+                                                            <div class="button pull-left">
+                                                                <a class="thm-btn" href="#">Know More</a>
+                                                            </div>
+                                                            <div class="social-share pull-right">
+                                                                <h3>Share:</h3>
+                                                                <ul class="social-links">
+                                                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--End single accordion box-->
+                                            <!--Start single accordion box-->
+                                            <div class="accordion accordion-block color-3 last">
+                                                <div class="single-box">
+                                                    <div class="single-box-title accord-btn">
+                                                        <div class="img-holder">
+                                                            <img src="images/events/3.jpg" alt="Awesome Image">
+                                                        </div>
+                                                        <div class="title-holder">
+                                                            <p><i class="fa fa-clock-o" aria-hidden="true"></i>02.45 - 03.45</p>
+                                                            <h3>A Frontier for Designers</h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="single-box-content accord-content">
+                                                        <ul class="meta-info">
+                                                            <li><span>Speaker:</span> Vanno Lawrence</li>
+                                                            <li><span>Where:</span> Block B, Room 12</li>
+                                                        </ul>
+                                                        <div class="text">
+                                                            <p>Explain to you how all this mistaken idea of denouncing pleasure and sed praising pain was born and I will give you a complete account of system, and expound the actual teachings of the great.</p>
+                                                        </div>
+                                                        <div class="bottom-content clearfix">
+                                                            <div class="button pull-left">
+                                                                <a class="thm-btn" href="#">Know More</a>
+                                                            </div>
+                                                            <div class="social-share pull-right">
+                                                                <h3>Share:</h3>
+                                                                <ul class="social-links">
+                                                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--End single accordion box-->
+                                            <!--Start single accordion box-->
+                                            <div class="accordion accordion-block color-4 last">
+                                                <div class="single-box">
+                                                    <div class="single-box-title accord-btn">
+                                                        <div class="img-holder">
+                                                            <img src="images/events/4.jpg" alt="Awesome Image">
+                                                        </div>
+                                                        <div class="title-holder">
+                                                            <p><i class="fa fa-clock-o" aria-hidden="true"></i>11.15 - 12.30</p>
+                                                            <h3>Unlocking the Digital World</h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="single-box-content accord-content">
+                                                        <ul class="meta-info">
+                                                            <li><span>Speaker:</span> Vanno Lawrence</li>
+                                                            <li><span>Where:</span> Block B, Room 12</li>
+                                                        </ul>
+                                                        <div class="text">
+                                                            <p>Praising pain was born and I will give you a complete account of system, and expound the actual teachings of the great. Explain to you how all this mistaken idea of denouncing pleasure and sed.</p>
+                                                        </div>
+                                                        <div class="bottom-content clearfix">
+                                                            <div class="button pull-left">
+                                                                <a class="thm-btn" href="#">Know More</a>
+                                                            </div>
+                                                            <div class="social-share pull-right">
+                                                                <h3>Share:</h3>
+                                                                <ul class="social-links">
+                                                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--End single accordion box-->
+
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="accordion-box">
+                                            <!--Start single accordion box-->
+                                            <div class="accordion accordion-block">
+                                                <div class="single-box">
+                                                    <div class="single-box-title accord-btn active">
+                                                        <div class="img-holder">
+                                                            <img src="images/events/1.jpg" alt="Awesome Image">
+                                                        </div>
+                                                        <div class="title-holder">
+                                                            <p><i class="fa fa-clock-o" aria-hidden="true"></i>09:30 - 11.00</p>
+                                                            <h3>Introduction About Event</h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="single-box-content accord-content collapsed">
+                                                        <ul class="meta-info">
+                                                            <li><span>Speaker:</span> Vanno Lawrence</li>
+                                                            <li><span>Where:</span> Block B, Room 12</li>
+                                                        </ul>
+                                                        <div class="text">
+                                                            <p>Explain to you how all this mistaken idea of denouncing pleasure and sed praising pain was born and I will give you a complete account of system, and expound the actual teachings of the great.</p>
+                                                        </div>
+                                                        <div class="bottom-content clearfix">
+                                                            <div class="button pull-left">
+                                                                <a class="thm-btn" href="#">Know More</a>
+                                                            </div>
+                                                            <div class="social-share pull-right">
+                                                                <h3>Share:</h3>
+                                                                <ul class="social-links">
+                                                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--End single accordion box-->
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--End single tab pane-->
+                            <!--Start single tab pane-->
+                            <div class="tab-pane" id="d4">
+
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="accordion-box">
+                                            <!--Start single accordion box-->
+                                            <div class="accordion accordion-block">
+                                                <div class="single-box">
+                                                    <div class="single-box-title accord-btn">
+                                                        <div class="img-holder">
+                                                            <img src="images/events/1.jpg" alt="Awesome Image">
+                                                        </div>
+                                                        <div class="title-holder">
+                                                            <p><i class="fa fa-clock-o" aria-hidden="true"></i>09:30 - 11.00</p>
+                                                            <h3>Introduction About Event</h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="single-box-content accord-content">
+                                                        <ul class="meta-info">
+                                                            <li><span>Speaker:</span> Vanno Lawrence</li>
+                                                            <li><span>Where:</span> Block B, Room 12</li>
+                                                        </ul>
+                                                        <div class="text">
+                                                            <p>Explain to you how all this mistaken idea of denouncing pleasure and sed praising pain was born and I will give you a complete account of system, and expound the actual teachings of the great.</p>
+                                                        </div>
+                                                        <div class="bottom-content clearfix">
+                                                            <div class="button pull-left">
+                                                                <a class="thm-btn" href="#">Know More</a>
+                                                            </div>
+                                                            <div class="social-share pull-right">
+                                                                <h3>Share:</h3>
+                                                                <ul class="social-links">
+                                                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--End single accordion box-->
+                                            <!--Start single accordion box-->
+                                            <div class="accordion accordion-block color-2">
+                                                <div class="single-box">
+                                                    <div class="single-box-title accord-btn">
+                                                        <div class="img-holder">
+                                                            <img src="images/events/2.jpg" alt="Awesome Image">
+                                                        </div>
+                                                        <div class="title-holder">
+                                                            <p><i class="fa fa-clock-o" aria-hidden="true"></i>12.15 - 01.15</p>
+                                                            <h3>Design Thinking for Innovation</h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="single-box-content accord-content">
+                                                        <ul class="meta-info">
+                                                            <li><span>Speaker:</span> Vanno Lawrence</li>
+                                                            <li><span>Where:</span> Block B, Room 12</li>
+                                                        </ul>
+                                                        <div class="text">
+                                                            <p>Explain to you how all this mistaken idea of denouncing pleasure and sed praising pain was born and I will give you a complete account of system, and expound the actual teachings of the great.</p>
+                                                        </div>
+                                                        <div class="bottom-content clearfix">
+                                                            <div class="button pull-left">
+                                                                <a class="thm-btn" href="#">Know More</a>
+                                                            </div>
+                                                            <div class="social-share pull-right">
+                                                                <h3>Share:</h3>
+                                                                <ul class="social-links">
+                                                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--End single accordion box-->
+                                            <!--Start single accordion box-->
+                                            <div class="accordion accordion-block color-3 last">
+                                                <div class="single-box">
+                                                    <div class="single-box-title accord-btn">
+                                                        <div class="img-holder">
+                                                            <img src="images/events/3.jpg" alt="Awesome Image">
+                                                        </div>
+                                                        <div class="title-holder">
+                                                            <p><i class="fa fa-clock-o" aria-hidden="true"></i>02.45 - 03.45</p>
+                                                            <h3>A Frontier for Designers</h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="single-box-content accord-content">
+                                                        <ul class="meta-info">
+                                                            <li><span>Speaker:</span> Vanno Lawrence</li>
+                                                            <li><span>Where:</span> Block B, Room 12</li>
+                                                        </ul>
+                                                        <div class="text">
+                                                            <p>Explain to you how all this mistaken idea of denouncing pleasure and sed praising pain was born and I will give you a complete account of system, and expound the actual teachings of the great.</p>
+                                                        </div>
+                                                        <div class="bottom-content clearfix">
+                                                            <div class="button pull-left">
+                                                                <a class="thm-btn" href="#">Know More</a>
+                                                            </div>
+                                                            <div class="social-share pull-right">
+                                                                <h3>Share:</h3>
+                                                                <ul class="social-links">
+                                                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--End single accordion box-->
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="accordion-box">
+                                            <!--Start single accordion box-->
+                                            <div class="accordion accordion-block color-4 last">
+                                                <div class="single-box">
+                                                    <div class="single-box-title accord-btn active">
+                                                        <div class="img-holder">
+                                                            <img src="images/events/4.jpg" alt="Awesome Image">
+                                                        </div>
+                                                        <div class="title-holder">
+                                                            <p><i class="fa fa-clock-o" aria-hidden="true"></i>11.15 - 12.30</p>
+                                                            <h3>Unlocking the Digital World</h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="single-box-content accord-content collapsed">
+                                                        <ul class="meta-info">
+                                                            <li><span>Speaker:</span> Vanno Lawrence</li>
+                                                            <li><span>Where:</span> Block B, Room 12</li>
+                                                        </ul>
+                                                        <div class="text">
+                                                            <p>Praising pain was born and I will give you a complete account of system, and expound the actual teachings of the great. Explain to you how all this mistaken idea of denouncing pleasure and sed.</p>
+                                                        </div>
+                                                        <div class="bottom-content clearfix">
+                                                            <div class="button pull-left">
+                                                                <a class="thm-btn" href="#">Know More</a>
+                                                            </div>
+                                                            <div class="social-share pull-right">
+                                                                <h3>Share:</h3>
+                                                                <ul class="social-links">
+                                                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--End single accordion box-->
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!--End single tab pane-->
+                            <!--Start single tab pane-->
+                            <div class="tab-pane" id="d5">
+
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="accordion-box">
+                                            <!--Start single accordion box-->
+                                            <div class="accordion accordion-block color-2">
+                                                <div class="single-box">
+                                                    <div class="single-box-title accord-btn">
+                                                        <div class="img-holder">
+                                                            <img src="images/events/2.jpg" alt="Awesome Image">
+                                                        </div>
+                                                        <div class="title-holder">
+                                                            <p><i class="fa fa-clock-o" aria-hidden="true"></i>12.15 - 01.15</p>
+                                                            <h3>Design Thinking for Innovation</h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="single-box-content accord-content">
+                                                        <ul class="meta-info">
+                                                            <li><span>Speaker:</span> Vanno Lawrence</li>
+                                                            <li><span>Where:</span> Block B, Room 12</li>
+                                                        </ul>
+                                                        <div class="text">
+                                                            <p>Explain to you how all this mistaken idea of denouncing pleasure and sed praising pain was born and I will give you a complete account of system, and expound the actual teachings of the great.</p>
+                                                        </div>
+                                                        <div class="bottom-content clearfix">
+                                                            <div class="button pull-left">
+                                                                <a class="thm-btn" href="#">Know More</a>
+                                                            </div>
+                                                            <div class="social-share pull-right">
+                                                                <h3>Share:</h3>
+                                                                <ul class="social-links">
+                                                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--End single accordion box-->
+                                            <!--Start single accordion box-->
+                                            <div class="accordion accordion-block">
+                                                <div class="single-box">
+                                                    <div class="single-box-title accord-btn">
+                                                        <div class="img-holder">
+                                                            <img src="images/events/1.jpg" alt="Awesome Image">
+                                                        </div>
+                                                        <div class="title-holder">
+                                                            <p><i class="fa fa-clock-o" aria-hidden="true"></i>09:30 - 11.00</p>
+                                                            <h3>Introduction About Event</h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="single-box-content accord-content">
+                                                        <ul class="meta-info">
+                                                            <li><span>Speaker:</span> Vanno Lawrence</li>
+                                                            <li><span>Where:</span> Block B, Room 12</li>
+                                                        </ul>
+                                                        <div class="text">
+                                                            <p>Explain to you how all this mistaken idea of denouncing pleasure and sed praising pain was born and I will give you a complete account of system, and expound the actual teachings of the great.</p>
+                                                        </div>
+                                                        <div class="bottom-content clearfix">
+                                                            <div class="button pull-left">
+                                                                <a class="thm-btn" href="#">Know More</a>
+                                                            </div>
+                                                            <div class="social-share pull-right">
+                                                                <h3>Share:</h3>
+                                                                <ul class="social-links">
+                                                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--End single accordion box-->
+                                            <!--Start single accordion box-->
+                                            <div class="accordion accordion-block color-3 last">
+                                                <div class="single-box">
+                                                    <div class="single-box-title accord-btn">
+                                                        <div class="img-holder">
+                                                            <img src="images/events/3.jpg" alt="Awesome Image">
+                                                        </div>
+                                                        <div class="title-holder">
+                                                            <p><i class="fa fa-clock-o" aria-hidden="true"></i>02.45 - 03.45</p>
+                                                            <h3>A Frontier for Designers</h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="single-box-content accord-content">
+                                                        <ul class="meta-info">
+                                                            <li><span>Speaker:</span> Vanno Lawrence</li>
+                                                            <li><span>Where:</span> Block B, Room 12</li>
+                                                        </ul>
+                                                        <div class="text">
+                                                            <p>Explain to you how all this mistaken idea of denouncing pleasure and sed praising pain was born and I will give you a complete account of system, and expound the actual teachings of the great.</p>
+                                                        </div>
+                                                        <div class="bottom-content clearfix">
+                                                            <div class="button pull-left">
+                                                                <a class="thm-btn" href="#">Know More</a>
+                                                            </div>
+                                                            <div class="social-share pull-right">
+                                                                <h3>Share:</h3>
+                                                                <ul class="social-links">
+                                                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--End single accordion box-->
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="accordion-box">
+                                            <!--Start single accordion box-->
+                                            <div class="accordion accordion-block color-4 last">
+                                                <div class="single-box">
+                                                    <div class="single-box-title accord-btn active">
+                                                        <div class="img-holder">
+                                                            <img src="images/events/4.jpg" alt="Awesome Image">
+                                                        </div>
+                                                        <div class="title-holder">
+                                                            <p><i class="fa fa-clock-o" aria-hidden="true"></i>11.15 - 12.30</p>
+                                                            <h3>Unlocking the Digital World</h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="single-box-content accord-content collapsed">
+                                                        <ul class="meta-info">
+                                                            <li><span>Speaker:</span> Vanno Lawrence</li>
+                                                            <li><span>Where:</span> Block B, Room 12</li>
+                                                        </ul>
+                                                        <div class="text">
+                                                            <p>Praising pain was born and I will give you a complete account of system, and expound the actual teachings of the great. Explain to you how all this mistaken idea of denouncing pleasure and sed.</p>
+                                                        </div>
+                                                        <div class="bottom-content clearfix">
+                                                            <div class="button pull-left">
+                                                                <a class="thm-btn" href="#">Know More</a>
+                                                            </div>
+                                                            <div class="social-share pull-right">
+                                                                <h3>Share:</h3>
+                                                                <ul class="social-links">
+                                                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--End single accordion box-->
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!--End single tab pane-->
+                            <!--Start single tab pane-->
+                            <div class="tab-pane" id="d6">
+
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="accordion-box">
+                                            <!--Start single accordion box-->
+                                            <div class="accordion accordion-block">
+                                                <div class="single-box">
+                                                    <div class="single-box-title accord-btn">
+                                                        <div class="img-holder">
+                                                            <img src="images/events/1.jpg" alt="Awesome Image">
+                                                        </div>
+                                                        <div class="title-holder">
+                                                            <p><i class="fa fa-clock-o" aria-hidden="true"></i>09:30 - 11.00</p>
+                                                            <h3>Introduction About Event</h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="single-box-content accord-content">
+                                                        <ul class="meta-info">
+                                                            <li><span>Speaker:</span> Vanno Lawrence</li>
+                                                            <li><span>Where:</span> Block B, Room 12</li>
+                                                        </ul>
+                                                        <div class="text">
+                                                            <p>Explain to you how all this mistaken idea of denouncing pleasure and sed praising pain was born and I will give you a complete account of system, and expound the actual teachings of the great.</p>
+                                                        </div>
+                                                        <div class="bottom-content clearfix">
+                                                            <div class="button pull-left">
+                                                                <a class="thm-btn" href="#">Know More</a>
+                                                            </div>
+                                                            <div class="social-share pull-right">
+                                                                <h3>Share:</h3>
+                                                                <ul class="social-links">
+                                                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--End single accordion box-->
+                                            <!--Start single accordion box-->
+                                            <div class="accordion accordion-block color-2">
+                                                <div class="single-box">
+                                                    <div class="single-box-title accord-btn">
+                                                        <div class="img-holder">
+                                                            <img src="images/events/2.jpg" alt="Awesome Image">
+                                                        </div>
+                                                        <div class="title-holder">
+                                                            <p><i class="fa fa-clock-o" aria-hidden="true"></i>12.15 - 01.15</p>
+                                                            <h3>Design Thinking for Innovation</h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="single-box-content accord-content">
+                                                        <ul class="meta-info">
+                                                            <li><span>Speaker:</span> Vanno Lawrence</li>
+                                                            <li><span>Where:</span> Block B, Room 12</li>
+                                                        </ul>
+                                                        <div class="text">
+                                                            <p>Explain to you how all this mistaken idea of denouncing pleasure and sed praising pain was born and I will give you a complete account of system, and expound the actual teachings of the great.</p>
+                                                        </div>
+                                                        <div class="bottom-content clearfix">
+                                                            <div class="button pull-left">
+                                                                <a class="thm-btn" href="#">Know More</a>
+                                                            </div>
+                                                            <div class="social-share pull-right">
+                                                                <h3>Share:</h3>
+                                                                <ul class="social-links">
+                                                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--End single accordion box-->
+                                            <!--Start single accordion box-->
+                                            <div class="accordion accordion-block color-3 last">
+                                                <div class="single-box">
+                                                    <div class="single-box-title accord-btn">
+                                                        <div class="img-holder">
+                                                            <img src="images/events/3.jpg" alt="Awesome Image">
+                                                        </div>
+                                                        <div class="title-holder">
+                                                            <p><i class="fa fa-clock-o" aria-hidden="true"></i>02.45 - 03.45</p>
+                                                            <h3>A Frontier for Designers</h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="single-box-content accord-content">
+                                                        <ul class="meta-info">
+                                                            <li><span>Speaker:</span> Vanno Lawrence</li>
+                                                            <li><span>Where:</span> Block B, Room 12</li>
+                                                        </ul>
+                                                        <div class="text">
+                                                            <p>Explain to you how all this mistaken idea of denouncing pleasure and sed praising pain was born and I will give you a complete account of system, and expound the actual teachings of the great.</p>
+                                                        </div>
+                                                        <div class="bottom-content clearfix">
+                                                            <div class="button pull-left">
+                                                                <a class="thm-btn" href="#">Know More</a>
+                                                            </div>
+                                                            <div class="social-share pull-right">
+                                                                <h3>Share:</h3>
+                                                                <ul class="social-links">
+                                                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--End single accordion box-->
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="accordion-box">
+                                            <!--Start single accordion box-->
+                                            <div class="accordion accordion-block color-4 last">
+                                                <div class="single-box">
+                                                    <div class="single-box-title accord-btn active">
+                                                        <div class="img-holder">
+                                                            <img src="images/events/4.jpg" alt="Awesome Image">
+                                                        </div>
+                                                        <div class="title-holder">
+                                                            <p><i class="fa fa-clock-o" aria-hidden="true"></i>11.15 - 12.30</p>
+                                                            <h3>Unlocking the Digital World</h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="single-box-content accord-content collapsed">
+                                                        <ul class="meta-info">
+                                                            <li><span>Speaker:</span> Vanno Lawrence</li>
+                                                            <li><span>Where:</span> Block B, Room 12</li>
+                                                        </ul>
+                                                        <div class="text">
+                                                            <p>Praising pain was born and I will give you a complete account of system, and expound the actual teachings of the great. Explain to you how all this mistaken idea of denouncing pleasure and sed.</p>
+                                                        </div>
+                                                        <div class="bottom-content clearfix">
+                                                            <div class="button pull-left">
+                                                                <a class="thm-btn" href="#">Know More</a>
+                                                            </div>
+                                                            <div class="social-share pull-right">
+                                                                <h3>Share:</h3>
+                                                                <ul class="social-links">
+                                                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--End single accordion box-->
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!--End single tab pane-->
+                            <!--Start single tab pane-->
+                            <div class="tab-pane" id="d7">
+
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="accordion-box">
+                                            <!--Start single accordion box-->
+                                            <div class="accordion accordion-block color-2">
+                                                <div class="single-box">
+                                                    <div class="single-box-title accord-btn">
+                                                        <div class="img-holder">
+                                                            <img src="images/events/2.jpg" alt="Awesome Image">
+                                                        </div>
+                                                        <div class="title-holder">
+                                                            <p><i class="fa fa-clock-o" aria-hidden="true"></i>12.15 - 01.15</p>
+                                                            <h3>Design Thinking for Innovation</h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="single-box-content accord-content">
+                                                        <ul class="meta-info">
+                                                            <li><span>Speaker:</span> Vanno Lawrence</li>
+                                                            <li><span>Where:</span> Block B, Room 12</li>
+                                                        </ul>
+                                                        <div class="text">
+                                                            <p>Explain to you how all this mistaken idea of denouncing pleasure and sed praising pain was born and I will give you a complete account of system, and expound the actual teachings of the great.</p>
+                                                        </div>
+                                                        <div class="bottom-content clearfix">
+                                                            <div class="button pull-left">
+                                                                <a class="thm-btn" href="#">Know More</a>
+                                                            </div>
+                                                            <div class="social-share pull-right">
+                                                                <h3>Share:</h3>
+                                                                <ul class="social-links">
+                                                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--End single accordion box-->
+                                            <!--Start single accordion box-->
+                                            <div class="accordion accordion-block">
+                                                <div class="single-box">
+                                                    <div class="single-box-title accord-btn">
+                                                        <div class="img-holder">
+                                                            <img src="images/events/1.jpg" alt="Awesome Image">
+                                                        </div>
+                                                        <div class="title-holder">
+                                                            <p><i class="fa fa-clock-o" aria-hidden="true"></i>09:30 - 11.00</p>
+                                                            <h3>Introduction About Event</h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="single-box-content accord-content">
+                                                        <ul class="meta-info">
+                                                            <li><span>Speaker:</span> Vanno Lawrence</li>
+                                                            <li><span>Where:</span> Block B, Room 12</li>
+                                                        </ul>
+                                                        <div class="text">
+                                                            <p>Explain to you how all this mistaken idea of denouncing pleasure and sed praising pain was born and I will give you a complete account of system, and expound the actual teachings of the great.</p>
+                                                        </div>
+                                                        <div class="bottom-content clearfix">
+                                                            <div class="button pull-left">
+                                                                <a class="thm-btn" href="#">Know More</a>
+                                                            </div>
+                                                            <div class="social-share pull-right">
+                                                                <h3>Share:</h3>
+                                                                <ul class="social-links">
+                                                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--End single accordion box-->
+                                            <!--Start single accordion box-->
+                                            <div class="accordion accordion-block color-3 last">
+                                                <div class="single-box">
+                                                    <div class="single-box-title accord-btn">
+                                                        <div class="img-holder">
+                                                            <img src="images/events/3.jpg" alt="Awesome Image">
+                                                        </div>
+                                                        <div class="title-holder">
+                                                            <p><i class="fa fa-clock-o" aria-hidden="true"></i>02.45 - 03.45</p>
+                                                            <h3>A Frontier for Designers</h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="single-box-content accord-content">
+                                                        <ul class="meta-info">
+                                                            <li><span>Speaker:</span> Vanno Lawrence</li>
+                                                            <li><span>Where:</span> Block B, Room 12</li>
+                                                        </ul>
+                                                        <div class="text">
+                                                            <p>Explain to you how all this mistaken idea of denouncing pleasure and sed praising pain was born and I will give you a complete account of system, and expound the actual teachings of the great.</p>
+                                                        </div>
+                                                        <div class="bottom-content clearfix">
+                                                            <div class="button pull-left">
+                                                                <a class="thm-btn" href="#">Know More</a>
+                                                            </div>
+                                                            <div class="social-share pull-right">
+                                                                <h3>Share:</h3>
+                                                                <ul class="social-links">
+                                                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--End single accordion box-->
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="accordion-box">
+                                            <!--Start single accordion box-->
+                                            <div class="accordion accordion-block color-4 last">
+                                                <div class="single-box">
+                                                    <div class="single-box-title accord-btn active">
+                                                        <div class="img-holder">
+                                                            <img src="images/events/4.jpg" alt="Awesome Image">
+                                                        </div>
+                                                        <div class="title-holder">
+                                                            <p><i class="fa fa-clock-o" aria-hidden="true"></i>11.15 - 12.30</p>
+                                                            <h3>Unlocking the Digital World</h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="single-box-content accord-content collapsed">
+                                                        <ul class="meta-info">
+                                                            <li><span>Speaker:</span> Vanno Lawrence</li>
+                                                            <li><span>Where:</span> Block B, Room 12</li>
+                                                        </ul>
+                                                        <div class="text">
+                                                            <p>Praising pain was born and I will give you a complete account of system, and expound the actual teachings of the great. Explain to you how all this mistaken idea of denouncing pleasure and sed.</p>
+                                                        </div>
+                                                        <div class="bottom-content clearfix">
+                                                            <div class="button pull-left">
+                                                                <a class="thm-btn" href="#">Know More</a>
+                                                            </div>
+                                                            <div class="social-share pull-right">
+                                                                <h3>Share:</h3>
+                                                                <ul class="social-links">
+                                                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--End single accordion box-->
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!--End single tab pane-->
+                            <!--Start single tab pane-->
+                            <div class="tab-pane" id="d8">
+
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="accordion-box">
+                                            <!--Start single accordion box-->
+                                            <div class="accordion accordion-block">
+                                                <div class="single-box">
+                                                    <div class="single-box-title accord-btn">
+                                                        <div class="img-holder">
+                                                            <img src="images/events/1.jpg" alt="Awesome Image">
+                                                        </div>
+                                                        <div class="title-holder">
+                                                            <p><i class="fa fa-clock-o" aria-hidden="true"></i>09:30 - 11.00</p>
+                                                            <h3>Introduction About Event</h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="single-box-content accord-content">
+                                                        <ul class="meta-info">
+                                                            <li><span>Speaker:</span> Vanno Lawrence</li>
+                                                            <li><span>Where:</span> Block B, Room 12</li>
+                                                        </ul>
+                                                        <div class="text">
+                                                            <p>Explain to you how all this mistaken idea of denouncing pleasure and sed praising pain was born and I will give you a complete account of system, and expound the actual teachings of the great.</p>
+                                                        </div>
+                                                        <div class="bottom-content clearfix">
+                                                            <div class="button pull-left">
+                                                                <a class="thm-btn" href="#">Know More</a>
+                                                            </div>
+                                                            <div class="social-share pull-right">
+                                                                <h3>Share:</h3>
+                                                                <ul class="social-links">
+                                                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--End single accordion box-->
+                                            <!--Start single accordion box-->
+                                            <div class="accordion accordion-block color-2">
+                                                <div class="single-box">
+                                                    <div class="single-box-title accord-btn">
+                                                        <div class="img-holder">
+                                                            <img src="images/events/2.jpg" alt="Awesome Image">
+                                                        </div>
+                                                        <div class="title-holder">
+                                                            <p><i class="fa fa-clock-o" aria-hidden="true"></i>12.15 - 01.15</p>
+                                                            <h3>Design Thinking for Innovation</h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="single-box-content accord-content">
+                                                        <ul class="meta-info">
+                                                            <li><span>Speaker:</span> Vanno Lawrence</li>
+                                                            <li><span>Where:</span> Block B, Room 12</li>
+                                                        </ul>
+                                                        <div class="text">
+                                                            <p>Explain to you how all this mistaken idea of denouncing pleasure and sed praising pain was born and I will give you a complete account of system, and expound the actual teachings of the great.</p>
+                                                        </div>
+                                                        <div class="bottom-content clearfix">
+                                                            <div class="button pull-left">
+                                                                <a class="thm-btn" href="#">Know More</a>
+                                                            </div>
+                                                            <div class="social-share pull-right">
+                                                                <h3>Share:</h3>
+                                                                <ul class="social-links">
+                                                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--End single accordion box-->
+                                            <!--Start single accordion box-->
+                                            <div class="accordion accordion-block color-3 last">
+                                                <div class="single-box">
+                                                    <div class="single-box-title accord-btn">
+                                                        <div class="img-holder">
+                                                            <img src="images/events/3.jpg" alt="Awesome Image">
+                                                        </div>
+                                                        <div class="title-holder">
+                                                            <p><i class="fa fa-clock-o" aria-hidden="true"></i>02.45 - 03.45</p>
+                                                            <h3>A Frontier for Designers</h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="single-box-content accord-content">
+                                                        <ul class="meta-info">
+                                                            <li><span>Speaker:</span> Vanno Lawrence</li>
+                                                            <li><span>Where:</span> Block B, Room 12</li>
+                                                        </ul>
+                                                        <div class="text">
+                                                            <p>Explain to you how all this mistaken idea of denouncing pleasure and sed praising pain was born and I will give you a complete account of system, and expound the actual teachings of the great.</p>
+                                                        </div>
+                                                        <div class="bottom-content clearfix">
+                                                            <div class="button pull-left">
+                                                                <a class="thm-btn" href="#">Know More</a>
+                                                            </div>
+                                                            <div class="social-share pull-right">
+                                                                <h3>Share:</h3>
+                                                                <ul class="social-links">
+                                                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--End single accordion box-->
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="accordion-box">
+                                            <!--Start single accordion box-->
+                                            <div class="accordion accordion-block color-4 last">
+                                                <div class="single-box">
+                                                    <div class="single-box-title accord-btn active">
+                                                        <div class="img-holder">
+                                                            <img src="images/events/4.jpg" alt="Awesome Image">
+                                                        </div>
+                                                        <div class="title-holder">
+                                                            <p><i class="fa fa-clock-o" aria-hidden="true"></i>11.15 - 12.30</p>
+                                                            <h3>Unlocking the Digital World</h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="single-box-content accord-content collapsed">
+                                                        <ul class="meta-info">
+                                                            <li><span>Speaker:</span> Vanno Lawrence</li>
+                                                            <li><span>Where:</span> Block B, Room 12</li>
+                                                        </ul>
+                                                        <div class="text">
+                                                            <p>Praising pain was born and I will give you a complete account of system, and expound the actual teachings of the great. Explain to you how all this mistaken idea of denouncing pleasure and sed.</p>
+                                                        </div>
+                                                        <div class="bottom-content clearfix">
+                                                            <div class="button pull-left">
+                                                                <a class="thm-btn" href="#">Know More</a>
+                                                            </div>
+                                                            <div class="social-share pull-right">
+                                                                <h3>Share:</h3>
+                                                                <ul class="social-links">
+                                                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                                                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--End single accordion box-->
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!--End single tab pane-->
+                        </div>
+                        <!--End tab content-->
+                    </div>
+
+                </div>
+            </div>
+            <button class="read-more" onclick="window.location.href ='{{ path('ressource_index') }}';"> << La liste des ressources</button>
+
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% endblock %}

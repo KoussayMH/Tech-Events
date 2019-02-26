@@ -1,3 +1,27 @@
+dorra_produit:
+    resource: "@DorraBundle/Controller/ProduitController.php"
+    type:     annotation
+
+dorra_ressource:
+    resource: "@DorraBundle/Controller/RessourceController.php"
+    type:     annotation
+
+dorra_ressource:
+    resource: "@DorraBundle/Controller/RessourceController.php"
+    type:     annotation
+
+dorra_ressource:
+    resource: "@DorraBundle/Controller/RessourceController.php"
+    type:     annotation
+
+dorra_ressource:
+    resource: "@DorraBundle/Controller/RessourceController.php"
+    type:     annotation
+
+dorra_ressource:
+    resource: "@DorraBundle/Controller/RessourceController.php"
+    type:     annotation
+
 back:
     resource: "@BackBundle/Resources/config/routing.yml"
     prefix:   /back

@@ -1,3 +1,6 @@
 chayma_homepage:
     path:     /
     defaults: { _controller: ChaymaBundle:Default:index }
+AjouterPanier:
+    path:    /{id}/Ajouter
+    defaults: { _controller: ChaymaBundle:Panier:Ajouter }

@@ -10,4 +10,6 @@ namespace ChaymaBundle\Repository;
  */
 class TicketRepository extends \Doctrine\ORM\EntityRepository
 {
+
+
 }
