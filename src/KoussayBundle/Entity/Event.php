@@ -3,12 +3,18 @@
 namespace KoussayBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\HttpFoundation\File\File;
+use Vich\UploaderBundle\Mapping\Annotation as Vich;
+use Symfony\Component\Validator\Constraints as Assert ;
+
+
 
 /**
  * Event
  *
  * @ORM\Table(name="event")
  * @ORM\Entity(repositoryClass="KoussayBundle\Repository\EventRepository")
+ * @Vich\Uploadable
  */
 class Event
 {
@@ -28,6 +34,17 @@ class Event
      */
     private $titre;
 
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="etat", type="string", length=255)
+     */
+    private $etat;
+
+
+
+
     /**
      * @var \DateTime
      *
@@ -38,10 +55,17 @@ class Event
     /**
      * @var string
      *
-     * @ORM\Column(name="description", type="string", length=255)
+     * @ORM\Column(name="image1", type="string", length=255)
      */
-    private $description;
+    private $image1;
 
+
+    /**
+ * @var string
+ *
+ * @ORM\Column(name="description", type="string", length=255)
+ */
+    private $description;
     /**
      * @var float
      *
@@ -62,6 +86,8 @@ class Event
      * @ORM\Column(name="nbparticipants", type="integer")
      */
     private $nbparticipants;
+
+
 
     /**
      * @var string
@@ -125,6 +151,33 @@ class Event
     {
         return $this->titre;
     }
+
+    /**
+     * Set image1
+     *
+     * @param string $image1
+     *
+     * @return Event
+     */
+    public function setImage1($image1)
+    {
+        $this->image1 = $image1;
+
+        return $this;
+    }
+
+    /**
+     * Get image1
+     *
+     * @return string
+     */
+    public function getImage1()
+    {
+        return $this->image1;
+    }
+
+
+
 
     /**
      * Set date
@@ -269,12 +322,36 @@ class Event
     {
         return $this->pub;
     }
-
-    public function __toString()
+    /**
+     * Set etat
+     *
+     * @param string $etat
+     *
+     * @return Event
+     */
+    public function setEtat($etat)
     {
+        $this->etat = $etat;
+
+        return $this;
+    }
+
+    /**
+     * Get etat
+     *
+     * @return string
+     */
+    public function getEtat()
+    {
+<<<<<<< HEAD
         return (string)$this->getId() ;
         // TODO: Implement __toString() method.
+=======
+        return $this->etat;
+>>>>>>> 30a24b2eed29a611d0978ac1882dfb4a47f00c2c
     }
+
+
 
 
 }

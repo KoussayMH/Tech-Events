@@ -10,5 +10,30 @@ namespace KoussayBundle\Repository;
  */
 class EventRepository extends \Doctrine\ORM\EntityRepository
 {
+<<<<<<< HEAD
+=======
+    public function findEventDQL()
+    {
+        $query=$this->getEntityManager()->createQuery(" SELECT e from KoussayBundle:Event e  WHERE e.etat LIKE 'Accepte'  ");
+
+        return $query->getResult();
+    }
+
+
+    public function AccepterDemandeDQL($id)
+    {
+        $query=$this->getEntityManager()->createQuery(" UPDATE KoussayBundle:Event d set d.etat='Accepte' WHERE d.id= :id ")
+            ->setParameter('id',$id )  ;
+        return $query->getResult();
+    }
+
+    public function findCommentDQL($id)
+    {
+        $query=$this->getEntityManager()->createQuery(" SELECT e from KoussayBundle:Comment e  WHERE e.event= :id  ")
+            ->setParameter('id',$id )  ;
+        return $query->getResult();
+    }
+
+>>>>>>> 30a24b2eed29a611d0978ac1882dfb4a47f00c2c
 
 }

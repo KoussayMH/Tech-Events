@@ -25,6 +25,11 @@ class AppKernel extends Kernel
             new ChaymaBundle\ChaymaBundle(),
             new FOS\UserBundle\FOSUserBundle(),
             new BackBundle\BackBundle(),
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 30a24b2eed29a611d0978ac1882dfb4a47f00c2c
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {
