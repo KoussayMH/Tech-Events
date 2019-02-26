@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 malek_promotion:
     resource: "@MalekBundle/Controller/promotionController.php"
     type:     annotation
@@ -16,6 +17,30 @@ malek_email:
 
 malek_publicite:
     resource: "@MalekBundle/Controller/PubliciteController.php"
+=======
+dorra_produit:
+    resource: "@DorraBundle/Controller/ProduitController.php"
+    type:     annotation
+
+dorra_ressource:
+    resource: "@DorraBundle/Controller/RessourceController.php"
+    type:     annotation
+
+dorra_ressource:
+    resource: "@DorraBundle/Controller/RessourceController.php"
+    type:     annotation
+
+dorra_ressource:
+    resource: "@DorraBundle/Controller/RessourceController.php"
+    type:     annotation
+
+dorra_ressource:
+    resource: "@DorraBundle/Controller/RessourceController.php"
+    type:     annotation
+
+dorra_ressource:
+    resource: "@DorraBundle/Controller/RessourceController.php"
+>>>>>>> 6b7a62fdfb9b605c66c6eeaa2a0028cebbe702d5
     type:     annotation
 
 back:

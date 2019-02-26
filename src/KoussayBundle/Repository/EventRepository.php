@@ -10,6 +10,36 @@ namespace KoussayBundle\Repository;
  */
 class EventRepository extends \Doctrine\ORM\EntityRepository
 {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    public function findEventDQL()
+    {
+        $query=$this->getEntityManager()->createQuery(" SELECT e from KoussayBundle:Event e  WHERE e.etat LIKE 'Accepte'  ");
+
+        return $query->getResult();
+    }
+
+
+    public function AccepterDemandeDQL($id)
+    {
+        $query=$this->getEntityManager()->createQuery(" UPDATE KoussayBundle:Event d set d.etat='Accepte' WHERE d.id= :id ")
+            ->setParameter('id',$id )  ;
+        return $query->getResult();
+    }
+
+    public function findCommentDQL($id)
+    {
+        $query=$this->getEntityManager()->createQuery(" SELECT e from KoussayBundle:Comment e  WHERE e.event= :id  ")
+            ->setParameter('id',$id )  ;
+        return $query->getResult();
+    }
+
+>>>>>>> 30a24b2eed29a611d0978ac1882dfb4a47f00c2c
+=======
+>>>>>>> 6b7a62fdfb9b605c66c6eeaa2a0028cebbe702d5
     public function findArray($array)
     {
         $qb = $this->createQueryBuilder('p')
@@ -18,5 +48,9 @@ class EventRepository extends \Doctrine\ORM\EntityRepository
             ->setParameter('array', $array);
         return $qb->getQuery()->getResult();
     }
+<<<<<<< HEAD
+=======
+>>>>>>> 854778e5b112b9441cb2e1706bbab68010ed3374
+>>>>>>> 6b7a62fdfb9b605c66c6eeaa2a0028cebbe702d5
 
 }
