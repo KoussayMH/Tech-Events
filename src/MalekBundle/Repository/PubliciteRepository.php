@@ -10,4 +10,12 @@ namespace MalekBundle\Repository;
  */
 class PubliciteRepository extends \Doctrine\ORM\EntityRepository
 {
+    public function findPubliciteDQL()
+    {
+        $query=$this->getEntityManager()->createQuery(" SELECT e from MalekBundle:publicite e ORDER by e.priorite ASC ")->setMaxResults(4);
+
+        return $query->getResult();
+    }
+
+
 }

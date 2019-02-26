@@ -1,0 +1,80 @@
+{% extends "@Back/base.html.twig" %}
+
+    {% block container %}
+
+<!-- partial:../../partials/_sidebar.html -->
+
+<div class="main-panel">
+    <div class="content-wrapper">
+        <div class="page-header">
+
+
+            <h3 class="page-title">
+                Liste Des Publicités
+            </h3>
+
+        </div>
+        <div class="card">
+            <div class="card-body">
+                    <h4 class="card-title">Publicités</h4>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="table-responsive">
+                            <table id="order-listing" class="table">
+                                <thead>
+                                <tr>
+                                    <th>Id </th>
+                                    <th>Description</th>
+                                    <th>Date</th>
+                                    <th>Durée</th>
+                                    <th>Priorite</th>
+
+                                    <th>Actions</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                {% for publicite in publicites %}
+
+                                    <tr>
+                                        <td><a  href="{{ path('publicite_show', { 'id': publicite.id }) }}">{{ publicite.id }}</a></td>
+                                        <td>{{ publicite.description }}</td>
+                                        <td>{% if publicite.date %}{{ publicite.date|date('Y-m-d') }}{% endif %}</td>
+                                        <td>{{ publicite.duree }}</td>
+                                        <td>{{ publicite.priorite }}</td>
+
+                                        <td>
+
+                                            <ul>
+                                                <li>
+                                                    <a class="btn btn-outline-danger btn-fw"  href="{{ path('publicite_show', { 'id': publicite.id }) }}">show</a>
+                                                </li>
+                                                <li>
+                                                    <a  class="btn btn-outline-danger btn-fw" href="{{ path('publicite_edit', { 'id': publicite.id }) }}">edit</a>
+                                                </li>
+                                            </ul>
+
+
+                                        </td>
+
+                                    </tr>
+                                {% endfor %}
+                                </tbody>
+                            </table>
+                            <ul>
+                                <li>
+                                    <a  class="btn btn-inverse-warning btn-fw"  href="{{ path('publicite_new') }}">Create a new publicite</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- content-wrapper ends -->
+
+    <script src="{{ asset ('back/js/data-table.js') }}"></script>
+
+    {% endblock %}
+
+

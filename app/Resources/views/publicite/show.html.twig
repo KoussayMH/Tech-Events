@@ -1,0 +1,91 @@
+{% extends '@Back/base.html.twig' %}
+
+{% block container %}
+
+
+<div class="main-panel">
+    <div class="content-wrapper">
+        <div class="page-header">
+
+            <div class="col-lg-12 grid-margin stretch-card">
+                <div class="card">
+                    <div class="card-body">
+
+                        <div class="table-responsive">
+                            <table class="table table-striped">
+                                <thead>
+                                <tr>
+                                    <th>
+                                        ID
+                                    </th>
+                                    <th>
+                                       Desc
+                                    </th>
+                                    <th>
+                                       Date
+                                    </th>
+                                    <th>
+                                        duree
+                                    </th>
+                                    <th>
+                                        priorite
+                                    </th>
+                                    <th>
+                                        image
+                                    </th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+
+                                    <td>
+                                    {{ publicite.id }}
+                                    </td>
+                                    <td>
+                                    {{ publicite.description }}
+                                    </td>
+                                    <td>
+                                        {% if publicite.date %}{{ publicite.date|date('Y-m-d') }}{% endif %}
+                                    </td>
+                                    <td>
+                                        {{ publicite.duree }}
+                                    </td>
+                                    <td>
+                                        {{ publicite.priorite }}
+                                    </td>
+
+
+                                    <td>
+                                        <a href="{{ asset(publicite.imageName) }}" class="image-tile"><img src="{{ asset(publicite.imageName) }} " alt="image small"></a>
+                                    </td>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <ul>
+                                <li>
+                                    <a href="{{ path('publicite_index') }}">Back to the list</a>
+                                </li>
+                                <li>
+                                    <a href="{{ path('publicite_edit', { 'id': publicite.id }) }}">Edit</a>
+                                </li>
+                                <li>
+                                    {{ form_start(delete_form) }}
+                                    <input type="submit" value="Delete">
+                                    {{ form_end(delete_form) }}
+                                </li>
+                            </ul>
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    {% endblock %}

@@ -1,3 +1,9 @@
 malek_homepage:
     path:     /
     defaults: { _controller: MalekBundle:Default:index }
+
+Affichage:
+    path:     /Aff
+    defaults: { _controller: MalekBundle:Publicite:AfficherPub }
+
+

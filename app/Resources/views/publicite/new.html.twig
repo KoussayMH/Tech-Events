@@ -1,0 +1,59 @@
+{% extends '@Back/base.html.twig' %}
+
+{% block container %}
+
+<div class="main-panel">
+    <div class="content-wrapper">
+        <div class="page-header">
+            <div class="card-body">
+                {{ form_start(form) }}
+
+    <div class="col-12 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+
+                <form class="forms-sample">
+                    <div class="form-group">
+                        <label for="exampleInputName1">Description</label>
+                        {{ form_widget(form.description , {'attr':{'class':'form-control' }}) }}
+
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail3">Date</label>
+                        {{ form_widget(form.date, {'attr':{'class':'form-control' }}) }}
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword4">Durée</label>
+
+                        {{ form_widget(form.duree, {'attr':{'class':'form-control' }}) }}
+
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleSelectGender">Priorité</label>
+
+                        {{ form_widget(form.priorite, {'attr':{'class':'form-control' }}) }}
+                    </div>
+                    <div class="form-group">
+                        <label>File upload</label>
+                        <input type="file" name="img[]" class="file-upload-default">
+                           <div class="input-group col-xs-12">
+                            <input type="text" class="form-control file-upload-info" disabled placeholder="Upload Image">
+                            <span class="input-group-append">
+                          <button class="file-upload-browse btn btn-primary" type="button">Upload</button>
+                                {{ form_widget(form.imageFile, {'attr':{'class':'form-control' }}) }}
+
+                        </span>
+                        </div>
+                    </div>
+
+                    <button type="submit" value="Create" class="btn btn-primary mr-2">Submit</button>
+                    {{ form_end(form) }}
+                </form>
+            </div>
+        </div>
+    </div>
+            </div>
+        </div>
+    </div>
+
+    {% endblock %}

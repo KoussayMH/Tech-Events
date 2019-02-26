@@ -1,25 +1,21 @@
-dorra_produit:
-    resource: "@DorraBundle/Controller/ProduitController.php"
+malek_promotion:
+    resource: "@MalekBundle/Controller/promotionController.php"
     type:     annotation
 
-dorra_ressource:
-    resource: "@DorraBundle/Controller/RessourceController.php"
+malek_sms:
+    resource: "@MalekBundle/Controller/SMSController.php"
     type:     annotation
 
-dorra_ressource:
-    resource: "@DorraBundle/Controller/RessourceController.php"
+malek_email:
+    resource: "@MalekBundle/Controller/EmailController.php"
     type:     annotation
 
-dorra_ressource:
-    resource: "@DorraBundle/Controller/RessourceController.php"
+malek_email:
+    resource: "@MalekBundle/Controller/EmailController.php"
     type:     annotation
 
-dorra_ressource:
-    resource: "@DorraBundle/Controller/RessourceController.php"
-    type:     annotation
-
-dorra_ressource:
-    resource: "@DorraBundle/Controller/RessourceController.php"
+malek_publicite:
+    resource: "@MalekBundle/Controller/PubliciteController.php"
     type:     annotation
 
 back:
@@ -56,3 +52,5 @@ app:
 
 fos_user:
     resource: "@FOSUserBundle/Resources/config/routing/all.xml"
+
+
