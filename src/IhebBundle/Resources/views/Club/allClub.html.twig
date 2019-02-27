@@ -1,0 +1,117 @@
+{% extends "@Front/layout.html.twig" %}
+
+{% block container %}
+    <!--Start breadcrumb area-->
+    <section class="breadcrumb-area"
+             style="background-image: url({{ asset ('front/images/resources/breadcrumb-bg.jpg') }});">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="breadcrumbs">
+                        <h1>all clubs</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End breadcrumb area-->
+
+    <!--Start breadcrumb bottom area-->
+    <section class="breadcrumb-bottom-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="breadcrumb-bottom">
+                        <div class="left pull-left">
+                            <ul>
+                                <li class="active">Club</li>
+                            </ul>
+                        </div>
+                        <div class="right pull-right">
+                            <a href="{{ path ('new_club') }}">
+                                <span><i class="fa fa-plus" aria-hidden="true"> Add a new club </i></span>
+
+                            </a>
+                            {% if is_granted("IS_AUTHENTICATED_FULLY") %}
+                                <a href="{{ path ('club_by_user') }}">
+                                    <span><i class="fa fa-list-ul"> My Clubs </i></span>
+                                </a>
+                            {% endif %}
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {% set flashbag_notices = app.session.flashbag.get('notice') %}
+    {% if flashbag_notices is not empty  %}
+        {% for notice in flashbag_notices %}
+            <div class="container">
+                <div class="alert alert-danger " role="alert">
+                    <strong>Oops !</strong> {{ notice }} <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                </div>
+            </div>
+        {% endfor %}
+    {% endif %}
+    <!--Start blog area-->
+    <section id="blog-area" class="blog-grid-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
+                    <div class="blog-post">
+                        <div class="row">
+                            <!--Start single blog item-->
+                            {% for a in clubs %}
+                            <div class="col-md-6">
+                                <div class="single-blog-item">
+                                    <div class="img-holder">
+                                        <img src="{{ asset('uploads/brochures/' ~ a.photoClub) }}" alt="{{ a.nameClub }}" style="width: 380px ; height: 270px" >
+                                        <div class="overlay-style-one">
+                                            <div class="box">
+                                                <div class="content">
+                                                    <a href="{{path('club_by_id', {id: a.id})}}"><i class="fa fa-link" aria-hidden="true"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="post-type">
+                                            <span class="flaticon-photo"></span>
+                                        </div>
+                                    </div>
+                                    <div class="text-holder">
+                                        <ul class="meta-info">
+                                            <li><a href="#"><i class="fa fa-user" aria-hidden="true"></i>By : {{ a.adminClub.firstName }} {{ a.adminClub.lastName }}</a></li>
+                                            <li><a href="#"><i class="fa fa-folder-open" aria-hidden="true"></i>Type : {{ a.typeClub }}</a></li>
+                                        </ul>
+                                        <a href="blog-single.html">
+                                            <h3 class="blog-title">{{ a.nameClub }}</h3>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            {% endfor %}
+                            <!--End single blog item-->
+                        </div>
+                    </div>
+                </div>
+                <!--Start sidebar Wrapper-->
+                <div class="col-lg-4 col-md-6 col-sm-7 col-xs-12">
+                    <div class="sidebar-wrapper">
+                        <!--Start single sidebar-->
+                        <div class="single-sidebar wow fadeInUp" data-wow-delay="0s" data-wow-duration="1s" data-wow-offset="0">
+                            <form class="search-form" method="POST">
+                                <input placeholder="Search..." type="text" name="club_search" id="club_search">
+                                <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                            </form>
+                        </div>
+                        <!--End single sidebar-->
+                    </div>
+                </div>
+                <!--End Sidebar Wrapper-->
+            </div>
+        </div>
+    </section>
+    <!--End blog area-->
+
+{% endblock %}

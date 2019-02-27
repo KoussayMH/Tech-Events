@@ -1,3 +1,38 @@
 dorra_homepage:
     path:     /
     defaults: { _controller: DorraBundle:Default:index }
+afficherAdmin:
+    path:     /afficherAdmin
+    defaults: { _controller: DorraBundle:Ressource:afficher }
+supprimerAdmin:
+    path:     /supprimerAdmin/{id}
+    defaults: { _controller: DorraBundle:Ressource:Supprimer }
+
+createDemande:
+    path:     /createDemande/{RS}
+    defaults: { _controller: DorraBundle:Ressource:createDemande }
+readDemande:
+    path:     /readDemande/{dateD}/{RS}
+    defaults: { _controller: DorraBundle:Ressource:readDemande }
+DeleteDemande:
+    path:     /DeleteDemande/{id}
+    defaults: { _controller: DorraBundle:Ressource:deleteDemande }
+listeDemandes:
+    path:     /listeDemandes
+    defaults: { _controller: DorraBundle:Ressource:afficherDemande }
+
+
+supprimerDemande:
+    path:     /supprimerDemande/{id}
+    defaults: { _controller: DorraBundle:Ressource:supprimerDemande }
+
+UpdateDemandes:
+    path:     /UpdateDemandes/{id}/{Id_RS}/{Id_Event}
+    defaults: { _controller: DorraBundle:Ressource:updateDemandeDQL }
+
+afficherProduit:
+    path:     /afficherProduit
+    defaults: { _controller: DorraBundle:Produit:afficherProduit }
+supprimerProduit:
+    path:     /supprimerProduit/{id}
+    defaults: { _controller: DorraBundle:Produit:supprimerProduit }

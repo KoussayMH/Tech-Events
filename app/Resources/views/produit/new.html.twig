@@ -1,0 +1,70 @@
+
+
+
+
+
+
+{% extends "@Back/layout.html.twig" %}
+
+
+{% block container %}
+
+
+
+    <div class="col-md-6 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                {{ form_start(form) }}
+
+                <h4 class="card-title"> Ajouter Un Produit </h4>
+
+
+
+                <form class="forms-sample">
+
+                    <div class="form-group row">
+                        <label for="exampleInputUsername2" class="col-sm-3 col-form-label">categorie</label>
+                        <div class="col-sm-9">
+                            {{ form_widget(form.categorie , {'attr':{'class':'form-control' }}) }}
+
+
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="exampleInputEmail2" class="col-sm-3 col-form-label">libelle</label>
+                        <div class="col-sm-9">
+                            {{ form_widget(form.libelle, {'attr':{'class':'form-control' }}) }}
+                        </div>
+                    </div>
+
+
+                    <div class="form-group row">
+                        <label for="exampleInputMobile" class="col-sm-3 col-form-label">Description</label>
+                        <div class="col-sm-9">
+                            {{ form_widget(form.description , {'attr':{'class':'form-control' }}) }}
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="exampleInputMobile" class="col-sm-3 col-form-label">quantite</label>
+                        <div class="col-sm-9">
+                            {{ form_widget(form.quantite , {'attr':{'class':'form-control' }}) }}
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="exampleInputMobile" class="col-sm-3 col-form-label">prix</label>
+                        <div class="col-sm-9">
+                            {{ form_widget(form.prix , {'attr':{'class':'form-control' }}) }}
+                        </div>
+                    </div>
+
+                    <button type="submit" value="Create" class="btn btn-primary mr-2">Submit</button>
+                    <button class="btn btn-light">Cancel</button>
+                    {{ form_end(form) }}
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+{% endblock %}

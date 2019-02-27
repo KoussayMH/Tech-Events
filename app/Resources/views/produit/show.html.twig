@@ -1,0 +1,116 @@
+{% extends "@Front/layout.html.twig" %}
+
+{% block container %}
+    <section class="breadcrumb-area" style="background-image: url({{ asset('front/images/resources/breadcrumb-bg.jpg') }});">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="breadcrumbs">
+                        <h1>{{ produit.categorie }}</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--Start single speaker area-->
+
+    <section class="single-speaker-area">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="top-content">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="img-holder">
+                                    <img src="{{ asset(produit.image) }}" alt="Awesome Image">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="text-holder">
+                                    <div class="title">
+                                        <h1>{{ produit.libelle }}  </h1>
+                                    </div>
+                                    <div class="text">
+                                        <p> {{ produit.description }}</p>
+                                        <div class="sec-title">
+                                            <div class="underlay">
+                                                <h2>Prix <span>{{ produit.prix }} Dt </span></h2>
+
+                                            </div>
+                                           <h1>PRIX</h1>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="container inner-content">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="table-outer">
+                                                    <table class="cart-table">
+                                                        <thead class="cart-header">
+                                                        <tr>
+
+                                                            <th>Quantite</th>
+
+                                                        </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                        <tr>
+
+                                                            <td class="qty">
+                                                                <input class="quantity-spinner" type="text" value="1" name="quantity">
+                                                                <br>
+                                                                <div class="row">
+                                                                    <div class="col-md-12">
+                                                                        <div class="schedules-button text-center">
+                                                                            <a class="thm-btn" href="#"> Ajouter  </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+
+                                                        </tr>
+
+                                                        </tbody>
+                                                    </table>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-md-4">
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <button class="read-more" onclick="window.location.href ='{{ path('produit_index') }}';"> << La liste des Produits</button>
+
+        </div>
+    </section>
+    <!--End single speaker area-->
+
+
+
+
+
+
+
+
+{% endblock %}
+
+
+
+

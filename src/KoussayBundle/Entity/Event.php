@@ -3,14 +3,20 @@
 namespace KoussayBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\HttpFoundation\File\File;
+use Vich\UploaderBundle\Mapping\Annotation as Vich;
+use Symfony\Component\Validator\Constraints as Assert ;
+
+
 
 /**
  * Event
  *
  * @ORM\Table(name="event")
  * @ORM\Entity(repositoryClass="KoussayBundle\Repository\EventRepository")
+ * @Vich\Uploadable
  */
-class Event
+ class Event
 {
     /**
      * @var int
@@ -21,12 +27,56 @@ class Event
      */
     private $id;
 
+
+
+
     /**
      * @var string
      *
      * @ORM\Column(name="titre", type="string", length=255)
      */
     private $titre;
+
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="etat", type="string", length=255)
+     */
+    private $etat;
+
+
+
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="image1", type="string", length=255)
+     */
+    private $image1;
+
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="image2", type="string", length=255)
+     */
+    private $image2;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="image3", type="string", length=255)
+     */
+    private $image3;
+
+
+
+
+
+
+
+
 
     /**
      * @var \DateTime
@@ -35,12 +85,12 @@ class Event
      */
     private $date;
 
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="description", type="string", length=255)
-     */
+
+
+
     private $description;
+
+
 
     /**
      * @var float
@@ -62,6 +112,15 @@ class Event
      * @ORM\Column(name="nbparticipants", type="integer")
      */
     private $nbparticipants;
+
+
+    /**
+     *
+     * @ORM\ManyToOne(targetEntity="DorraBundle\Entity\Ressource")
+     * @ORM\JoinColumn(name="ressource_id",referencedColumnName="id")
+     */
+    private $ressource;
+
 
     /**
      * @var string
@@ -127,6 +186,86 @@ class Event
     }
 
     /**
+     * Set image1
+     *
+     * @param string $image1
+     *
+     * @return Event
+     */
+    public function setImage1($image1)
+    {
+        $this->image1 = $image1;
+
+        return $this;
+    }
+
+    /**
+     * Get image1
+     *
+     * @return string
+     */
+    public function getImage1()
+    {
+        return $this->image1;
+    }
+
+
+
+
+
+    /**
+     * Set image2
+     *
+     * @param string $image2
+     *
+     * @return Event
+     */
+    public function setImage2($image2)
+    {
+        $this->image2 = $image2;
+
+        return $this;
+    }
+
+    /**
+     * Get image2
+     *
+     * @return string
+     */
+    public function getImage2()
+    {
+        return $this->image2;
+    }
+
+
+
+
+
+    /**
+     * Set image3
+     *
+     * @param string $image3
+     *
+     * @return Event
+     */
+    public function setImage3($image3)
+    {
+        $this->image3 = $image3;
+
+        return $this;
+    }
+
+    /**
+     * Get image3
+     *
+     * @return string
+     */
+    public function getImage3()
+    {
+        return $this->image3;
+    }
+
+    /**
      * Set date
      *
      * @param \DateTime $date
@@ -173,6 +312,44 @@ class Event
     {
         return $this->description;
     }
+
+
+
+
+
+
+
+     /**
+      * Set etat
+      *
+      * @param string $etat
+      *
+      * @return Event
+      */
+     public function setEtat($etat)
+     {
+         $this->etat = $etat;
+
+         return $this;
+     }
+
+     /**
+      * Get etat
+      *
+      * @return string
+      */
+     public function getEtat()
+     {
+         return $this->etat;
+     }
+
+
+
+
+
+
+
+
 
     /**
      * Set note
@@ -246,6 +423,35 @@ class Event
         return $this->nbparticipants;
     }
 
+
+    /**
+     * Set ressource
+     *
+     * @param integer $ressource
+     *
+     * @return Event
+     */
+    public function setRessource($ressource)
+    {
+        $this->ressource = $ressource;
+
+        return $this;
+    }
+
+    /**
+     * Get ressource
+     *
+     * @return int
+     */
+    public function getRessource()
+    {
+        return $this->ressource;
+    }
+
+
+
+
+
     /**
      * Set pub
      *
@@ -270,11 +476,15 @@ class Event
         return $this->pub;
     }
 
+<<<<<<< HEAD
     public function __toString()
     {
         return (string)$this->getId() ;
         // TODO: Implement __toString() method.
     }
+=======
+
+>>>>>>> 1ad5119659a4dd31671b5afad639cdd6a71e3544
 
 
 }

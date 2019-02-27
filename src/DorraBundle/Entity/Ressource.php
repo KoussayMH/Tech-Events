@@ -31,6 +31,42 @@ class Ressource
     /**
      * @var string
      *
+     * @ORM\Column(name="company", type="string", length=255)
+     */
+
+    private $company;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="email", type="string", length=255)
+     */
+
+    private $email;
+
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="website", type="string", length=255)
+     */
+
+    private $website;
+
+
+
+
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="image", type="string", length=255)
+     */
+    private $image;
+
+    /**
+     * @var string
+     *
      * @ORM\Column(name="prenom", type="string", length=255)
      */
     private $prenom;
@@ -82,6 +118,30 @@ class Ressource
     }
 
     /**
+     * Get image
+     *
+     * @return string
+     */
+    public function getImage()
+    {
+        return $this->image;
+    }
+
+    /**
+     * Set image
+     *
+     * @param string $image
+     *
+     * @return Ressource
+     */
+    public function setImage($image)
+    {
+        $this->image = $image;
+
+        return $this;
+    }
+
+    /**
      * Get nom
      *
      * @return string
@@ -90,7 +150,6 @@ class Ressource
     {
         return $this->nom;
     }
-
     /**
      * Set prenom
      *
@@ -104,6 +163,63 @@ class Ressource
 
         return $this;
     }
+
+    /**
+     * Get company
+     *
+     * @return string
+     */
+    public function getCompany()
+    {
+        return $this->company;
+    }
+    /**
+     * Set company
+     *
+     * @param string $company
+     *
+     * @return Ressource
+     */
+    public function setCompany($company)
+    {
+        $this->company = $company;
+
+        return $this;
+    }
+
+
+
+
+
+    /**
+     * Get email
+     *
+     * @return string
+     */
+    public function getEmail()
+    {
+        return $this->email;
+    }
+    /**
+     * Set email
+     *
+     * @param string $email
+     *
+     * @return Ressource
+     */
+    public function setEmail($email)
+    {
+        $this->email = $email;
+
+        return $this;
+    }
+
+
+
+
+
+
+
 
     /**
      * Get prenom
@@ -186,5 +302,33 @@ class Ressource
     {
         return $this->link;
     }
+
+
+
+    /**
+     * Set website
+     *
+     * @param string $website
+     *
+     * @return Ressource
+     */
+    public function setWebsite($website)
+    {
+        $this->link = $website;
+
+        return $this;
+    }
+
+    /**
+     * Get website
+     *
+     * @return string
+     */
+    public function getWebsite()
+    {
+        return $this->website;
+    }
+
+
 }
 

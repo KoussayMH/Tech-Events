@@ -1,7 +1,133 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="74f9d4b7-13ae-44e4-bb69-10276f0c1446" name="Default" comment="" />
+    <list default="true" id="74f9d4b7-13ae-44e4-bb69-10276f0c1446" name="Default" comment="">
+<<<<<<< HEAD
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/commandlinetools/Composer_18_02_19_23_59_c.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/commandlinetools/Symfony_19_02_19_00_00_s.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/email/edit.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/email/index.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/email/new.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/email/show.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/promotion/edit.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/promotion/index.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/promotion/new.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/promotion/show.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/publicite/edit.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/publicite/index.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/publicite/new.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/publicite/show.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/sms/edit.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/sms/index.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/sms/new.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/sms/show.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BackBundle/Resources/views/c.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MalekBundle/Controller/EmailController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MalekBundle/Controller/PubliciteController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MalekBundle/Controller/SMSController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MalekBundle/Controller/promotionController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MalekBundle/Entity/promotion.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MalekBundle/Form/EmailType.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MalekBundle/Form/PubliciteType.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MalekBundle/Form/SMSType.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MalekBundle/Form/promotionType.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MalekBundle/Repository/promotionRepository.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MalekBundle/Resources/views/AffichPub.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MalekBundle/Tests/Controller/EmailControllerTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MalekBundle/Tests/Controller/PubliciteControllerTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MalekBundle/Tests/Controller/SMSControllerTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/MalekBundle/Tests/Controller/promotionControllerTest.php" />
+=======
+<<<<<<< HEAD
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/commandlinetools/Composer_20_02_19_18_37_c.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/commandlinetools/Symfony_20_02_19_18_37_s.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/comment/edit.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/comment/index.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/comment/new.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/comment/show.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/event/edit.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/event/index.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/event/new.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/event/show.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/KoussayBundle/Controller/CommentController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/KoussayBundle/Controller/EventController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/KoussayBundle/Form/CommentType.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/KoussayBundle/Form/EventType.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/KoussayBundle/Resources/views/admin.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/KoussayBundle/Resources/views/commentaire.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/KoussayBundle/Tests/Controller/CommentControllerTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/KoussayBundle/Tests/Controller/EventControllerTest.php" />
+=======
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/ressource/edit.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/ressource/index.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/ressource/new.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/ressource/show.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BackBundle/Resources/views/layout.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/DorraBundle/Controller/RessourceController.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/DorraBundle/Form/RessourceType.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/DorraBundle/Resources/views/RessourcesAdmin.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/DorraBundle/Tests/Controller/RessourceControllerTest.php" />
+>>>>>>> 854778e5b112b9441cb2e1706bbab68010ed3374
+>>>>>>> 6b7a62fdfb9b605c66c6eeaa2a0028cebbe702d5
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/commandlinetools/Composer_11_02_19_16_45_c.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/commandlinetools/Composer_2_12_19_7_01_PM_c.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/commandlinetools/Symfony_11_02_19_16_56_s.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/commandlinetools/Symfony_2_12_19_7_02_PM_s.xml" afterPath="" />
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 6b7a62fdfb9b605c66c6eeaa2a0028cebbe702d5
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/PI.iml" afterPath="$PROJECT_DIR$/.idea/PI.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/php.xml" afterPath="$PROJECT_DIR$/.idea/php.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/AppKernel.php" afterPath="$PROJECT_DIR$/app/AppKernel.php" />
+<<<<<<< HEAD
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/base.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config.yml" afterPath="$PROJECT_DIR$/app/config/config.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/routing.yml" afterPath="$PROJECT_DIR$/app/config/routing.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/services.yml" afterPath="$PROJECT_DIR$/app/config/services.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
+=======
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config.yml" afterPath="$PROJECT_DIR$/app/config/config.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/routing.yml" afterPath="$PROJECT_DIR$/app/config/routing.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/symfony_requirements" afterPath="$PROJECT_DIR$/bin/symfony_requirements" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BackBundle/Resources/views/base.html.twig" afterPath="$PROJECT_DIR$/src/BackBundle/Resources/views/base.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontBundle/Resources/views/Default/index.html.twig" afterPath="$PROJECT_DIR$/src/FrontBundle/Resources/views/Default/index.html.twig" />
+=======
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/routing.yml" afterPath="$PROJECT_DIR$/app/config/routing.yml" />
+>>>>>>> 6b7a62fdfb9b605c66c6eeaa2a0028cebbe702d5
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BackBundle/Resources/views/Default/index.html.twig" afterPath="$PROJECT_DIR$/src/BackBundle/Resources/views/Default/index.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BackBundle/Resources/views/base.html.twig" afterPath="$PROJECT_DIR$/src/BackBundle/Resources/views/base.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ChaymaBundle/Entity/Ticket.php" afterPath="$PROJECT_DIR$/src/ChaymaBundle/Entity/Ticket.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ChaymaBundle/Repository/TicketRepository.php" afterPath="$PROJECT_DIR$/src/ChaymaBundle/Repository/TicketRepository.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ChaymaBundle/Resources/config/routing.yml" afterPath="$PROJECT_DIR$/src/ChaymaBundle/Resources/config/routing.yml" />
+<<<<<<< HEAD
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontBundle/Resources/views/layout.html.twig" afterPath="$PROJECT_DIR$/src/FrontBundle/Resources/views/layout.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/KoussayBundle/Entity/Comment.php" afterPath="$PROJECT_DIR$/src/KoussayBundle/Entity/Comment.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/KoussayBundle/Repository/EventRepository.php" afterPath="$PROJECT_DIR$/src/KoussayBundle/Repository/EventRepository.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MalekBundle/Entity/Publicite.php" afterPath="$PROJECT_DIR$/src/MalekBundle/Entity/Publicite.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MalekBundle/Repository/PubliciteRepository.php" afterPath="$PROJECT_DIR$/src/MalekBundle/Repository/PubliciteRepository.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MalekBundle/Resources/config/routing.yml" afterPath="$PROJECT_DIR$/src/MalekBundle/Resources/config/routing.yml" />
+=======
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DorraBundle/Entity/Ressource.php" afterPath="$PROJECT_DIR$/src/DorraBundle/Entity/Ressource.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/DorraBundle/Resources/config/routing.yml" afterPath="$PROJECT_DIR$/src/DorraBundle/Resources/config/routing.yml" />
+>>>>>>> 854778e5b112b9441cb2e1706bbab68010ed3374
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FrontBundle/Resources/views/layout.html.twig" afterPath="$PROJECT_DIR$/src/FrontBundle/Resources/views/layout.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/KoussayBundle/Entity/Comment.php" afterPath="$PROJECT_DIR$/src/KoussayBundle/Entity/Comment.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/KoussayBundle/Entity/Event.php" afterPath="$PROJECT_DIR$/src/KoussayBundle/Entity/Event.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/KoussayBundle/Repository/EventRepository.php" afterPath="$PROJECT_DIR$/src/KoussayBundle/Repository/EventRepository.php" />
+<<<<<<< HEAD
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/KoussayBundle/Resources/config/routing.yml" afterPath="$PROJECT_DIR$/src/KoussayBundle/Resources/config/routing.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/var/SymfonyRequirements.php" afterPath="$PROJECT_DIR$/var/SymfonyRequirements.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/config.php" afterPath="$PROJECT_DIR$/web/config.php" />
+=======
+>>>>>>> 854778e5b112b9441cb2e1706bbab68010ed3374
+>>>>>>> 6b7a62fdfb9b605c66c6eeaa2a0028cebbe702d5
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,8 +139,20 @@
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <pharPath>$PROJECT_DIR$/composer.phar</pharPath>
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <expand />
+    <select />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+<<<<<<< HEAD
       <file leaf-file-name="PanierController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ChaymaBundle/Controller/PanierController.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -30,10 +168,36 @@
                 <element signature="e#5760#5786#1#PHP" expanded="true" />
                 <element signature="e#5871#5899#1#PHP" expanded="true" />
               </folding>
+=======
+<<<<<<< HEAD
+      <file leaf-file-name="routing.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/KoussayBundle/Resources/config/routing.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="14" lean-forward="false" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="39" />
+=======
+<<<<<<< HEAD
+      <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Resources/views/promotion/index.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+      <file leaf-file-name="Ticket.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ChaymaBundle/Entity/Ticket.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1092">
+              <caret line="52" column="7" lean-forward="false" selection-start-line="52" selection-start-column="7" selection-end-line="52" selection-end-column="7" />
+              <folding />
+>>>>>>> 1ad5119659a4dd31671b5afad639cdd6a71e3544
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="PanierClubController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ChaymaBundle/Controller/PanierClubController.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -49,20 +213,169 @@
                 <element signature="e#5354#5382#1#PHP" expanded="true" />
                 <element signature="e#5467#5497#1#PHP" expanded="true" />
               </folding>
+=======
+>>>>>>> 854778e5b112b9441cb2e1706bbab68010ed3374
+      <file leaf-file-name="PanierController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ChaymaBundle/Controller/PanierController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1092">
+              <caret line="58" column="54" lean-forward="false" selection-start-line="58" selection-start-column="54" selection-end-line="58" selection-end-column="54" />
+              <folding>
+<<<<<<< HEAD
+                <element signature="e#127#153#0#PHP" expanded="true" />
+                <element signature="e#2024#2050#0#PHP" expanded="true" />
+                <element signature="e#2836#2857#1#PHP" expanded="true" />
+                <element signature="e#3551#3572#1#PHP" expanded="true" />
+                <element signature="e#4497#4525#0#PHP" expanded="true" />
+                <element signature="e#4872#4900#0#PHP" expanded="true" />
+                <element signature="e#5760#5786#1#PHP" expanded="true" />
+                <element signature="e#5871#5899#1#PHP" expanded="true" />
+=======
+      <file leaf-file-name="EventController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/KoussayBundle/Controller/EventController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="355">
+              <caret line="205" column="0" lean-forward="false" selection-start-line="205" selection-start-column="0" selection-end-line="205" selection-end-column="0" />
+              <folding>
+                <element signature="e#44#77#0#PHP" expanded="true" />
+                <element signature="e#643#920#0#PHP" expanded="false" />
+                <element signature="e#1056#2008#0#PHP" expanded="false" />
+                <element signature="e#3346#4028#0#PHP" expanded="false" />
+                <element signature="e#4157#4553#0#PHP" expanded="false" />
+                <element signature="e#4734#4995#0#PHP" expanded="false" />
+>>>>>>> 30a24b2eed29a611d0978ac1882dfb4a47f00c2c
+=======
+                <element signature="e#127#184#0#PHP" expanded="true" />
+>>>>>>> 854778e5b112b9441cb2e1706bbab68010ed3374
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="checkoutCl.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ChaymaBundle/Resources/views/checkoutCl.html.twig">
+<<<<<<< HEAD
+<<<<<<< HEAD
+      <file leaf-file-name="PanierClubController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ChaymaBundle/Controller/PanierClubController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="21" column="54" lean-forward="false" selection-start-line="21" selection-start-column="54" selection-end-line="21" selection-end-column="54" />
+            <state relative-caret-position="236">
+              <caret line="91" column="20" lean-forward="false" selection-start-line="91" selection-start-column="20" selection-end-line="91" selection-end-column="26" />
+              <folding>
+                <element signature="e#127#184#0#PHP" expanded="true" />
+                <element signature="e#1850#1871#1#PHP" expanded="true" />
+                <element signature="e#1953#1981#0#PHP" expanded="true" />
+                <element signature="e#2770#2791#1#PHP" expanded="true" />
+                <element signature="e#3495#3516#1#PHP" expanded="true" />
+                <element signature="e#4456#4486#0#PHP" expanded="true" />
+                <element signature="e#5354#5382#1#PHP" expanded="true" />
+                <element signature="e#5467#5497#1#PHP" expanded="true" />
+=======
+      <file leaf-file-name="admin.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/KoussayBundle/Resources/views/admin.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="63" column="158" lean-forward="false" selection-start-line="63" selection-start-column="108" selection-end-line="63" selection-end-column="158" />
+>>>>>>> 6b7a62fdfb9b605c66c6eeaa2a0028cebbe702d5
+>>>>>>> 987882ce275dbc30165e59a3bebaac9d4087cd97
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
+      <file leaf-file-name="Event.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/KoussayBundle/Entity/Event.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="244">
+              <caret line="93" column="0" lean-forward="true" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
+=======
+      <file leaf-file-name="CommentController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/KoussayBundle/Controller/CommentController.php">
+          <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+            <state relative-caret-position="6851">
+              <caret line="403" column="0" lean-forward="false" selection-start-line="403" selection-start-column="0" selection-end-line="403" selection-end-column="0" />
+=======
+            <state relative-caret-position="321">
+              <caret line="157" column="0" lean-forward="false" selection-start-line="157" selection-start-column="0" selection-end-line="157" selection-end-column="0" />
+              <folding>
+                <element signature="e#560#841#0#PHP" expanded="false" />
+                <element signature="e#2246#2948#0#PHP" expanded="false" />
+                <element signature="e#3081#3487#0#PHP" expanded="false" />
+>>>>>>> 30a24b2eed29a611d0978ac1882dfb4a47f00c2c
+              </folding>
+=======
+      <file leaf-file-name="panier.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ChaymaBundle/Resources/views/Panier/panier.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+>>>>>>> 6b7a62fdfb9b605c66c6eeaa2a0028cebbe702d5
+              <folding />
+>>>>>>> 854778e5b112b9441cb2e1706bbab68010ed3374
+            </state>
+          </provider>
+        </entry>
+      </file>
+<<<<<<< HEAD
+      <file leaf-file-name="services.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/config/services.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+      <file leaf-file-name="checkoutCl.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ChaymaBundle/Resources/views/checkoutCl.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="21" column="54" lean-forward="false" selection-start-line="21" selection-start-column="54" selection-end-line="21" selection-end-column="54" />
+=======
+      <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ChaymaBundle/Resources/views/Default/index.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+>>>>>>> 30a24b2eed29a611d0978ac1882dfb4a47f00c2c
+=======
+      <file leaf-file-name="EventRepository.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/KoussayBundle/Repository/EventRepository.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+>>>>>>> 854778e5b112b9441cb2e1706bbab68010ed3374
+>>>>>>> 6b7a62fdfb9b605c66c6eeaa2a0028cebbe702d5
+>>>>>>> 987882ce275dbc30165e59a3bebaac9d4087cd97
+              <folding />
+>>>>>>> 1ad5119659a4dd31671b5afad639cdd6a71e3544
+            </state>
+          </provider>
+        </entry>
+      </file>
+<<<<<<< HEAD
+      <file leaf-file-name="checkoutCl.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ChaymaBundle/Resources/views/checkoutCl.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="21" column="54" lean-forward="false" selection-start-line="21" selection-start-column="54" selection-end-line="21" selection-end-column="54" />
+=======
+<<<<<<< HEAD
+      <file leaf-file-name="routing.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-255">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+=======
+<<<<<<< HEAD
+      <file leaf-file-name="routing.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="952">
+              <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
       <file leaf-file-name="paniercl.html.twig" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ChaymaBundle/Resources/views/paniercl.html.twig">
           <provider selected="true" editor-type-id="text-editor">
@@ -71,35 +384,181 @@
               <folding>
                 <element signature="e#5037#5043#0#Twig" expanded="true" />
               </folding>
+=======
+      <file leaf-file-name="layout.html.twig" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/FrontBundle/Resources/views/layout.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="30" lean-forward="false" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+              <folding />
+>>>>>>> 30a24b2eed29a611d0978ac1882dfb4a47f00c2c
+=======
+      <file leaf-file-name="routing.yml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/ChaymaBundle/Resources/config/routing.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="84">
+              <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+>>>>>>> 6b7a62fdfb9b605c66c6eeaa2a0028cebbe702d5
+>>>>>>> 1ad5119659a4dd31671b5afad639cdd6a71e3544
+              <folding />
+>>>>>>> 854778e5b112b9441cb2e1706bbab68010ed3374
+>>>>>>> 987882ce275dbc30165e59a3bebaac9d4087cd97
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
+      <file leaf-file-name="paniercl.html.twig" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/ChaymaBundle/Resources/views/paniercl.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="251">
+              <caret line="124" column="19" lean-forward="true" selection-start-line="124" selection-start-column="19" selection-end-line="124" selection-end-column="19" />
+              <folding>
+                <element signature="e#5037#5043#0#Twig" expanded="true" />
+              </folding>
+=======
+<<<<<<< HEAD
+      <file leaf-file-name="composer.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/composer.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+=======
+<<<<<<< HEAD
+      <file leaf-file-name="config.yml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3">
+              <caret line="6" column="63" lean-forward="false" selection-start-line="6" selection-start-column="63" selection-end-line="6" selection-end-column="63" />
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+      <file leaf-file-name="Produit.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/DorraBundle/Entity/Produit.php">
+=======
+      <file leaf-file-name="DefaultController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ChaymaBundle/Controller/DefaultController.php">
+>>>>>>> 854778e5b112b9441cb2e1706bbab68010ed3374
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="10" column="30" lean-forward="false" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="61" />
+>>>>>>> 6b7a62fdfb9b605c66c6eeaa2a0028cebbe702d5
+              <folding />
+>>>>>>> 1ad5119659a4dd31671b5afad639cdd6a71e3544
+            </state>
+          </provider>
+        </entry>
+      </file>
+<<<<<<< HEAD
       <file leaf-file-name="Produit.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/DorraBundle/Entity/Produit.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-170">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+=======
+<<<<<<< HEAD
+      <file leaf-file-name="promotion.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/MalekBundle/Entity/promotion.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2057">
+              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+=======
+      <file leaf-file-name="Comment.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/KoussayBundle/Entity/Comment.php">
+          <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+            <state relative-caret-position="147">
+              <caret line="62" column="30" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="144" selection-end-column="0" />
+=======
+      <file leaf-file-name="routing.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/KoussayBundle/Resources/config/routing.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="19" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="19" />
+>>>>>>> 30a24b2eed29a611d0978ac1882dfb4a47f00c2c
+=======
+            <state relative-caret-position="819">
+              <caret line="39" column="2" lean-forward="false" selection-start-line="39" selection-start-column="2" selection-end-line="44" selection-end-column="25" />
+>>>>>>> 854778e5b112b9441cb2e1706bbab68010ed3374
+>>>>>>> 6b7a62fdfb9b605c66c6eeaa2a0028cebbe702d5
+>>>>>>> 987882ce275dbc30165e59a3bebaac9d4087cd97
+>>>>>>> 1ad5119659a4dd31671b5afad639cdd6a71e3544
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="panier.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ChaymaBundle/Resources/views/panier.html.twig">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="147">
               <caret line="62" column="30" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="144" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
+=======
+<<<<<<< HEAD
+      <file leaf-file-name="routing.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ChaymaBundle/Resources/config/routing.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+=======
+<<<<<<< HEAD
+      <file leaf-file-name="promotionType.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/MalekBundle/Form/promotionType.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-51">
+              <caret line="7" column="58" lean-forward="false" selection-start-line="7" selection-start-column="58" selection-end-line="7" selection-end-column="58" />
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
       <file leaf-file-name="routing.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ChaymaBundle/Resources/config/routing.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="289">
               <caret line="17" column="49" lean-forward="false" selection-start-line="17" selection-start-column="49" selection-end-line="17" selection-end-column="49" />
+=======
+      <file leaf-file-name="commentaire.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/KoussayBundle/Resources/views/commentaire.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="16" column="133" lean-forward="false" selection-start-line="16" selection-start-column="133" selection-end-line="16" selection-end-column="133" />
+>>>>>>> 30a24b2eed29a611d0978ac1882dfb4a47f00c2c
+=======
+      <file leaf-file-name="DetailCommande.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ChaymaBundle/Entity/DetailCommande.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+>>>>>>> 6b7a62fdfb9b605c66c6eeaa2a0028cebbe702d5
+>>>>>>> 1ad5119659a4dd31671b5afad639cdd6a71e3544
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+<<<<<<< HEAD
+      <file leaf-file-name="routing.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ChaymaBundle/Resources/config/routing.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" column="49" lean-forward="false" selection-start-line="17" selection-start-column="49" selection-end-line="17" selection-end-column="49" />
+=======
+<<<<<<< HEAD
+      <file leaf-file-name="routing.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/MalekBundle/Resources/config/routing.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+=======
+      <file leaf-file-name="Commande.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ChaymaBundle/Entity/Commande.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="441">
+              <caret line="21" column="16" lean-forward="false" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
+>>>>>>> 854778e5b112b9441cb2e1706bbab68010ed3374
+>>>>>>> 6b7a62fdfb9b605c66c6eeaa2a0028cebbe702d5
+>>>>>>> 987882ce275dbc30165e59a3bebaac9d4087cd97
+>>>>>>> 1ad5119659a4dd31671b5afad639cdd6a71e3544
               <folding />
             </state>
           </provider>
@@ -109,6 +568,49 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+      <find>image</find>
+=======
+<<<<<<< HEAD
+      <find>dashboard.js</find>
+      <find>class=&quot;card&quot;</find>
+      <find>class=&quot;content-wrapper&quot;</find>
+      <find>class=&quot;col-md-6 grid-margin stretch-card&quot;</find>
+      <find>class=&quot;main-panel&quot;</find>
+      <find>{{ form_end(form) }}</find>
+      <find>Submit</find>
+      <find>src</find>
+      <find>form</find>
+      <find>class=&quot;row&quot;</find>
+      <find>section</find>
+      <find>class=&quot;card rounded mb-2&quot;</find>
+      <find>c</find>
+      <find>henry</find>
+      <find>on ho</find>
+      <find>class=&quot;col-sm-9&quot;</find>
+      <find>href=&quot;http://www.urbanui.com/melody/template/pages/ui-features/popups.html&quot;</find>
+      <find>prod</find>
+      <find>image</find>
+      <find>imagef</find>
+      <find>field</find>
+      <find>Buy Ticket</find>
+      <find>class=&quot;col-md-6&quot;</find>
+      <find>vich</find>
+      <find>pource</find>
+      <find>Vich</find>
+      <find>date</find>
+      <find>datede</find>
+      <find>calEvent</find>
+      <find>evenement</find>
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+      <find>cont</find>
+>>>>>>> 854778e5b112b9441cb2e1706bbab68010ed3374
+>>>>>>> 1ad5119659a4dd31671b5afad639cdd6a71e3544
       <find>header</find>
       <find>tra</find>
       <find>login</find>
@@ -116,6 +618,10 @@
       <find>pro</find>
       <find>href</find>
       <find>src</find>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 1ad5119659a4dd31671b5afad639cdd6a71e3544
       <find>welcom</find>
       <find>profile</find>
       <find>dash</find>
@@ -139,10 +645,81 @@
       <find>effect</find>
       <find>PANIER</find>
       <find>panier</find>
+<<<<<<< HEAD
+=======
+=======
+      <find>read co</find>
+      <find>read commen</find>
+      <find>max</find>
+      <find>affichageDQL</find>
+      <find>etat</find>
+      <find>dql</find>
+      <find>description</find>
+      <find>your comme</find>
+      <find>desc</find>
+      <find>add you</find>
+      <find>Ajouter un evenement</find>
+      <find>commentaire</find>
+      <find>add your commen</find>
+      <find>form</find>
+      <find>form.date</find>
+      <find>ajouter</find>
+      <find>findCommentDQL</find>
+      <find>sho</find>
+      <find>event</find>
+      <find>show</find>
+      <find>read</find>
+      <find>comment</find>
+      <find>vich</find>
+      <find>update</find>
+      <find>index</find>
+      <find>image</find>
+      <find>image</find>
+      <find>setim</find>
+      <find>Read Comments</find>
+      <find>redirectToRoute</find>
+>>>>>>> 30a24b2eed29a611d0978ac1882dfb4a47f00c2c
+=======
+>>>>>>> 854778e5b112b9441cb2e1706bbab68010ed3374
+>>>>>>> 6b7a62fdfb9b605c66c6eeaa2a0028cebbe702d5
+>>>>>>> 987882ce275dbc30165e59a3bebaac9d4087cd97
+>>>>>>> 1ad5119659a4dd31671b5afad639cdd6a71e3544
     </findStrings>
   </component>
   <component name="FrameworkCommandLineHistory">
     <commandsHistory>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+      <command text="s doctrine:schema:update --force " />
+      <command text="s server:start " />
+      <command text="s debug:router " />
+      <command text="s server:start " />
+      <command text="s debug:router " />
+      <command text="s doctrine:schema:update --force " />
+      <command text="c clear-cache" />
+      <command text="s server:start " />
+      <command text="s debug:router " />
+      <command text="c self-update " />
+      <command text="c bower install jquery moment fullcalendar " />
+      <command text="c  npm install jquery moment fullcalendar" />
+      <command text="c require ancarebeca/full-calendar-bundle" />
+      <command text="s server:run " />
+      <command text="c require --dev doctrine/doctrine-fixtures-bundle" />
+      <command text="s doctrine:schema:update --force " />
+      <command text="s debug:router " />
+      <command text="s server:run " />
+      <command text="c self-update " />
+      <command text="s server:run " />
+      <command text="s assets:install web" />
+      <command text="c self-update " />
+      <command text="s debug:router " />
+      <command text="s server:run r" />
+      <command text="s server:run " />
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 1ad5119659a4dd31671b5afad639cdd6a71e3544
       <command text="s doctrine:generate:form ChaymaBundle:Ticket" />
       <command text="php composer.phar require &quot;payum/payum-bundle&quot; &quot;payum/offline&quot; &quot;php-http/guzzle6-adapter&quot;" />
       <command text="c require &quot;payum/payum-bundle&quot; &quot;payum/offline&quot; &quot;php-http/guzzle6-adapter&quot;" />
@@ -154,6 +731,7 @@
       <command text="jms_payment_core:generate-key" />
       <command text="jms" />
       <command text="c dump-autoload" />
+<<<<<<< HEAD
       <command text="s doctrine:schema:update --force " />
       <command text="c require endroid/qr-code" />
       <command text="c dump-autoload" />
@@ -168,6 +746,71 @@
       <command text="s doctrine:schema:update --force " />
       <command text="c dump-autoload" />
       <command text="s doctrine:schema:update --force " />
+=======
+=======
+      <command text="s doctrine:cache:clear-metadata" />
+>>>>>>> 854778e5b112b9441cb2e1706bbab68010ed3374
+      <command text="s doctrine:schema:update --force " />
+      <command text="s doctrine:database:create" />
+      <command text="s doctrine:database:drop" />
+      <command text="s doctrine:database:drop --force" />
+      <command text="s doctrine:database:create" />
+      <command text="s doctrine:schema:create" />
+      <command text="s doctrine:schema:update --force " />
+      <command text="s cache:clear" />
+      <command text="c clear-cache" />
+      <command text="s doctrine:schema:update --force " />
+      <command text="s doctrine:database:drop --force " />
+      <command text="s doctrine:database:create" />
+      <command text="s doctrine:schema:create" />
+      <command text="s doctrine:schema:update --force " />
+      <command text="s doctrine:database:create" />
+      <command text="c dump-autoload" />
+      <command text="s doctrine:database:create" />
+      <command text="s doctrine:database:drop --force " />
+      <command text="s doctrine:database:create" />
+      <command text="s doctrine:schema:create" />
+      <command text="s doctrine:schema:update --force " />
+<<<<<<< HEAD
+=======
+      <command text="s server:run " />
+      <command text="s debug:router " />
+      <command text="s server:run " />
+<<<<<<< HEAD
+      <command text="c update " />
+      <command text="s server:run " />
+=======
+      <command text="c require vich/uploader-bundle" />
+      <command text="sche*" />
+      <command text="s doctrine:schema:create" />
+      <command text="s doctrine:schema:update" />
+      <command text="s doctrine:schema:create" />
+      <command text="s doctrine:schema:update --force " />
+      <command text="s doctrine:schema:create" />
+      <command text="s doctrine:schema:update --force " />
+      <command text="c clear-cache" />
+      <command text="s doctrine:schema:update --force " />
+      <command text="s doctrine:schema:update --force" />
+      <command text="s doctrine:schema:update --force " />
+      <command text="s doctrine:schema:update" />
+      <command text="s doctrine:schema:update --force " />
+      <command text="s doctrine:schema:update" />
+      <command text="s server:run " />
+      <command text="c clear-cache" />
+      <command text="c require vich/uploader-bundle" />
+      <command text="s doctrine:schema:update --fore" />
+      <command text="s doctrine:schema:update --force" />
+      <command text="s doctrine:schema:update --force " />
+      <command text="s debug:router " />
+>>>>>>> 30a24b2eed29a611d0978ac1882dfb4a47f00c2c
+=======
+      <command text="s server:start " />
+      <command text="s server:run " />
+      <command text="s debug:router " />
+>>>>>>> 854778e5b112b9441cb2e1706bbab68010ed3374
+>>>>>>> 6b7a62fdfb9b605c66c6eeaa2a0028cebbe702d5
+>>>>>>> 987882ce275dbc30165e59a3bebaac9d4087cd97
+>>>>>>> 1ad5119659a4dd31671b5afad639cdd6a71e3544
     </commandsHistory>
   </component>
   <component name="Git.Settings">
@@ -179,20 +822,58 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" />
+<<<<<<< HEAD
+        <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/src/KoussayBundle/Entity/Event.php" />
+=======
         <option value="$PROJECT_DIR$/src/FrontBundle/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/composer.json" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/app/config/security.yml" />
         <option value="$PROJECT_DIR$/app/config/config.yml" />
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+        <option value="$PROJECT_DIR$/app/config/security.yml" />
+        <option value="$PROJECT_DIR$/app/config/config.yml" />
+=======
+        <option value="$PROJECT_DIR$/app/config/parameters.yml" />
+        <option value="$PROJECT_DIR$/app/config/security.yml" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Entity/User.php" />
+>>>>>>> 30a24b2eed29a611d0978ac1882dfb4a47f00c2c
+=======
+        <option value="$PROJECT_DIR$/app/AppKernel.php" />
+>>>>>>> 6b7a62fdfb9b605c66c6eeaa2a0028cebbe702d5
+        <option value="$PROJECT_DIR$/app/config/security.yml" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Entity/User.php" />
+>>>>>>> 854778e5b112b9441cb2e1706bbab68010ed3374
+>>>>>>> 1ad5119659a4dd31671b5afad639cdd6a71e3544
         <option value="$PROJECT_DIR$/src/ChaymaBundle/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/src/DorraBundle/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/src/IhebBundle/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/src/KoussayBundle/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/src/MalekBundle/Controller/DefaultController.php" />
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+        <option value="$PROJECT_DIR$/src/FrontBundle/Resources/views/Default/index.html.twig" />
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+        <option value="$PROJECT_DIR$/src/FrontBundle/Resources/views/layout.html.twig" />
+        <option value="$PROJECT_DIR$/src/FrontBundle/Resources/views/Default/index.html.twig" />
+        <option value="$PROJECT_DIR$/app/config/routing.yml" />
+>>>>>>> 854778e5b112b9441cb2e1706bbab68010ed3374
+>>>>>>> 6b7a62fdfb9b605c66c6eeaa2a0028cebbe702d5
+>>>>>>> 1ad5119659a4dd31671b5afad639cdd6a71e3544
         <option value="$PROJECT_DIR$/src/BackBundle/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/views/Security/login_content.html.twig" />
         <option value="$PROJECT_DIR$/src/KoussayBundle/Entity/Comment.php" />
         <option value="$PROJECT_DIR$/app/config/parameters.yml" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/app/config/routing.yml" />
         <option value="$PROJECT_DIR$/src/FrontBundle/Resources/views/Default/index.html.twig" />
         <option value="$PROJECT_DIR$/src/ChaymaBundle/Resources/views/Panier/panier.html.twig" />
@@ -230,6 +911,90 @@
         <option value="$PROJECT_DIR$/src/ChaymaBundle/Controller/PanierClubController.php" />
         <option value="$PROJECT_DIR$/src/ChaymaBundle/Resources/config/routing.yml" />
         <option value="$PROJECT_DIR$/src/ChaymaBundle/Resources/views/paniercl.html.twig" />
+=======
+        <option value="$PROJECT_DIR$/src/ChaymaBundle/Entity/Commande.php" />
+        <option value="$PROJECT_DIR$/src/ChaymaBundle/Entity/Ticket.php" />
+        <option value="$PROJECT_DIR$/src/ChaymaBundle/Repository/TicketRepository.php" />
+        <option value="$PROJECT_DIR$/src/KoussayBundle/Repository/EventRepository.php" />
+        <option value="$PROJECT_DIR$/src/ChaymaBundle/Controller/PanierController.php" />
+        <option value="$PROJECT_DIR$/src/ChaymaBundle/Resources/config/routing.yml" />
+        <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
+        <option value="$PROJECT_DIR$/src/BackBundle/Resources/views/Default/indexBack.html.twig" />
+        <option value="$PROJECT_DIR$/src/BackBundle/Resources/views/Default/index.html.twig" />
+<<<<<<< HEAD
+        <option value="$PROJECT_DIR$/app/Resources/views/email/new.html.twig" />
+        <option value="$PROJECT_DIR$/src/FrontBundle/Resources/views/layout.html.twig" />
+        <option value="$PROJECT_DIR$/src/BackBundle/Resources/views/base.html.twig" />
+        <option value="$PROJECT_DIR$/src/MalekBundle/Resources/views/AffichagePub.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/publicite/show.html.twig" />
+        <option value="$PROJECT_DIR$/src/MalekBundle/Form/PubliciteType.php" />
+        <option value="$PROJECT_DIR$/app/Resources/views/publicite/edit.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/publicite/index.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/publicite/new.html.twig" />
+        <option value="$PROJECT_DIR$/src/MalekBundle/Controller/PubliciteController.php" />
+        <option value="$PROJECT_DIR$/src/MalekBundle/Repository/PubliciteRepository.php" />
+        <option value="$PROJECT_DIR$/src/MalekBundle/Resources/views/AffichPub.html.twig" />
+        <option value="$PROJECT_DIR$/src/MalekBundle/Entity/Publicite.php" />
+        <option value="$PROJECT_DIR$/app/AppKernel.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/DataFixtures/ORM/LoadEvenementData.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/DataFixtures/ORM/LoadPromotionData.php" />
+        <option value="$PROJECT_DIR$/app/Resources/views/promotion/show.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/promotion/new.html.twig" />
+        <option value="$PROJECT_DIR$/src/BackBundle/Resources/views/calender.html.twig" />
+        <option value="$PROJECT_DIR$/src/MalekBundle/Form/promotionType.php" />
+        <option value="$PROJECT_DIR$/src/BackBundle/Resources/views/c.html.twig" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Listener/LoadDataListener.php" />
+        <option value="$PROJECT_DIR$/app/config/routing.yml" />
+        <option value="$PROJECT_DIR$/app/config/services.yml" />
+        <option value="$PROJECT_DIR$/app/Resources/views/promotion/index.html.twig" />
+        <option value="$PROJECT_DIR$/src/MalekBundle/Entity/promotion.php" />
+        <option value="$PROJECT_DIR$/src/MalekBundle/Resources/config/routing.yml" />
+        <option value="$PROJECT_DIR$/app/config/config.yml" />
+=======
+        <option value="$PROJECT_DIR$/src/KoussayBundle/Entity/Comment.php" />
+        <option value="$PROJECT_DIR$/app/config/parameters.yml" />
+        <option value="$PROJECT_DIR$/src/ChaymaBundle/Entity/Commande.php" />
+        <option value="$PROJECT_DIR$/src/ChaymaBundle/Entity/Ticket.php" />
+        <option value="$PROJECT_DIR$/src/ChaymaBundle/Repository/TicketRepository.php" />
+        <option value="$PROJECT_DIR$/src/KoussayBundle/Repository/EventRepository.php" />
+        <option value="$PROJECT_DIR$/src/ChaymaBundle/Controller/PanierController.php" />
+        <option value="$PROJECT_DIR$/src/ChaymaBundle/Resources/config/routing.yml" />
+<<<<<<< HEAD
+        <option value="$PROJECT_DIR$/src/ChaymaBundle/Resources/views/paniercl.html.twig" />
+=======
+        <option value="$PROJECT_DIR$/app/config/routing.yml" />
+        <option value="$PROJECT_DIR$/src/BackBundle/Controller/DefaultController.php" />
+        <option value="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/views/Security/login_content.html.twig" />
+        <option value="$PROJECT_DIR$/src/BackBundle/Resources/views/Default/index.html.twig" />
+        <option value="$PROJECT_DIR$/src/KoussayBundle/Entity/Comment.php" />
+        <option value="$PROJECT_DIR$/app/Resources/views/comment/new.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/comment/edit.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/event/index.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/event/edit.html.twig" />
+        <option value="$PROJECT_DIR$/src/BackBundle/Resources/views/base.html.twig" />
+        <option value="$PROJECT_DIR$/src/FrontBundle/Resources/views/Default/index.html.twig" />
+        <option value="$PROJECT_DIR$/src/KoussayBundle/Repository/EventRepository.php" />
+        <option value="$PROJECT_DIR$/src/KoussayBundle/Form/CommentType.php" />
+        <option value="$PROJECT_DIR$/app/Resources/views/comment/index.html.twig" />
+        <option value="$PROJECT_DIR$/app/AppKernel.php" />
+        <option value="$PROJECT_DIR$/app/config/config.yml" />
+        <option value="$PROJECT_DIR$/app/Resources/views/comment/show.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/event/show.html.twig" />
+        <option value="$PROJECT_DIR$/src/KoussayBundle/Entity/Event.php" />
+        <option value="$PROJECT_DIR$/src/KoussayBundle/Form/EventType.php" />
+        <option value="$PROJECT_DIR$/app/Resources/views/event/new.html.twig" />
+        <option value="$PROJECT_DIR$/src/KoussayBundle/Controller/EventController.php" />
+        <option value="$PROJECT_DIR$/src/KoussayBundle/Resources/views/admin.html.twig" />
+        <option value="$PROJECT_DIR$/src/KoussayBundle/Resources/config/routing.yml" />
+        <option value="$PROJECT_DIR$/src/KoussayBundle/Resources/views/commentaire.html.twig" />
+        <option value="$PROJECT_DIR$/src/KoussayBundle/Controller/CommentController.php" />
+        <option value="$PROJECT_DIR$/src/FrontBundle/Resources/views/layout.html.twig" />
+>>>>>>> 30a24b2eed29a611d0978ac1882dfb4a47f00c2c
+=======
+>>>>>>> 854778e5b112b9441cb2e1706bbab68010ed3374
+>>>>>>> 6b7a62fdfb9b605c66c6eeaa2a0028cebbe702d5
+>>>>>>> 987882ce275dbc30165e59a3bebaac9d4087cd97
+>>>>>>> 1ad5119659a4dd31671b5afad639cdd6a71e3544
       </list>
     </option>
   </component>
@@ -281,6 +1046,7 @@
       <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-cache-bundle" />
       <path value="$PROJECT_DIR$/vendor/symfony/phpunit-bridge" />
       <path value="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle" />
+<<<<<<< HEAD
       <path value="$PROJECT_DIR$/vendor/defuse/php-encryption" />
       <path value="$PROJECT_DIR$/vendor/jms/payment-core-bundle" />
       <path value="$PROJECT_DIR$/vendor/myclabs/php-enum" />
@@ -288,12 +1054,66 @@
       <path value="$PROJECT_DIR$/vendor/bacon/bacon-qr-code" />
       <path value="$PROJECT_DIR$/vendor/endroid/qr-code" />
       <path value="$PROJECT_DIR$/vendor/stripe/stripe-php" />
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+      <path value="$PROJECT_DIR$/vendor/jms/metadata" />
+      <path value="$PROJECT_DIR$/vendor/vich/uploader-bundle" />
+      <path value="$PROJECT_DIR$/vendor/ancarebeca/full-calendar-bundle" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/data-fixtures" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-fixtures-bundle" />
+      <path value="$PROJECT_DIR$/vendor/fullcalendar/lib" />
+      <path value="$PROJECT_DIR$/vendor/fullcalendar/locale" />
+>>>>>>> 1ad5119659a4dd31671b5afad639cdd6a71e3544
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-7" />
+    <option name="x" value="161" />
+    <option name="y" value="41" />
     <option name="width" value="697" />
     <option name="height" value="735" />
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 987882ce275dbc30165e59a3bebaac9d4087cd97
+      <path value="$PROJECT_DIR$/vendor/defuse/php-encryption" />
+      <path value="$PROJECT_DIR$/vendor/jms/payment-core-bundle" />
+      <path value="$PROJECT_DIR$/vendor/myclabs/php-enum" />
+      <path value="$PROJECT_DIR$/vendor/khanamiryan/qrcode-detector-decoder" />
+      <path value="$PROJECT_DIR$/vendor/bacon/bacon-qr-code" />
+      <path value="$PROJECT_DIR$/vendor/endroid/qr-code" />
+      <path value="$PROJECT_DIR$/vendor/stripe/stripe-php" />
+<<<<<<< HEAD
+      <path value="$PROJECT_DIR$/vendor/jms/metadata" />
+      <path value="$PROJECT_DIR$/vendor/vich/uploader-bundle" />
+      <path value="$PROJECT_DIR$/vendor/ancarebeca/full-calendar-bundle" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/data-fixtures" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-fixtures-bundle" />
+      <path value="$PROJECT_DIR$/vendor/fullcalendar/lib" />
+      <path value="$PROJECT_DIR$/vendor/fullcalendar/locale" />
+    </include_path>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="7">
+=======
+=======
+      <path value="$PROJECT_DIR$/vendor/jms/metadata" />
+      <path value="$PROJECT_DIR$/vendor/vich/uploader-bundle" />
+>>>>>>> 30a24b2eed29a611d0978ac1882dfb4a47f00c2c
+=======
+>>>>>>> 854778e5b112b9441cb2e1706bbab68010ed3374
+    </include_path>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+>>>>>>> 987882ce275dbc30165e59a3bebaac9d4087cd97
+    <option name="x" value="184" />
+    <option name="y" value="129" />
+    <option name="width" value="976" />
+    <option name="height" value="788" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+>>>>>>> 6b7a62fdfb9b605c66c6eeaa2a0028cebbe702d5
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -310,8 +1130,15 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+<<<<<<< HEAD
       <pane id="Scratches" />
       <pane id="Scope" />
+=======
+<<<<<<< HEAD
+      <pane id="Scratches" />
+=======
+>>>>>>> 6b7a62fdfb9b605c66c6eeaa2a0028cebbe702d5
+>>>>>>> 1ad5119659a4dd31671b5afad639cdd6a71e3544
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -322,7 +1149,359 @@
             <path>
               <item name="PI-Dev" type="b2602c69:ProjectViewProjectNode" />
               <item name="PI-Dev" type="2a2b976b:PhpTreeStructureProvider$1" />
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 6b7a62fdfb9b605c66c6eeaa2a0028cebbe702d5
+>>>>>>> 1ad5119659a4dd31671b5afad639cdd6a71e3544
               <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="PI-Dev" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PI-Dev" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="config" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="PI-Dev" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PI-Dev" type="2a2b976b:PhpTreeStructureProvider$1" />
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 1ad5119659a4dd31671b5afad639cdd6a71e3544
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="PI-Dev" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PI-Dev" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+<<<<<<< HEAD
+=======
+=======
+              <item name="bin" type="2a2b976b:PhpTreeStructureProvider$1" />
+>>>>>>> 6b7a62fdfb9b605c66c6eeaa2a0028cebbe702d5
+>>>>>>> 1ad5119659a4dd31671b5afad639cdd6a71e3544
+            </path>
+            <path>
+              <item name="PI-Dev" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PI-Dev" type="2a2b976b:PhpTreeStructureProvider$1" />
+<<<<<<< HEAD
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+=======
+<<<<<<< HEAD
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="promotion" type="2a2b976b:PhpTreeStructureProvider$1" />
+=======
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+>>>>>>> 6b7a62fdfb9b605c66c6eeaa2a0028cebbe702d5
+            </path>
+            <path>
+              <item name="PI-Dev" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PI-Dev" type="2a2b976b:PhpTreeStructureProvider$1" />
+<<<<<<< HEAD
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+=======
+=======
+>>>>>>> 30a24b2eed29a611d0978ac1882dfb4a47f00c2c
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="ChaymaBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+>>>>>>> 6b7a62fdfb9b605c66c6eeaa2a0028cebbe702d5
+>>>>>>> 1ad5119659a4dd31671b5afad639cdd6a71e3544
+            </path>
+            <path>
+              <item name="PI-Dev" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PI-Dev" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+<<<<<<< HEAD
+              <item name="AppBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+=======
+<<<<<<< HEAD
+              <item name="AppBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+              <item name="AppBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+=======
+              <item name="BackBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+>>>>>>> 30a24b2eed29a611d0978ac1882dfb4a47f00c2c
+=======
+              <item name="ChaymaBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Controller" type="2a2b976b:PhpTreeStructureProvider$1" />
+>>>>>>> 854778e5b112b9441cb2e1706bbab68010ed3374
+>>>>>>> 6b7a62fdfb9b605c66c6eeaa2a0028cebbe702d5
+>>>>>>> 1ad5119659a4dd31671b5afad639cdd6a71e3544
+            </path>
+            <path>
+              <item name="PI-Dev" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PI-Dev" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+<<<<<<< HEAD
+              <item name="AppBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Entity" type="2a2b976b:PhpTreeStructureProvider$1" />
+=======
+<<<<<<< HEAD
+              <item name="AppBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Entity" type="2a2b976b:PhpTreeStructureProvider$1" />
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+              <item name="AppBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+=======
+              <item name="ChaymaBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+>>>>>>> 854778e5b112b9441cb2e1706bbab68010ed3374
+              <item name="Entity" type="2a2b976b:PhpTreeStructureProvider$1" />
+=======
+              <item name="FrontBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+>>>>>>> 30a24b2eed29a611d0978ac1882dfb4a47f00c2c
+>>>>>>> 6b7a62fdfb9b605c66c6eeaa2a0028cebbe702d5
+>>>>>>> 1ad5119659a4dd31671b5afad639cdd6a71e3544
+            </path>
+            <path>
+              <item name="PI-Dev" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PI-Dev" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+<<<<<<< HEAD
+              <item name="ChaymaBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+=======
+<<<<<<< HEAD
+              <item name="BackBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+>>>>>>> 1ad5119659a4dd31671b5afad639cdd6a71e3544
+            </path>
+            <path>
+              <item name="PI-Dev" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PI-Dev" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+<<<<<<< HEAD
+              <item name="ChaymaBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Entity" type="2a2b976b:PhpTreeStructureProvider$1" />
+=======
+              <item name="BackBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+=======
+<<<<<<< HEAD
+              <item name="ChaymaBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+<<<<<<< HEAD
+=======
+              <item name="FrontBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+>>>>>>> 30a24b2eed29a611d0978ac1882dfb4a47f00c2c
+=======
+              <item name="Repository" type="2a2b976b:PhpTreeStructureProvider$1" />
+>>>>>>> 854778e5b112b9441cb2e1706bbab68010ed3374
+>>>>>>> 6b7a62fdfb9b605c66c6eeaa2a0028cebbe702d5
+>>>>>>> 1ad5119659a4dd31671b5afad639cdd6a71e3544
+            </path>
+            <path>
+              <item name="PI-Dev" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PI-Dev" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+<<<<<<< HEAD
+              <item name="ChaymaBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+=======
+<<<<<<< HEAD
+              <item name="BackBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+=======
+<<<<<<< HEAD
+              <item name="ChaymaBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+<<<<<<< HEAD
+              <item name="Entity" type="2a2b976b:PhpTreeStructureProvider$1" />
+=======
+              <item name="FrontBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+>>>>>>> 30a24b2eed29a611d0978ac1882dfb4a47f00c2c
+=======
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+>>>>>>> 854778e5b112b9441cb2e1706bbab68010ed3374
+>>>>>>> 6b7a62fdfb9b605c66c6eeaa2a0028cebbe702d5
+>>>>>>> 1ad5119659a4dd31671b5afad639cdd6a71e3544
+            </path>
+            <path>
+              <item name="PI-Dev" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PI-Dev" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+<<<<<<< HEAD
+              <item name="ChaymaBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+=======
+<<<<<<< HEAD
+              <item name="BackBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Default" type="2a2b976b:PhpTreeStructureProvider$1" />
+=======
+<<<<<<< HEAD
+              <item name="ChaymaBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+<<<<<<< HEAD
+=======
+              <item name="FrontBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Default" type="2a2b976b:PhpTreeStructureProvider$1" />
+>>>>>>> 30a24b2eed29a611d0978ac1882dfb4a47f00c2c
+=======
+              <item name="config" type="2a2b976b:PhpTreeStructureProvider$1" />
+>>>>>>> 854778e5b112b9441cb2e1706bbab68010ed3374
+>>>>>>> 6b7a62fdfb9b605c66c6eeaa2a0028cebbe702d5
+            </path>
+            <path>
+              <item name="PI-Dev" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PI-Dev" type="2a2b976b:PhpTreeStructureProvider$1" />
+<<<<<<< HEAD
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="ChaymaBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+>>>>>>> 1ad5119659a4dd31671b5afad639cdd6a71e3544
+            </path>
+            <path>
+              <item name="PI-Dev" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PI-Dev" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+<<<<<<< HEAD
+              <item name="DorraBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+=======
+              <item name="MalekBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+>>>>>>> 1ad5119659a4dd31671b5afad639cdd6a71e3544
+            </path>
+            <path>
+              <item name="PI-Dev" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PI-Dev" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+<<<<<<< HEAD
+              <item name="DorraBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Entity" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+=======
+              <item name="MalekBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Controller" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="PI-Dev" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PI-Dev" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="MalekBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Entity" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="PI-Dev" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PI-Dev" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="MalekBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Form" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="PI-Dev" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PI-Dev" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="MalekBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+=======
+<<<<<<< HEAD
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="ChaymaBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+=======
+              <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
+>>>>>>> 30a24b2eed29a611d0978ac1882dfb4a47f00c2c
+>>>>>>> 6b7a62fdfb9b605c66c6eeaa2a0028cebbe702d5
+            </path>
+            <path>
+              <item name="PI-Dev" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PI-Dev" type="2a2b976b:PhpTreeStructureProvider$1" />
+<<<<<<< HEAD
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="MalekBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="config" type="2a2b976b:PhpTreeStructureProvider$1" />
+=======
+<<<<<<< HEAD
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+<<<<<<< HEAD
+              <item name="DorraBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+=======
+              <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="front" type="2a2b976b:PhpTreeStructureProvider$1" />
+>>>>>>> 30a24b2eed29a611d0978ac1882dfb4a47f00c2c
+=======
+              <item name="ChaymaBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Default" type="2a2b976b:PhpTreeStructureProvider$1" />
+>>>>>>> 854778e5b112b9441cb2e1706bbab68010ed3374
+>>>>>>> 6b7a62fdfb9b605c66c6eeaa2a0028cebbe702d5
+            </path>
+            <path>
+              <item name="PI-Dev" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PI-Dev" type="2a2b976b:PhpTreeStructureProvider$1" />
+<<<<<<< HEAD
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="MalekBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+=======
+<<<<<<< HEAD
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+<<<<<<< HEAD
+              <item name="DorraBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Entity" type="2a2b976b:PhpTreeStructureProvider$1" />
+=======
+              <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="front" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="images" type="2a2b976b:PhpTreeStructureProvider$1" />
+>>>>>>> 30a24b2eed29a611d0978ac1882dfb4a47f00c2c
+=======
+              <item name="ChaymaBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Panier" type="2a2b976b:PhpTreeStructureProvider$1" />
+>>>>>>> 6b7a62fdfb9b605c66c6eeaa2a0028cebbe702d5
+            </path>
+            <path>
+              <item name="PI-Dev" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PI-Dev" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+<<<<<<< HEAD
+              <item name="MalekBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Default" type="2a2b976b:PhpTreeStructureProvider$1" />
+=======
+              <item name="KoussayBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+>>>>>>> 6b7a62fdfb9b605c66c6eeaa2a0028cebbe702d5
+            </path>
+            <path>
+              <item name="PI-Dev" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PI-Dev" type="2a2b976b:PhpTreeStructureProvider$1" />
+<<<<<<< HEAD
+              <item name="vendor" type="2a2b976b:PhpTreeStructureProvider$1" />
+=======
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="KoussayBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Repository" type="2a2b976b:PhpTreeStructureProvider$1" />
+>>>>>>> 6b7a62fdfb9b605c66c6eeaa2a0028cebbe702d5
+            </path>
+            <path>
+              <item name="PI-Dev" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PI-Dev" type="2a2b976b:PhpTreeStructureProvider$1" />
+<<<<<<< HEAD
+              <item name="vendor" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="fullcalendar" type="2a2b976b:PhpTreeStructureProvider$1" />
+=======
+              <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
+>>>>>>> 854778e5b112b9441cb2e1706bbab68010ed3374
+>>>>>>> 6b7a62fdfb9b605c66c6eeaa2a0028cebbe702d5
             </path>
             <path>
               <item name="PI-Dev" type="b2602c69:ProjectViewProjectNode" />
@@ -352,19 +1531,6 @@
               <item name="PI-Dev" type="b2602c69:ProjectViewProjectNode" />
               <item name="PI-Dev" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="AppBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="PI-Dev" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PI-Dev" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="AppBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Entity" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="PI-Dev" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PI-Dev" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="ChaymaBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -372,7 +1538,7 @@
               <item name="PI-Dev" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="ChaymaBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Entity" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Controller" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="PI-Dev" type="b2602c69:ProjectViewProjectNode" />
@@ -387,29 +1553,63 @@
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="ChaymaBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="config" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="PI-Dev" type="b2602c69:ProjectViewProjectNode" />
               <item name="PI-Dev" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="DorraBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="KoussayBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="PI-Dev" type="b2602c69:ProjectViewProjectNode" />
               <item name="PI-Dev" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="DorraBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="KoussayBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Entity" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
+            <path>
+              <item name="PI-Dev" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PI-Dev" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="KoussayBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="PI-Dev" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PI-Dev" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="KoussayBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="config" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="PI-Dev" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PI-Dev" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="MalekBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+>>>>>>> 1ad5119659a4dd31671b5afad639cdd6a71e3544
           </expand>
           <select />
         </subPane>
       </pane>
+<<<<<<< HEAD
+=======
+      <pane id="Scope" />
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+      <pane id="Scratches" />
+>>>>>>> 854778e5b112b9441cb2e1706bbab68010ed3374
+>>>>>>> 6b7a62fdfb9b605c66c6eeaa2a0028cebbe702d5
+>>>>>>> 1ad5119659a4dd31671b5afad639cdd6a71e3544
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.zend.framework.tool" />
+<<<<<<< HEAD
     <property name="last_opened_file_path" value="$USER_HOME$/Downloads/madame" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
@@ -420,6 +1620,23 @@
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\chaym\Documents\GitHub\PI\PI\PI-Dev\src\ChaymaBundle\Resources\views" />
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/madame" />
+=======
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../untitled4" />
+>>>>>>> 30a24b2eed29a611d0978ac1882dfb4a47f00c2c
+=======
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+>>>>>>> 854778e5b112b9441cb2e1706bbab68010ed3374
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\asus\Documents\GitHub\PI-Dev\src\AppBundle" />
+      <recent name="C:\Users\asus\Documents\GitHub\PI-Dev\vendor" />
+>>>>>>> 1ad5119659a4dd31671b5afad639cdd6a71e3544
     </key>
   </component>
   <component name="RunDashboard">
@@ -443,19 +1660,68 @@
       <created>1549898193547</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+      <updated>1551217229956</updated>
+      <workItem from="1551217235010" duration="332000" />
+      <workItem from="1551221291084" duration="764000" />
+      <workItem from="1551222119579" duration="1930000" />
+=======
+>>>>>>> 1ad5119659a4dd31671b5afad639cdd6a71e3544
       <updated>1549898193547</updated>
       <workItem from="1549898195048" duration="1626000" />
       <workItem from="1549900799647" duration="4909000" />
       <workItem from="1549989710131" duration="4234000" />
       <workItem from="1549994390500" duration="14704000" />
+<<<<<<< HEAD
       <workItem from="1550505868686" duration="3355000" />
       <workItem from="1550515010547" duration="4015000" />
       <workItem from="1550520269855" duration="69041000" />
       <workItem from="1551095979465" duration="41059000" />
+=======
+<<<<<<< HEAD
+      <workItem from="1550505868686" duration="3355000" />
+      <workItem from="1550515010547" duration="4015000" />
+      <workItem from="1550530654624" duration="8825000" />
+      <workItem from="1550574209420" duration="42117000" />
+      <workItem from="1550754925504" duration="889000" />
+      <workItem from="1550761408521" duration="4997000" />
+      <workItem from="1550935506189" duration="2392000" />
+      <workItem from="1551005933001" duration="32411000" />
+      <workItem from="1551097086783" duration="21086000" />
+      <workItem from="1551136109795" duration="22911000" />
+      <workItem from="1551221756049" duration="943000" />
+=======
+<<<<<<< HEAD
+      <workItem from="1550505868686" duration="3355000" />
+      <workItem from="1550515010547" duration="4015000" />
+<<<<<<< HEAD
+      <workItem from="1550520269855" duration="69041000" />
+      <workItem from="1551095979465" duration="41059000" />
+=======
+      <workItem from="1550517443300" duration="2994000" />
+      <workItem from="1550520640991" duration="1660000" />
+      <workItem from="1550529047951" duration="3133000" />
+      <workItem from="1550679028154" duration="2690000" />
+      <workItem from="1550684210589" duration="30959000" />
+      <workItem from="1550939004432" duration="5615000" />
+      <workItem from="1551040158130" duration="17729000" />
+      <workItem from="1551122977207" duration="22403000" />
+>>>>>>> 30a24b2eed29a611d0978ac1882dfb4a47f00c2c
+=======
+      <workItem from="1550869869822" duration="13000" />
+      <workItem from="1550869898796" duration="27000" />
+      <workItem from="1550869969815" duration="1812000" />
+>>>>>>> 854778e5b112b9441cb2e1706bbab68010ed3374
+>>>>>>> 6b7a62fdfb9b605c66c6eeaa2a0028cebbe702d5
+>>>>>>> 987882ce275dbc30165e59a3bebaac9d4087cd97
+>>>>>>> 1ad5119659a4dd31671b5afad639cdd6a71e3544
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="142943000" />
   </component>
   <component name="ToolWindowManager">
@@ -470,6 +1736,86 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32847896" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+=======
+<<<<<<< HEAD
+    <option name="totallyTimeSpent" value="3026000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="7" />
+    <editor active="true" />
+=======
+<<<<<<< HEAD
+    <option name="totallyTimeSpent" value="169414000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+>>>>>>> 987882ce275dbc30165e59a3bebaac9d4087cd97
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20877458" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+=======
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.06535948" sideWeight="0.13691376" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24673203" sideWeight="0.49092284" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Command Line Tools Console" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.06535948" sideWeight="0.8630862" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+>>>>>>> 987882ce275dbc30165e59a3bebaac9d4087cd97
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.49394855" order="9" side_tool="false" content_ui="tabs" />
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+    <option name="totallyTimeSpent" value="142943000" />
+=======
+    <option name="totallyTimeSpent" value="112656000" />
+>>>>>>> 30a24b2eed29a611d0978ac1882dfb4a47f00c2c
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
+    <layout>
+<<<<<<< HEAD
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22163388" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+=======
+    <option name="totallyTimeSpent" value="34695000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29001075" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+>>>>>>> 854778e5b112b9441cb2e1706bbab68010ed3374
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36850393" sideWeight="0.1068814" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.9191344" sideWeight="0.8931186" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32847896" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+=======
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19818456" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36850393" sideWeight="0.1068814" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.52820516" sideWeight="0.8931186" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32820514" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+>>>>>>> 30a24b2eed29a611d0978ac1882dfb4a47f00c2c
+=======
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32913387" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+>>>>>>> 854778e5b112b9441cb2e1706bbab68010ed3374
+>>>>>>> 6b7a62fdfb9b605c66c6eeaa2a0028cebbe702d5
+>>>>>>> 1ad5119659a4dd31671b5afad639cdd6a71e3544
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -477,7 +1823,10 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+<<<<<<< HEAD
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32847896" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+=======
+>>>>>>> 1ad5119659a4dd31671b5afad639cdd6a71e3544
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -512,6 +1861,7 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/ChaymaBundle/Repository/DetailCommandeRepository.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -563,12 +1913,736 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/jms/payment-core-bundle/JMS/Payment/CoreBundle/bin/composer">
+=======
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/PI-Dev/src/KoussayBundle/Resources/config/routing.yml" />
+    <entry file="file://$PROJECT_DIR$/PI-Dev/src/KoussayBundle/Resources/config/routing.yml" />
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+=======
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/src/BackBundle/Resources/views/Default/indexBack.html.twig" />
+    <entry file="file://$PROJECT_DIR$/src/MalekBundle/Entity/Email.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/MalekBundle/Form/EmailType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="15" column="48" lean-forward="false" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/email/new.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="26" column="107" lean-forward="false" selection-start-line="26" selection-start-column="107" selection-end-line="26" selection-end-column="135" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MalekBundle/Repository/promotionRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ChaymaBundle/Resources/views/Panier/panier.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MalekBundle/Resources/views/AffichagePub.html.twig" />
+    <entry file="file://$PROJECT_DIR$/src/FrontBundle/Resources/views/Default/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="16" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FrontBundle/Resources/views/layout.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="41" lean-forward="false" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config_dev.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/src/ChaymaBundle/Repository/DetailCommandeRepository.php">
+=======
+    <entry file="file://$PROJECT_DIR$/src/FrontBundle/Resources/views/layout.html.twig.html" />
+    <entry file="file://$PROJECT_DIR$/src/FrontBundle/Resources/config/routing.yml">
+>>>>>>> 854778e5b112b9441cb2e1706bbab68010ed3374
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="15" lean-forward="false" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FrontBundle/Controller/DefaultController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="45" lean-forward="false" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../RevDoKou/vendor/swiftmailer/swiftmailer/lib/swift_init.php" />
+    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/config/routing/registration.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="73" lean-forward="false" selection-start-line="7" selection-start-column="73" selection-end-line="7" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/config/routing/all.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="26" lean-forward="false" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="8" lean-forward="false" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/My Web Sites/back/wieldy.g-axon.work/static/css/143.4c8153d0.chunk.css" />
+    <entry file="file://C:/My Web Sites/back2/wieldy.g-axon.work/loader.css" />
+    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="338">
+          <caret line="40" column="57" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+=======
+    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/config/routing/all.xml" />
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="8" lean-forward="false" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/My Web Sites/back/wieldy.g-axon.work/static/css/143.4c8153d0.chunk.css" />
+    <entry file="file://C:/My Web Sites/back2/wieldy.g-axon.work/loader.css" />
+    <entry file="file://$PROJECT_DIR$/src/ChaymaBundle/Resources/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/IhebBundle/Controller/DefaultController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="35" lean-forward="false" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+>>>>>>> 6b7a62fdfb9b605c66c6eeaa2a0028cebbe702d5
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ChaymaBundle/Controller/DefaultController.php">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/vich/uploader-bundle/Storage/AbstractStorage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2438">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/publicite/show.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="986">
+          <caret line="58" column="49" lean-forward="false" selection-start-line="58" selection-start-column="49" selection-end-line="58" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/publicite/edit.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1173">
+          <caret line="69" column="70" lean-forward="false" selection-start-line="69" selection-start-column="70" selection-end-line="69" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MalekBundle/Repository/PubliciteRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="137" lean-forward="false" selection-start-line="14" selection-start-column="137" selection-end-line="14" selection-end-column="137" />
+          <folding>
+            <marker date="1551125779585" expanded="true" signature="342:403" ph="SELECT e fro... MalekBundle" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MalekBundle/Resources/views/AffichPub.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="833">
+          <caret line="49" column="109" lean-forward="false" selection-start-line="49" selection-start-column="109" selection-end-line="49" selection-end-column="109" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MalekBundle/Form/PubliciteType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="40" lean-forward="false" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
+          <folding>
+            <element signature="e#36#76#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/DataFixtures/ORM/LoadPromotionData.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml.dist">
+=======
+        <state relative-caret-position="170">
+          <caret line="10" column="30" lean-forward="false" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MalekBundle/Controller/DefaultController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="36" lean-forward="false" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/default/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="20" lean-forward="true" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+>>>>>>> 30a24b2eed29a611d0978ac1882dfb4a47f00c2c
+=======
+        <state relative-caret-position="340">
+          <caret line="86" column="15" lean-forward="false" selection-start-line="86" selection-start-column="15" selection-end-line="86" selection-end-column="15" />
+>>>>>>> 854778e5b112b9441cb2e1706bbab68010ed3374
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/KoussayBundle/Controller/DefaultController.php">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+<<<<<<< HEAD
+        <state relative-caret-position="386">
+          <caret line="467" column="61" lean-forward="false" selection-start-line="467" selection-start-column="61" selection-end-line="467" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/jms/payment-core-bundle/JMS/Payment/CoreBundle/bin/composer">
+=======
+        <state relative-caret-position="238">
+          <caret line="16" column="30" lean-forward="false" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/views/layout.html.twig" />
+    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/views/Security/login_content.html.twig" />
+    <entry file="file://$PROJECT_DIR$/src/DorraBundle/Controller/DefaultController.php">
+>>>>>>> 30a24b2eed29a611d0978ac1882dfb4a47f00c2c
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="30" lean-forward="false" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/.idea/commandlinetools/Custom_jms.xml" />
+    <entry file="file://$PROJECT_DIR$/bin/console">
+=======
+        <state relative-caret-position="170">
+          <caret line="10" column="38" lean-forward="false" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/IhebBundle/Controller/DefaultController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="35" lean-forward="false" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MalekBundle/Controller/DefaultController.php">
+>>>>>>> 854778e5b112b9441cb2e1706bbab68010ed3374
+>>>>>>> 6b7a62fdfb9b605c66c6eeaa2a0028cebbe702d5
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="36" lean-forward="false" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/src/MalekBundle/Entity/Publicite.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="28" column="12" lean-forward="false" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="18" />
+          <folding>
+            <element signature="e#38#70#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MalekBundle/Controller/PubliciteController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="813">
+          <caret line="48" column="41" lean-forward="false" selection-start-line="48" selection-start-column="41" selection-end-line="48" selection-end-column="41" />
+          <folding>
+            <element signature="e#42#75#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MalekBundle/Controller/promotionController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-255">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/publicite/new.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="10" column="44" lean-forward="false" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MalekBundle/Resources/views/Default/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/publicite/index.html.twig">
+=======
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/default/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="20" lean-forward="true" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+=======
+    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/views/Registration/register.html.twig" />
+    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Form/Type/RegistrationFormType.php" />
+    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/views/Registration/register_content.html.twig" />
+    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/views/Security/login.html.twig" />
+    <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="19" lean-forward="false" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BackBundle/Controller/DefaultController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+>>>>>>> 30a24b2eed29a611d0978ac1882dfb4a47f00c2c
+=======
+        <state relative-caret-position="238">
+          <caret line="16" column="30" lean-forward="false" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="53" />
+>>>>>>> 854778e5b112b9441cb2e1706bbab68010ed3374
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/views/layout.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/vendor/jms/payment-core-bundle/JMS/Payment/CoreBundle/Resources/config/payment.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-680">
+=======
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+>>>>>>> 30a24b2eed29a611d0978ac1882dfb4a47f00c2c
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/vendor/jms/payment-core-bundle/JMS/Payment/CoreBundle/Command/GenerateKeyCommand.php">
+=======
+    <entry file="file://$PROJECT_DIR$/src/FrontBundle/Resources/views/layout.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3655">
+          <caret line="320" column="19" lean-forward="false" selection-start-line="320" selection-start-column="19" selection-end-line="320" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
+>>>>>>> 854778e5b112b9441cb2e1706bbab68010ed3374
+>>>>>>> 6b7a62fdfb9b605c66c6eeaa2a0028cebbe702d5
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-51">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="15" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/vendor/fullcalendar/lib/moment.min.js">
+=======
+    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/views/Security/login_content.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1326">
+          <caret line="78" column="180" lean-forward="false" selection-start-line="78" selection-start-column="175" selection-end-line="78" selection-end-column="180" />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/vendor/khanamiryan/qrcode-detector-decoder/tests/qrcodes/hello_world.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/khanamiryan/qrcode-detector-decoder/tests/QrReaderTest.php">
+=======
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/comment/edit.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/event/edit.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="48" lean-forward="false" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/KoussayBundle/Tests/Controller/CommentControllerTest.php">
+>>>>>>> 30a24b2eed29a611d0978ac1882dfb4a47f00c2c
+>>>>>>> 6b7a62fdfb9b605c66c6eeaa2a0028cebbe702d5
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7141">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/vendor/fullcalendar/lib/jquery-ui.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/fullcalendar/lib/jquery.min.js">
+=======
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/src/IhebBundle/Entity/Club.php">
+=======
+    <entry file="file://$PROJECT_DIR$/src/DorraBundle/Controller/DefaultController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="30" lean-forward="false" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/views/Registration/register.html.twig">
+>>>>>>> 854778e5b112b9441cb2e1706bbab68010ed3374
+>>>>>>> 6b7a62fdfb9b605c66c6eeaa2a0028cebbe702d5
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/app/config/security.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-211">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/FrontBundle/Resources/views/Default/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="72" lean-forward="false" selection-start-line="5" selection-start-column="72" selection-end-line="5" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BackBundle/Resources/views/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19601">
+          <caret line="1153" column="50" lean-forward="false" selection-start-line="1153" selection-start-column="50" selection-end-line="1153" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/src/ChaymaBundle/Entity/Commande.php">
+=======
+    <entry file="file://$PROJECT_DIR$/src/KoussayBundle/Controller/DefaultController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="38" lean-forward="false" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
+>>>>>>> 6b7a62fdfb9b605c66c6eeaa2a0028cebbe702d5
+          <folding />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/app/config/config_prod.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config_test.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="23" column="42" lean-forward="false" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Event.php" />
+    <entry file="file://$PROJECT_DIR$/vendor/ancarebeca/full-calendar-bundle/Event/CalendarEvent.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="46" lean-forward="false" selection-start-line="4" selection-start-column="46" selection-end-line="4" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Listener/LoadDataListener.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="816">
+          <caret line="55" column="40" lean-forward="false" selection-start-line="55" selection-start-column="40" selection-end-line="55" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/DataFixtures/ORM/LoadPromotionData.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="28" lean-forward="false" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/ChaymaBundle/Entity/Commande.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1741">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ChaymaBundle/Entity/DetailCommande.php">
+>>>>>>> 30a24b2eed29a611d0978ac1882dfb4a47f00c2c
+=======
+    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Form/Type/RegistrationFormType.php">
+>>>>>>> 854778e5b112b9441cb2e1706bbab68010ed3374
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="32" column="28" lean-forward="false" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/src/KoussayBundle/Entity/Event.php">
+=======
+    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/views/Registration/register_content.html.twig">
+>>>>>>> 854778e5b112b9441cb2e1706bbab68010ed3374
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="80" lean-forward="true" selection-start-line="2" selection-start-column="80" selection-end-line="2" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle/Resources/views/Security/login.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BackBundle/Resources/views/Default/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22185">
+          <caret line="1305" column="11" lean-forward="false" selection-start-line="1305" selection-start-column="8" selection-end-line="1305" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BackBundle/Controller/DefaultController.php">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="248">
+          <caret line="52" column="47" lean-forward="false" selection-start-line="52" selection-start-column="47" selection-end-line="52" selection-end-column="47" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/FrontBundle/Resources/views/Default/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="26" column="31" lean-forward="false" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/KoussayBundle/Entity/Comment.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="356">
+          <caret line="153" column="30" lean-forward="false" selection-start-line="153" selection-start-column="30" selection-end-line="153" selection-end-column="30" />
+>>>>>>> 30a24b2eed29a611d0978ac1882dfb4a47f00c2c
+          <folding />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/src/ChaymaBundle/Resources/views/detailclub.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="36" lean-forward="false" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/KoussayBundle/Form/CommentType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="16" column="53" lean-forward="false" selection-start-line="16" selection-start-column="53" selection-end-line="16" selection-end-column="53" />
+>>>>>>> 30a24b2eed29a611d0978ac1882dfb4a47f00c2c
+=======
+        <state relative-caret-position="221">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="24" column="24" lean-forward="false" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
+>>>>>>> 854778e5b112b9441cb2e1706bbab68010ed3374
+          <folding />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/web/app_dev.php">
+=======
+    <entry file="file://$PROJECT_DIR$/src/KoussayBundle/Repository/CommentRepository.php">
+>>>>>>> 30a24b2eed29a611d0978ac1882dfb4a47f00c2c
+=======
+    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml.dist">
+>>>>>>> 854778e5b112b9441cb2e1706bbab68010ed3374
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/web/app.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+=======
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/event/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="386">
+          <caret line="91" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
+>>>>>>> 30a24b2eed29a611d0978ac1882dfb4a47f00c2c
+>>>>>>> 6b7a62fdfb9b605c66c6eeaa2a0028cebbe702d5
+          <folding />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/promotion/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+>>>>>>> 987882ce275dbc30165e59a3bebaac9d4087cd97
+          <folding />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
+>>>>>>> 1ad5119659a4dd31671b5afad639cdd6a71e3544
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-255">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/MalekBundle/Entity/promotion.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2057">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+=======
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/src/FrontBundle/Resources/views/layout.html.twig">
+=======
+    <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="19" lean-forward="false" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/.idea/commandlinetools/Custom_jms.xml" />
     <entry file="file://$PROJECT_DIR$/bin/console">
       <provider selected="true" editor-type-id="text-editor">
@@ -581,10 +2655,19 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+=======
+    <entry file="file://$PROJECT_DIR$/bin/console">
+>>>>>>> 854778e5b112b9441cb2e1706bbab68010ed3374
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-134">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+>>>>>>> 6b7a62fdfb9b605c66c6eeaa2a0028cebbe702d5
+>>>>>>> 1ad5119659a4dd31671b5afad639cdd6a71e3544
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/config/config_dev.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -618,10 +2701,91 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+=======
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/src/MalekBundle/Form/promotionType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-51">
+          <caret line="7" column="58" lean-forward="false" selection-start-line="7" selection-start-column="58" selection-end-line="7" selection-end-column="58" />
+=======
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="-255">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/KoussayBundle/Repository/EventRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="554">
+          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding>
+            <marker date="1551106563056" expanded="true" signature="332:386" ph="SELECT e fro... KoussayBundle" />
+            <marker date="1551106563056" expanded="true" signature="332:396" ph="SELECT e fro... KoussayBundle" />
+            <marker date="1551106563056" expanded="true" signature="332:397" ph="SELECT e fro... KoussayBundle" />
+            <marker date="1551106563056" expanded="true" signature="553:618" ph="UPDATE Kouss... " />
+            <marker date="1551106563056" expanded="true" signature="808:865" ph="SELECT e fro... KoussayBundle" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/comment/new.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="9" column="40" lean-forward="false" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
+>>>>>>> 30a24b2eed29a611d0978ac1882dfb4a47f00c2c
+>>>>>>> 6b7a62fdfb9b605c66c6eeaa2a0028cebbe702d5
+>>>>>>> 987882ce275dbc30165e59a3bebaac9d4087cd97
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/src/ChaymaBundle/Resources/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+=======
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/src/MalekBundle/Resources/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+=======
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/src/ChaymaBundle/Form/TicketType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="16" column="86" lean-forward="false" selection-start-line="16" selection-start-column="86" selection-end-line="16" selection-end-column="86" />
+=======
+    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="52" lean-forward="false" selection-start-line="16" selection-start-column="52" selection-end-line="16" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/comment/show.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="452">
+          <caret line="38" column="16" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="38" selection-end-column="16" />
+>>>>>>> 30a24b2eed29a611d0978ac1882dfb4a47f00c2c
+>>>>>>> 6b7a62fdfb9b605c66c6eeaa2a0028cebbe702d5
+          <folding />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/promotion/new.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+>>>>>>> 1ad5119659a4dd31671b5afad639cdd6a71e3544
+          <folding />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/vendor/khanamiryan/qrcode-detector-decoder/tests/qrcodes/hello_world.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -631,11 +2795,43 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/BackBundle/Resources/views/Default/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+=======
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="21" lean-forward="false" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
+          <folding>
+            <marker date="1550521043161" expanded="true" signature="0:605" ph="front: &lt;2 keys&gt;" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/KoussayBundle/Entity/Event.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-422">
+          <caret line="140" column="25" lean-forward="false" selection-start-line="140" selection-start-column="20" selection-end-line="140" selection-end-column="25" />
+          <folding>
+            <element signature="e#40#72#0#PHP" expanded="false" />
+>>>>>>> 30a24b2eed29a611d0978ac1882dfb4a47f00c2c
+          </folding>
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/src/ChaymaBundle/Resources/views/paiement.html.twig">
+=======
+        <state relative-caret-position="1071">
+          <caret line="63" column="28" lean-forward="false" selection-start-line="63" selection-start-column="28" selection-end-line="63" selection-end-column="28" />
+>>>>>>> 1ad5119659a4dd31671b5afad639cdd6a71e3544
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/IhebBundle/Entity/Club.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="302">
           <caret line="191" column="41" lean-forward="false" selection-start-line="191" selection-start-column="41" selection-end-line="191" selection-end-column="41" />
           <folding />
@@ -653,6 +2849,22 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/User.php">
+=======
+        <state relative-caret-position="187">
+          <caret line="11" column="20" lean-forward="false" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/security.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-287">
+          <caret line="15" column="21" lean-forward="false" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/services.yml">
+>>>>>>> 854778e5b112b9441cb2e1706bbab68010ed3374
+>>>>>>> 1ad5119659a4dd31671b5afad639cdd6a71e3544
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
@@ -660,7 +2872,11 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/ChaymaBundle/Entity/Commande.php">
+=======
+    <entry file="file://$PROJECT_DIR$/app/config/routing_dev.yml">
+>>>>>>> 1ad5119659a4dd31671b5afad639cdd6a71e3544
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="49" selection-end-column="18" />
@@ -668,6 +2884,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/KoussayBundle/Entity/Event.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
@@ -696,10 +2913,49 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="248">
           <caret line="52" column="47" lean-forward="false" selection-start-line="52" selection-start-column="47" selection-end-line="52" selection-end-column="47" />
+=======
+    <entry file="file://$PROJECT_DIR$/app/config/config_test.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config_prod.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-83">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/config_dev.yml">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="289">
+          <caret line="82" column="28" lean-forward="false" selection-start-line="82" selection-start-column="24" selection-end-line="82" selection-end-column="28" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/KoussayBundle/Form/EventType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="25" column="44" lean-forward="false" selection-start-line="25" selection-start-column="44" selection-end-line="25" selection-end-column="44" />
+          <folding>
+            <element signature="e#38#78#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/comment/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="43" column="15" lean-forward="false" selection-start-line="43" selection-start-column="15" selection-end-line="43" selection-end-column="15" />
+>>>>>>> 30a24b2eed29a611d0978ac1882dfb4a47f00c2c
+>>>>>>> 6b7a62fdfb9b605c66c6eeaa2a0028cebbe702d5
+>>>>>>> 1ad5119659a4dd31671b5afad639cdd6a71e3544
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/ChaymaBundle/Resources/views/detailclub.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -712,30 +2968,116 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+=======
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/promotion/show.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="44" lean-forward="false" selection-start-line="13" selection-start-column="44" selection-end-line="13" selection-end-column="44" />
+=======
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/src/ChaymaBundle/Resources/views/ticketevent.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="50" column="25" lean-forward="false" selection-start-line="50" selection-start-column="21" selection-end-line="50" selection-end-column="25" />
+=======
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/event/show.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="95" column="87" lean-forward="false" selection-start-line="95" selection-start-column="87" selection-end-line="95" selection-end-column="87" />
+>>>>>>> 30a24b2eed29a611d0978ac1882dfb4a47f00c2c
+=======
+        <state relative-caret-position="-406">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ChaymaBundle/Entity/Commande.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="21" column="16" lean-forward="false" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
+>>>>>>> 854778e5b112b9441cb2e1706bbab68010ed3374
+>>>>>>> 1ad5119659a4dd31671b5afad639cdd6a71e3544
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/web/app.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/src/DorraBundle/Repository/ProduitRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+=======
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/event/new.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2142">
+          <caret line="31" column="4" lean-forward="false" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
+>>>>>>> 30a24b2eed29a611d0978ac1882dfb4a47f00c2c
+=======
+    <entry file="file://$PROJECT_DIR$/src/ChaymaBundle/Entity/DetailCommande.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+>>>>>>> 854778e5b112b9441cb2e1706bbab68010ed3374
+>>>>>>> 6b7a62fdfb9b605c66c6eeaa2a0028cebbe702d5
+>>>>>>> 1ad5119659a4dd31671b5afad639cdd6a71e3544
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/FrontBundle/Resources/views/layout.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="108" column="82" lean-forward="false" selection-start-line="108" selection-start-column="82" selection-end-line="108" selection-end-column="82" />
+=======
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/src/BackBundle/Resources/views/c.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1468">
+          <caret line="119" column="69" lean-forward="false" selection-start-line="119" selection-start-column="69" selection-end-line="119" selection-end-column="69" />
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/src/ChaymaBundle/Repository/TicketRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="0" lean-forward="true" selection-start-line="13" selection-start-column="3" selection-end-line="21" selection-end-column="0" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/BackBundle/Resources/views/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="424" column="59" lean-forward="false" selection-start-line="424" selection-start-column="59" selection-end-line="424" selection-end-column="59" />
+>>>>>>> 30a24b2eed29a611d0978ac1882dfb4a47f00c2c
+=======
+    <entry file="file://$PROJECT_DIR$/src/KoussayBundle/Entity/Comment.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="819">
+          <caret line="39" column="2" lean-forward="false" selection-start-line="39" selection-start-column="2" selection-end-line="44" selection-end-column="25" />
+>>>>>>> 854778e5b112b9441cb2e1706bbab68010ed3374
+>>>>>>> 6b7a62fdfb9b605c66c6eeaa2a0028cebbe702d5
+>>>>>>> 1ad5119659a4dd31671b5afad639cdd6a71e3544
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/composer.json">
+=======
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/promotion/edit.html.twig">
+>>>>>>> 1ad5119659a4dd31671b5afad639cdd6a71e3544
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-255">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+<<<<<<< HEAD
           <folding />
         </state>
       </provider>
@@ -762,10 +3104,42 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="7" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="7" selection-end-column="7" />
+=======
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/src/ChaymaBundle/Resources/views/AfficherPClub.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/BackBundle/Resources/views/Default/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16628">
+          <caret line="1121" column="48" lean-forward="false" selection-start-line="1121" selection-start-column="48" selection-end-line="1121" selection-end-column="48" />
+>>>>>>> 30a24b2eed29a611d0978ac1882dfb4a47f00c2c
+=======
+    <entry file="file://$PROJECT_DIR$/src/ChaymaBundle/Controller/DefaultController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="30" lean-forward="false" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="61" />
+>>>>>>> 854778e5b112b9441cb2e1706bbab68010ed3374
+>>>>>>> 6b7a62fdfb9b605c66c6eeaa2a0028cebbe702d5
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/src/BackBundle/Resources/views/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6851">
+          <caret line="403" column="0" lean-forward="false" selection-start-line="403" selection-start-column="0" selection-end-line="403" selection-end-column="0" />
+>>>>>>> 1ad5119659a4dd31671b5afad639cdd6a71e3544
+          <folding />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/ChaymaBundle/Controller/TicketController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -804,10 +3178,68 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="82" column="28" lean-forward="false" selection-start-line="82" selection-start-column="24" selection-end-line="82" selection-end-column="28" />
+=======
+    <entry file="file://$PROJECT_DIR$/app/config/services.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/src/ChaymaBundle/Controller/PanierController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="51" column="55" lean-forward="false" selection-start-line="51" selection-start-column="55" selection-end-line="51" selection-end-column="55" />
+          <folding>
+            <element signature="e#127#153#0#PHP" expanded="true" />
+            <element signature="e#2024#2050#0#PHP" expanded="true" />
+            <element signature="e#2836#2857#1#PHP" expanded="true" />
+            <element signature="e#3551#3572#1#PHP" expanded="true" />
+            <element signature="e#4497#4525#0#PHP" expanded="true" />
+            <element signature="e#4872#4900#0#PHP" expanded="true" />
+            <element signature="e#5760#5786#1#PHP" expanded="true" />
+            <element signature="e#5871#5899#1#PHP" expanded="true" />
+=======
+    <entry file="file://$PROJECT_DIR$/app/AppKernel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding>
+            <element signature="e#7#66#0#PHP" expanded="false" />
+>>>>>>> 30a24b2eed29a611d0978ac1882dfb4a47f00c2c
+          </folding>
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/src/DorraBundle/Entity/Produit.php">
+=======
+    <entry file="file://$PROJECT_DIR$/src/ChaymaBundle/Repository/TicketRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="3" lean-forward="false" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ChaymaBundle/Resources/views/Default/index.html.twig">
+>>>>>>> 854778e5b112b9441cb2e1706bbab68010ed3374
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+<<<<<<< HEAD
+=======
+    <entry file="file://$PROJECT_DIR$/src/KoussayBundle/Resources/views/admin.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="63" column="158" lean-forward="false" selection-start-line="63" selection-start-column="108" selection-end-line="63" selection-end-column="158" />
+>>>>>>> 30a24b2eed29a611d0978ac1882dfb4a47f00c2c
+>>>>>>> 6b7a62fdfb9b605c66c6eeaa2a0028cebbe702d5
+>>>>>>> 1ad5119659a4dd31671b5afad639cdd6a71e3544
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/ChaymaBundle/Resources/views/ticketevent.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
@@ -820,18 +3252,67 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+=======
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="952">
+          <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+=======
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/src/ChaymaBundle/Entity/DetailCommande.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="18" column="14" lean-forward="false" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/KoussayBundle/Resources/views/commentaire.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="133" lean-forward="false" selection-start-line="16" selection-start-column="133" selection-end-line="16" selection-end-column="133" />
+>>>>>>> 30a24b2eed29a611d0978ac1882dfb4a47f00c2c
+=======
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ChaymaBundle/Resources/views/Panier/panier.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+>>>>>>> 854778e5b112b9441cb2e1706bbab68010ed3374
+>>>>>>> 6b7a62fdfb9b605c66c6eeaa2a0028cebbe702d5
+>>>>>>> 1ad5119659a4dd31671b5afad639cdd6a71e3544
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/ChaymaBundle/Repository/TicketRepository.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="21" column="0" lean-forward="true" selection-start-line="13" selection-start-column="3" selection-end-line="21" selection-end-column="0" />
+=======
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3">
+          <caret line="6" column="63" lean-forward="false" selection-start-line="6" selection-start-column="63" selection-end-line="6" selection-end-column="63" />
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/src/ChaymaBundle/Resources/views/checkout.html.twig">
+=======
+    <entry file="file://$PROJECT_DIR$/src/ChaymaBundle/Entity/Ticket.php">
+>>>>>>> 854778e5b112b9441cb2e1706bbab68010ed3374
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1092">
+          <caret line="52" column="7" lean-forward="false" selection-start-line="52" selection-start-column="7" selection-end-line="52" selection-end-column="7" />
+>>>>>>> 987882ce275dbc30165e59a3bebaac9d4087cd97
+>>>>>>> 1ad5119659a4dd31671b5afad639cdd6a71e3544
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/ChaymaBundle/Resources/views/AfficherPClub.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -853,26 +3334,73 @@
             <element signature="e#4872#4900#0#PHP" expanded="true" />
             <element signature="e#5760#5786#1#PHP" expanded="true" />
             <element signature="e#5871#5899#1#PHP" expanded="true" />
+=======
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/src/KoussayBundle/Resources/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="14" lean-forward="false" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="39" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/KoussayBundle/Repository/EventRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="147">
+          <caret line="62" column="30" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="144" selection-end-column="0" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/KoussayBundle/Controller/EventController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="355">
+          <caret line="205" column="0" lean-forward="false" selection-start-line="205" selection-start-column="0" selection-end-line="205" selection-end-column="0" />
+          <folding>
+            <element signature="e#44#77#0#PHP" expanded="true" />
+            <element signature="e#643#920#0#PHP" expanded="false" />
+            <element signature="e#1056#2008#0#PHP" expanded="false" />
+            <element signature="e#3346#4028#0#PHP" expanded="false" />
+            <element signature="e#4157#4553#0#PHP" expanded="false" />
+            <element signature="e#4734#4995#0#PHP" expanded="false" />
+>>>>>>> 1ad5119659a4dd31671b5afad639cdd6a71e3544
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/DorraBundle/Entity/Produit.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-170">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/KoussayBundle/Resources/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="19" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="19" />
+>>>>>>> 30a24b2eed29a611d0978ac1882dfb4a47f00c2c
+=======
+        <state relative-caret-position="420">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+>>>>>>> 854778e5b112b9441cb2e1706bbab68010ed3374
+>>>>>>> 987882ce275dbc30165e59a3bebaac9d4087cd97
+>>>>>>> 1ad5119659a4dd31671b5afad639cdd6a71e3544
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/ChaymaBundle/Entity/DetailCommande.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="18" column="14" lean-forward="false" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
+=======
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/src/KoussayBundle/Entity/Event.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="93" column="0" lean-forward="true" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
+>>>>>>> 1ad5119659a4dd31671b5afad639cdd6a71e3544
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/ChaymaBundle/Resources/views/checkout.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
@@ -885,10 +3413,49 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
           <caret line="62" column="30" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="144" selection-end-column="0" />
+=======
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/src/ChaymaBundle/Controller/PanierClubController.php">
+=======
+    <entry file="file://$PROJECT_DIR$/src/ChaymaBundle/Controller/PanierController.php">
+>>>>>>> 854778e5b112b9441cb2e1706bbab68010ed3374
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1092">
+          <caret line="58" column="54" lean-forward="false" selection-start-line="58" selection-start-column="54" selection-end-line="58" selection-end-column="54" />
+          <folding>
+            <element signature="e#127#184#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ChaymaBundle/Resources/config/routing.yml">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="289">
+          <caret line="17" column="49" lean-forward="false" selection-start-line="17" selection-start-column="49" selection-end-line="17" selection-end-column="49" />
+>>>>>>> 1ad5119659a4dd31671b5afad639cdd6a71e3544
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/ChaymaBundle/Controller/PanierClubController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="236">
@@ -918,10 +3485,43 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="21" column="54" lean-forward="false" selection-start-line="21" selection-start-column="54" selection-end-line="21" selection-end-column="54" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/ChaymaBundle/Resources/views/checkoutCl.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="21" column="54" lean-forward="false" selection-start-line="21" selection-start-column="54" selection-end-line="21" selection-end-column="54" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/KoussayBundle/Controller/CommentController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="157" column="0" lean-forward="false" selection-start-line="157" selection-start-column="0" selection-end-line="157" selection-end-column="0" />
+          <folding>
+            <element signature="e#560#841#0#PHP" expanded="false" />
+            <element signature="e#2246#2948#0#PHP" expanded="false" />
+            <element signature="e#3081#3487#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ChaymaBundle/Resources/views/Default/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+>>>>>>> 30a24b2eed29a611d0978ac1882dfb4a47f00c2c
+=======
+        <state relative-caret-position="84">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+>>>>>>> 854778e5b112b9441cb2e1706bbab68010ed3374
+>>>>>>> 1ad5119659a4dd31671b5afad639cdd6a71e3544
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 1ad5119659a4dd31671b5afad639cdd6a71e3544
     <entry file="file://$PROJECT_DIR$/src/ChaymaBundle/Resources/views/paniercl.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="251">
@@ -929,8 +3529,22 @@
           <folding>
             <element signature="e#5037#5043#0#Twig" expanded="true" />
           </folding>
+<<<<<<< HEAD
+=======
+=======
+    <entry file="file://$PROJECT_DIR$/src/FrontBundle/Resources/views/layout.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="30" lean-forward="false" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+>>>>>>> 6b7a62fdfb9b605c66c6eeaa2a0028cebbe702d5
+          <folding />
+>>>>>>> 30a24b2eed29a611d0978ac1882dfb4a47f00c2c
+>>>>>>> 1ad5119659a4dd31671b5afad639cdd6a71e3544
         </state>
       </provider>
     </entry>
+=======
+>>>>>>> 854778e5b112b9441cb2e1706bbab68010ed3374
+>>>>>>> 987882ce275dbc30165e59a3bebaac9d4087cd97
   </component>
 </project>

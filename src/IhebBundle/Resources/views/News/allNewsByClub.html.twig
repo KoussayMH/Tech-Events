@@ -1,0 +1,114 @@
+{% extends "@Front/layout.html.twig" %}
+
+{% block container %}
+    <!--Start breadcrumb area-->
+    <section class="breadcrumb-area"
+             style="background-image: url({{ asset ('front/images/resources/breadcrumb-bg.jpg') }});">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="breadcrumbs">
+                        <h1>  News Club {{ club.nameClub }}</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End breadcrumb area-->
+
+    <!--Start breadcrumb bottom area-->
+    <section class="breadcrumb-bottom-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="breadcrumb-bottom">
+                        <div class="left pull-left">
+                            <ul>
+                                <li><a href="{{ path ('club_by_user') }}">Clubs</a></li>
+                                <li><i class="fa fa-angle-right" aria-hidden="true"></i></li>
+                                <li class="active"> News</li>
+                            </ul>
+                        </div>
+                        <div class="right pull-right">
+                            <a href="{{ path ('new_club') }}">
+                                <span><i class="fa fa-plus" aria-hidden="true"> Add a new club </i></span>
+                            </a>
+                            {% if is_granted("IS_AUTHENTICATED_FULLY") %}
+                                <a href="{{ path ('club_by_user') }}">
+                                    <span><i class="fa fa-list-ul"> My Clubs </i></span>
+                                </a>
+                            {% endif %}
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {% set flashbag_notices = app.session.flashbag.get('notice') %}
+    {% if flashbag_notices is not empty  %}
+        {% for notice in flashbag_notices %}
+            <div class="container">
+                <div class="alert alert-danger " role="alert">
+                    <strong>Oops !</strong> {{ notice }} <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                </div>
+            </div>
+        {% endfor %}
+    {% endif %}
+    <section id="blog-area" class="blog-modern-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="blog-post">
+                        {% for a in news %}
+                        <!--Start single blog item-->
+                        <div class="single-blog-item">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="img-holder">
+                                        <img src="{{ asset('uploads/brochures/' ~ a.photoNews) }}" alt="Awesome Image" style="width: 700px ; height: 300px">
+                                        <div class="post-type">
+                                            <span class="flaticon-photo"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="text-holder">
+                                        <ul class="meta-info">
+                                            <li><a href="#"><i class="fa fa-user" aria-hidden="true"></i>By : {{ a.idClub.adminClub.firstName }} {{ a.idClub.adminClub.lastName }}</a></li>
+                                            <li><a href="#"><i class="fa fa-folder-open" aria-hidden="true"></i>Name Club : {{ a.idClub.nameClub }}</a></li>
+                                            <li><a href="#"><i class="fa fa-comments" aria-hidden="true"></i>Type : {{ a.idClub.typeClub }}</a></li>
+                                        </ul>
+                                        <a href="blog-single.html">
+                                            <h3 class="blog-title">{{ a.title }}</h3>
+                                        </a>
+                                        <div class="text">
+                                            <p>{{ a.description }}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--End single blog item-->
+                        {% endfor %}
+                        <!--Start post pagination-->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <ul class="post-pagination text-center">
+                                    <li><a href="#"><i class="fa fa-caret-left" aria-hidden="true"></i></a></li>
+                                    <li class="active"><a href="#">1</a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--End post pagination-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End blog area-->
+
+{% endblock %}

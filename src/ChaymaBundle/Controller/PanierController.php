@@ -12,8 +12,6 @@ namespace ChaymaBundle\Controller;
 use AppBundle\Entity\User;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
-use ChaymaBundle\Entity\DetailCommande;
-use ChaymaBundle\Entity\Commande;
 
 class PanierController extends Controller
 {
@@ -49,13 +47,7 @@ class PanierController extends Controller
         $twig = new \Twig_Environment($loader);
         $twig->addGlobal('panier', $session->get('panier'));
 
-        return $this->redirect($this->generateUrl('Afficher'));
-
-    }
-
-
-    public function ApplyAction()
-    {
+        return $this->redirect($this->generateUrl('produits_index'));
 
     }
 
@@ -65,13 +57,14 @@ class PanierController extends Controller
         if (!$session->has('panier')) $session->set('panier', array());
 
         $em = $this->getDoctrine()->getManager();
-        $tickets = $em->getRepository('ChaymaBundle:Ticket')->findArray(array_keys($session->get('panier')));
+        $tickets = $em->getRepository('KoussayBundle:Event')->findArray(array_keys($session->get('panier')));
 
 
-        return $this->render('@Chayma/panier.html.twig', array(
+        return $this->render('ChaymaBundle:Panier:panier.html.twig', array(
             'tickets' => $tickets, 'panier' => $session->get('panier')));
     }
 
+<<<<<<< HEAD
     public function SupprimmerAction($id)
     {
         $session = $this->get('session');
@@ -209,6 +202,8 @@ $u= $this->getUser() ;
 
     }
 
+=======
+>>>>>>> 1ad5119659a4dd31671b5afad639cdd6a71e3544
 
 
 

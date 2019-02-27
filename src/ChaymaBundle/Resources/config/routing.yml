@@ -72,3 +72,6 @@ Basket:
 AjouterCl:
     path:     /{id}/AjouterCl/
     defaults: { _controller: ChaymaBundle:PanierClub:AjouterPC }
+AjouterPanier:
+    path:    /{id}/Ajouter
+    defaults: { _controller: ChaymaBundle:Panier:Ajouter }

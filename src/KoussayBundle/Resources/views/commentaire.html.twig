@@ -1,0 +1,23 @@
+<table >
+    <thead>
+    <tr>
+        <th>date</th>
+        <th>description</th>
+        <th>Action</th>
+
+    </tr>
+    </thead>
+    <tbody>
+    {% for comment in comments %}
+
+        <tr>
+            <td>{{ comment.date | date('Y-m-d') }}</td>
+            <td>{{ comment.description }}</td>
+            <td>
+                <button class="btn btn-outline-primary" onclick="window.location.href ='{{ path('supprimerCommentaire',{'id': comment.id}) }}';">Supprimer</button>
+            </td>
+
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
