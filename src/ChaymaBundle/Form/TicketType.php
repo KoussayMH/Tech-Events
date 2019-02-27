@@ -14,7 +14,7 @@ class TicketType extends AbstractType
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $builder->add('prix')->add('quantite')->add('type')->add('event');
+        $builder->add('prix')->add('quantite')->add('type')->add('titre')->add('desc');
     }/**
      * {@inheritdoc}
      */

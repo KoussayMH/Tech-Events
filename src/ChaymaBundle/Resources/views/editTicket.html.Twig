@@ -37,23 +37,17 @@
 
                                 <div class="row">
                                     {{ form_start(TicketType) }}
-
                                     <div class="">
-                                        <div class="field-label">Titre</div>
+                                        <div class="field-label">Event</div>
 
-                                        {{ form_widget(TicketType.titre) }}
+                                        <label>{{ form_widget(TicketType.event) }}</label>
                                     </div>
-                                        <div class="">
-                                            <div class="field-label">Description</div>
-
-                                            {{ form_widget(TicketType.desc) }}
-                                        </div>
                                     <div class="">
                                         <div class="field-label">Prix</div>
 
                                         {{ form_widget(TicketType.prix) }}
                                     </div>
-                                    <div class="cm-number" >
+                                    <div class="cm-number">
                                         <div class="field-label">Quantite</div>
 
                                         {{ form_widget(TicketType.quantite) }}
@@ -63,13 +57,11 @@
 
                                         {{ form_widget(TicketType.type) }}
                                     </div>
-
-
-                                <div class="row">
-                                    <div class="">
-                                        <button class="thm-btn gra" type="submit">Add Ticket</button>
+                                    <div class="row">
+                                        <div class="">
+                                            <button class="thm-btn gra" type="submit">Add Ticket</button>
+                                        </div>
                                     </div>
-                                </div>
                                 </div>
                                 {{ form_end(TicketType) }}
 

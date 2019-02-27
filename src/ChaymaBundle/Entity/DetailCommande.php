@@ -34,10 +34,55 @@ class DetailCommande
     private $ticket;
 
     /**
+     * @ORM\ManyToOne(targetEntity="\DorraBundle\Entity\Produit")
+     * @ORM\JoinColumn(name="ticket",referencedColumnName="id")
+     */
+    private $produit;
+
+    /**
+     * @return mixed
+     */
+    public function getProduit()
+    {
+        return $this->produit;
+    }
+
+    /**
+     * @param mixed $produit
+     */
+    public function setProduit($produit)
+    {
+        $this->produit = $produit;
+    }
+
+    /**
      * @ORM\ManyToOne(targetEntity="\ChaymaBundle\Entity\Commande")
      * @ORM\JoinColumn(name="commande",referencedColumnName="id")
      */
     private $commande;
+
+    /**
+     * @ORM\ManyToOne(targetEntity="\AppBundle\Entity\User")
+     * @ORM\JoinColumn(name="user",referencedColumnName="id")
+     */
+    private $user;
+
+    /**
+     * @return mixed
+     */
+    public function getUser()
+    {
+        return $this->user;
+    }
+
+    /**
+     * @param mixed $user
+     */
+    public function setUser($user)
+    {
+        $this->user = $user;
+    }
+
 
     /**
      * @return mixed

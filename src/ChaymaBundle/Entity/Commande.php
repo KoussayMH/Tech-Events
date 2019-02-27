@@ -36,6 +36,50 @@ class Commande
     private $date;
 
 
+    /**
+     * @ORM\ManyToOne(targetEntity="\IhebBundle\Entity\Club")
+     * @ORM\JoinColumn(name="club",referencedColumnName="id")
+     */
+    private $club;
+
+
+    /**
+     * @ORM\ManyToOne(targetEntity="\AppBundle\Entity\User")
+     * @ORM\JoinColumn(name="user",referencedColumnName="id")
+     */
+    private $user;
+
+    /**
+     * @return mixed
+     */
+    public function getUser()
+    {
+        return $this->user;
+    }
+
+    /**
+     * @param mixed $user
+     */
+    public function setUser($user)
+    {
+        $this->user = $user;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getClub()
+    {
+        return $this->club;
+    }
+
+    /**
+     * @param mixed $club
+     */
+    public function setClub($club)
+    {
+        $this->club = $club;
+    }
 
 
     /**
