@@ -10,4 +10,5 @@ namespace KoussayBundle\Repository;
  */
 class EventRepository extends \Doctrine\ORM\EntityRepository
 {
+
 }

@@ -186,5 +186,13 @@ class Club
     {
         return $this->nbmembres;
     }
+
+    public function __toString()
+    {
+        return (string) $this->getNom() ;
+        // TODO: Implement __toString() method.
+    }
+
+
 }
 
